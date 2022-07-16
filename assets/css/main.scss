@@ -108,12 +108,18 @@ main {
     .expand {
       color: #018e9f;
     }
+  
     .btn {
       color: #8a98aa;
       border: 1px solid #8c98a8;
       border-radius: 10px;
       padding: 12px;
       white-space: nowrap;
+      &.active{
+        background-color: #8E8769;
+        color: white;
+        border:none
+      }
     }
     textarea::placeholder {
       color: #8a98aa;

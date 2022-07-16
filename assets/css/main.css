@@ -137,6 +137,12 @@ main .patient-file .btn {
   white-space: nowrap;
 }
 
+main .patient-file .btn.active {
+  background-color: #8E8769;
+  color: white;
+  border: none;
+}
+
 main .patient-file textarea::-webkit-input-placeholder {
   color: #8a98aa;
   font-size: 14px;
