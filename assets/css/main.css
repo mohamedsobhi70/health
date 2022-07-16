@@ -1,0 +1,133 @@
+body {
+  background: #f1f3f9;
+  font-family: Arial;
+}
+
+.br-10 {
+  border-radius: 10px;
+}
+
+.br-15 {
+  border-radius: 15px;
+}
+
+.border-e {
+  border-color: #eee;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+main {
+  background: url(../img/bg.jpg);
+  background-size: 100% 284px;
+  background-repeat: no-repeat;
+}
+
+main aside .navigation {
+  -webkit-box-shadow: 4px 0px 6px #0000001c;
+          box-shadow: 4px 0px 6px #0000001c;
+}
+
+main aside .navigation .hide {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  top: 94px;
+  right: -6px;
+  width: 18px;
+  height: 30px;
+}
+
+main aside .navigation .logo {
+  margin: 44px 0;
+}
+
+main aside .navigation li {
+  margin: 0 16px;
+  padding: 18px;
+}
+
+main aside .navigation li.active {
+  background-color: #f662783b;
+}
+
+main aside .navigation li.active span {
+  color: #f66277;
+  opacity: 1;
+}
+
+main aside .navigation li span {
+  font-size: 14px;
+  opacity: 0.8;
+  color: #172b4d;
+}
+
+main .info {
+  -webkit-box-shadow: 0px 4px 6px #0000001c;
+          box-shadow: 0px 4px 6px #0000001c;
+}
+
+main .info .title {
+  color: #f66277;
+  font-size: 20px;
+  padding: 22px;
+  font-weight: bold;
+}
+
+main .info .dr-info i {
+  color: #018e9f;
+}
+
+main .info .dr-info span {
+  color: #000102;
+  font-size: 13px;
+}
+
+main .patient-info {
+  margin: 32px 0;
+  padding: 20px 33px;
+  -webkit-box-shadow: 0px 3px 6px #2c28281c;
+          box-shadow: 0px 3px 6px #2c28281c;
+}
+
+main .patient-info .patient-name h2 {
+  font-size: 24px;
+}
+
+main .patient-info .edit-patient {
+  color: #018e9f;
+  font-size: 14px;
+}
+
+main .patient-info svg path {
+  fill: #018e9f;
+}
+
+main .patient-info .info-title {
+  color: #8898aa;
+}
+
+main .patient-file {
+  margin: 32px 0;
+  padding: 20px 33px;
+  -webkit-box-shadow: 0px 3px 6px #2c28281c;
+          box-shadow: 0px 3px 6px #2c28281c;
+}
+
+main .patient-file h3 {
+  font-size: 18px;
+  color: #8a98aa;
+}
+
+main .patient-file .btn {
+  color: #8a98aa;
+  border: 1px solid #8c98a8;
+  border-radius: 10px;
+  padding: 12px;
+}
+/*# sourceMappingURL=main.css.map */
