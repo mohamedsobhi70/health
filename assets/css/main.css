@@ -115,8 +115,8 @@ main .patient-info .info-title {
 main .patient-file {
   margin: 32px 0;
   padding: 20px 33px;
-  -webkit-box-shadow: 0px 3px 6px #2c28281c;
-          box-shadow: 0px 3px 6px #2c28281c;
+  -webkit-box-shadow: 0px 3px 6px #2c28281c !important;
+          box-shadow: 0px 3px 6px #2c28281c !important;
 }
 
 main .patient-file h3 {
@@ -124,10 +124,34 @@ main .patient-file h3 {
   color: #8a98aa;
 }
 
+main .patient-file .expand {
+  color: #018e9f;
+}
+
 main .patient-file .btn {
   color: #8a98aa;
   border: 1px solid #8c98a8;
   border-radius: 10px;
   padding: 12px;
+}
+
+main .patient-file textarea::-webkit-input-placeholder {
+  color: #8a98aa;
+  font-size: 14px;
+}
+
+main .patient-file textarea:-ms-input-placeholder {
+  color: #8a98aa;
+  font-size: 14px;
+}
+
+main .patient-file textarea::-ms-input-placeholder {
+  color: #8a98aa;
+  font-size: 14px;
+}
+
+main .patient-file textarea::placeholder {
+  color: #8a98aa;
+  font-size: 14px;
 }
 /*# sourceMappingURL=main.css.map */
