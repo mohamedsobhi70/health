@@ -76,33 +76,35 @@ main {
     &.open {
       padding-left: 0 !important ;
     }
+    .info {
+      box-shadow: 0px 4px 6px #0000001c;
+      .title {
+        color: #f66277;
+        font-size: 20px;
+        padding: 22px;
+        font-weight: bold;
+      }
+
+      .dr-info {
+        i {
+          color: #018e9f;
+        }
+        span {
+          color: #000102;
+          font-size: 13px;
+        }
+      }
+    }
   }
 }
 
-.info {
-  box-shadow: 0px 4px 6px #0000001c;
-  .title {
-    color: #f66277;
-    font-size: 20px;
-    padding: 22px;
-    font-weight: bold;
-  }
-
-  .dr-info {
-    i {
-      color: #018e9f;
-    }
-    span {
-      color: #000102;
-      font-size: 13px;
-    }
-  }
-}
-
-@media (max-width: 767) {
+@media (max-width: 767px) {
   main {
     .main-content {
       padding-left: 0 !important;
+      .dr-info {
+        padding: 10px 0;
+      }
     }
   }
 }

@@ -100,30 +100,33 @@ main .main-content.open {
   padding-left: 0 !important;
 }
 
-.info {
+main .main-content .info {
   -webkit-box-shadow: 0px 4px 6px #0000001c;
           box-shadow: 0px 4px 6px #0000001c;
 }
 
-.info .title {
+main .main-content .info .title {
   color: #f66277;
   font-size: 20px;
   padding: 22px;
   font-weight: bold;
 }
 
-.info .dr-info i {
+main .main-content .info .dr-info i {
   color: #018e9f;
 }
 
-.info .dr-info span {
+main .main-content .info .dr-info span {
   color: #000102;
   font-size: 13px;
 }
 
-@media (max-width: 767) {
+@media (max-width: 767px) {
   main .main-content {
     padding-left: 0 !important;
+  }
+  main .main-content .dr-info {
+    padding: 10px 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
