@@ -8,9 +8,11 @@
     <meta content="Health CheckMate website" name="description">
     <meta content="HealthCheckMate" name="keywords">
     <link rel="stylesheet" href="assets/vendor/bootstrap-5.0.2/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="assets/vendor/fontawesome/fontawesome.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/patients.css">
 
 
 </head>
@@ -96,8 +98,7 @@
                                 <g id="icon_visits" transform="translate(-731 -190)">
                                     <rect id="Rectangle_13844" data-name="Rectangle 13844" width="20" height="20"
                                         transform="translate(731 190)" fill="none" />
-                                    <g id="Group_15119" data-name="Group 15119"
-                                        transform="translate(-10.091 0.255)">
+                                    <g id="Group_15119" data-name="Group 15119" transform="translate(-10.091 0.255)">
                                         <path id="Path_142690" data-name="Path 142690"
                                             d="M61.091,7.049a6.471,6.471,0,0,1,.329-.988,3.037,3.037,0,0,1,2.747-1.747c.331-.012.662,0,1.024,0,0-.285-.008-.562,0-.839a.778.778,0,0,1,1.553,0c.01.208,0,.416,0,.625v.206h3.52V3.569a.78.78,0,1,1,1.558-.079c0,.026,0,.053,0,.079v.746h3.553c0-.276-.009-.554,0-.83a.778.778,0,0,1,1.553,0c.01.2,0,.4,0,.606v.237h.98a3.051,3.051,0,0,1,2.4,1.093,2.937,2.937,0,0,1,.758,1.944c.008,1.5,0,3.007,0,4.51a.779.779,0,1,1-1.557.045.5.5,0,0,1,0-.055V7.549a1.673,1.673,0,0,0-.318-1.043,1.536,1.536,0,0,0-1.2-.626c-.343-.017-.687,0-1.056,0V6.6a.782.782,0,1,1-1.564-.01v-.71H71.822v.785A.779.779,0,0,1,70.61,7.3a.731.731,0,0,1-.344-.623c0-.26,0-.52,0-.794H66.749v.733a.782.782,0,1,1-1.563-.007V5.848a9.212,9.212,0,0,0-1.348.09,1.522,1.522,0,0,0-1.189,1.6V19.507a1.523,1.523,0,0,0,.886,1.5,2.009,2.009,0,0,0,.808.169c1.938.014,3.876.007,5.814.008a.781.781,0,0,1,.8.638.8.8,0,0,1-.5.877.752.752,0,0,0-.077.047H63.823a.38.38,0,0,0-.085-.038,3.033,3.033,0,0,1-2.327-1.727,7.017,7.017,0,0,1-.32-.97Z"
                                             transform="translate(680 187)" fill="#16bc84" />
@@ -215,7 +216,7 @@
         </aside>
         <div class="main-content ">
             <header class="info bg-white mb-3 br-10 d-flex align-items-center justify-content-between">
-                <div class="title">
+                <div class="title d-none d-sm-block">
                     Patients
                 </div>
                 <div class="dr-info px-3">
@@ -225,14 +226,34 @@
                     <a class="mx-3 text-decoration-none" href="">
                         <i class="far fa-envelope  fa-lg" "></i> </a>
                         <a class=" mx-3 text-decoration-none" href="">
-                            <img src="assets/img/person.jfif" class="me-1 rounded-circle" width="50px" height="50px"
+                            <img src="assets/img/person.png" class="me-1 rounded-circle" width="50px" height="50px"
                                 alt="">
                             <span>Dr. House</span>
                     </a>
                 </div>
             </header>
             <div class="my-4 patients-table bg-white  p-3 br-10 ">
-                <table id="patientstable" class="table" style="width:100%">
+                <div class="d-flex align-items-center justify-content-md-between mb-4 flex-wrap justify-content-center">
+                    <div class="search-box d-flex align-items-center px-2" style="max-height: 40px">
+                        <input type="text" class="form-control fs-14 border-0" placeholder="Search">
+                        <i class="fas fa- fa-search fa-rotate-90 mx-2 "></i>
+                    </div>
+                    <div class="add-patient">
+                        <button class="bars my-2 btn mx-1 my-md-0 d-inline-flex justify-content-center align-items-center">
+                            <i class="fas fa-bars fa-rotate-90   "></i>
+                        </button>
+                        <button class="filter my-2 btn mx-1 my-md-0 d-inline-flex justify-content-center align-items-center">
+                            <i class="fas fa-filter    "></i>
+                        </button>
+                        <button
+                            class="btn text-white my-2 fs-14 p1 my-md-0-2 px-4 add-patient-btn mx-2 d-inline-flex justify-content-center align-items-center">
+                            <i class="fas fa-plus fa-sm me-2  "></i>
+                            New Patient
+                        </button>
+                    </div>
+                </div>
+                <table id="example" class="table  fs-14 table-borderless table-responsive table-striped "
+                    style="width:100%;max-width: 100%;">
                     <thead>
                         <tr>
                             <th>Code</th>
@@ -244,24 +265,268 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <tr class="d-none">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
                         <tr>
                             <td>0001</td>
-                            <td><img src="assets/img/person.jfif" class="me-1 rounded-circle" width="50px" height="50px"
-                                    alt=""> Mohammed Omar</td>
-                            <td>Male</td>
-                            <td>61</td>
+                            <td><img src="assets/img/person.png" class="rounded-circle me-3" width="50px" height="50px" alt="">Mohammed Omar</td>
+                            <td><span class="male">male</span></td>
+                            <td>36 Years</td>
                             <td>0789601601</td>
-                            <td>mao1986jo@gmail.com</td>
+                            <td>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>mao1986jo@gmail.com</span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="48" height="48" viewBox="0 0 48 48">
+                                        <defs>
+                                            <filter id="Ellipse_369" x="0" y="0" width="48" height="48"
+                                                filterUnits="userSpaceOnUse">
+                                                <feOffset dy="3" input="SourceAlpha" />
+                                                <feGaussianBlur stdDeviation="3" result="blur" />
+                                                <feFlood flood-color="#2c2828" flood-opacity="0.11" />
+                                                <feComposite operator="in" in2="blur" />
+                                                <feComposite in="SourceGraphic" />
+                                            </filter>
+                                        </defs>
+                                        <g id="icon_actions" transform="translate(9 6)">
+                                            <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Ellipse_369)">
+                                                <circle id="Ellipse_369-2" data-name="Ellipse 369" cx="15" cy="15"
+                                                    r="15" transform="translate(9 6)" fill="#fff" />
+                                            </g>
+                                            <g id="more-vertical" transform="translate(14 7)">
+                                                <circle id="Ellipse_348" data-name="Ellipse 348" cx="1" cy="1" r="1"
+                                                    transform="translate(0 7)" fill="none" stroke="#172b4d"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                                <circle id="Ellipse_349" data-name="Ellipse 349" cx="1" cy="1" r="1"
+                                                    fill="none" stroke="#172b4d" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" />
+                                                <circle id="Ellipse_350" data-name="Ellipse 350" cx="1" cy="1" r="1"
+                                                    transform="translate(0 14)" fill="none" stroke="#172b4d"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>0002</td>
-                            <td><img src="assets/img/person.jfif" class="me-1 rounded-circle" width="50px" height="50px"
-                                    alt=""><a class="text-decoration-none text-dark" href="patientdetails.html"> Mohammed Omar</a></td>
-                            <td>Male</td>
-                            <td>61</td>
+                            <td><img src="assets/img/person.jfif" class="rounded-circle me-3" width="50px" height="50px" alt="">Noor Sulaiman</td>
+                            <td><span class="female">female</span></td>
+                            <td>22 Years</td>
                             <td>0789601601</td>
-                            <td>mao1986jo@gmail.com</td>
+                            <td>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>n.sulaiman@yahoo.com</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="48" height="48" viewBox="0 0 48 48">
+                                        <defs>
+                                            <filter id="Ellipse_369" x="0" y="0" width="48" height="48"
+                                                filterUnits="userSpaceOnUse">
+                                                <feOffset dy="3" input="SourceAlpha" />
+                                                <feGaussianBlur stdDeviation="3" result="blur" />
+                                                <feFlood flood-color="#2c2828" flood-opacity="0.11" />
+                                                <feComposite operator="in" in2="blur" />
+                                                <feComposite in="SourceGraphic" />
+                                            </filter>
+                                        </defs>
+                                        <g id="icon_actions" transform="translate(9 6)">
+                                            <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Ellipse_369)">
+                                                <circle id="Ellipse_369-2" data-name="Ellipse 369" cx="15" cy="15"
+                                                    r="15" transform="translate(9 6)" fill="#fff" />
+                                            </g>
+                                            <g id="more-vertical" transform="translate(14 7)">
+                                                <circle id="Ellipse_348" data-name="Ellipse 348" cx="1" cy="1" r="1"
+                                                    transform="translate(0 7)" fill="none" stroke="#172b4d"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                                <circle id="Ellipse_349" data-name="Ellipse 349" cx="1" cy="1" r="1"
+                                                    fill="none" stroke="#172b4d" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" />
+                                                <circle id="Ellipse_350" data-name="Ellipse 350" cx="1" cy="1" r="1"
+                                                    transform="translate(0 14)" fill="none" stroke="#172b4d"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>0003</td>
+                            <td><img src="assets/img/person.png" class="rounded-circle me-3" width="50px" height="50px" alt="">Mohammed Omar</td>
+                            <td><span class="male">male</span></td>
+                            <td>36 Years</td>
+                            <td>0789601601</td>
+                            <td>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>mao1986jo@gmail.com</span>
 
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="48" height="48" viewBox="0 0 48 48">
+                                        <defs>
+                                            <filter id="Ellipse_369" x="0" y="0" width="48" height="48"
+                                                filterUnits="userSpaceOnUse">
+                                                <feOffset dy="3" input="SourceAlpha" />
+                                                <feGaussianBlur stdDeviation="3" result="blur" />
+                                                <feFlood flood-color="#2c2828" flood-opacity="0.11" />
+                                                <feComposite operator="in" in2="blur" />
+                                                <feComposite in="SourceGraphic" />
+                                            </filter>
+                                        </defs>
+                                        <g id="icon_actions" transform="translate(9 6)">
+                                            <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Ellipse_369)">
+                                                <circle id="Ellipse_369-2" data-name="Ellipse 369" cx="15" cy="15"
+                                                    r="15" transform="translate(9 6)" fill="#fff" />
+                                            </g>
+                                            <g id="more-vertical" transform="translate(14 7)">
+                                                <circle id="Ellipse_348" data-name="Ellipse 348" cx="1" cy="1" r="1"
+                                                    transform="translate(0 7)" fill="none" stroke="#172b4d"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                                <circle id="Ellipse_349" data-name="Ellipse 349" cx="1" cy="1" r="1"
+                                                    fill="none" stroke="#172b4d" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" />
+                                                <circle id="Ellipse_350" data-name="Ellipse 350" cx="1" cy="1" r="1"
+                                                    transform="translate(0 14)" fill="none" stroke="#172b4d"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>0004</td>
+                            <td><img src="assets/img/person.jfif" class="rounded-circle me-3" width="50px" height="50px" alt="">Noor Sulaiman</td>
+                            <td><span class="female">female</span></td>
+                            <td>22 Years</td>
+                            <td>0789601601</td>
+                            <td>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>n.sulaiman@yahoo.com</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="48" height="48" viewBox="0 0 48 48">
+                                        <defs>
+                                            <filter id="Ellipse_369" x="0" y="0" width="48" height="48"
+                                                filterUnits="userSpaceOnUse">
+                                                <feOffset dy="3" input="SourceAlpha" />
+                                                <feGaussianBlur stdDeviation="3" result="blur" />
+                                                <feFlood flood-color="#2c2828" flood-opacity="0.11" />
+                                                <feComposite operator="in" in2="blur" />
+                                                <feComposite in="SourceGraphic" />
+                                            </filter>
+                                        </defs>
+                                        <g id="icon_actions" transform="translate(9 6)">
+                                            <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Ellipse_369)">
+                                                <circle id="Ellipse_369-2" data-name="Ellipse 369" cx="15" cy="15"
+                                                    r="15" transform="translate(9 6)" fill="#fff" />
+                                            </g>
+                                            <g id="more-vertical" transform="translate(14 7)">
+                                                <circle id="Ellipse_348" data-name="Ellipse 348" cx="1" cy="1" r="1"
+                                                    transform="translate(0 7)" fill="none" stroke="#172b4d"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                                <circle id="Ellipse_349" data-name="Ellipse 349" cx="1" cy="1" r="1"
+                                                    fill="none" stroke="#172b4d" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" />
+                                                <circle id="Ellipse_350" data-name="Ellipse 350" cx="1" cy="1" r="1"
+                                                    transform="translate(0 14)" fill="none" stroke="#172b4d"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>0005</td>
+                            <td><img src="assets/img/person.png" class="rounded-circle me-3" width="50px" height="50px" alt="">Mohammed Omar</td>
+                            <td><span class="male">male</span></td>
+                            <td>36 Years</td>
+                            <td>0789601601</td>
+                            <td>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>mao1986jo@gmail.com</span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="48" height="48" viewBox="0 0 48 48">
+                                        <defs>
+                                            <filter id="Ellipse_369" x="0" y="0" width="48" height="48"
+                                                filterUnits="userSpaceOnUse">
+                                                <feOffset dy="3" input="SourceAlpha" />
+                                                <feGaussianBlur stdDeviation="3" result="blur" />
+                                                <feFlood flood-color="#2c2828" flood-opacity="0.11" />
+                                                <feComposite operator="in" in2="blur" />
+                                                <feComposite in="SourceGraphic" />
+                                            </filter>
+                                        </defs>
+                                        <g id="icon_actions" transform="translate(9 6)">
+                                            <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Ellipse_369)">
+                                                <circle id="Ellipse_369-2" data-name="Ellipse 369" cx="15" cy="15"
+                                                    r="15" transform="translate(9 6)" fill="#fff" />
+                                            </g>
+                                            <g id="more-vertical" transform="translate(14 7)">
+                                                <circle id="Ellipse_348" data-name="Ellipse 348" cx="1" cy="1" r="1"
+                                                    transform="translate(0 7)" fill="none" stroke="#172b4d"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                                <circle id="Ellipse_349" data-name="Ellipse 349" cx="1" cy="1" r="1"
+                                                    fill="none" stroke="#172b4d" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" />
+                                                <circle id="Ellipse_350" data-name="Ellipse 350" cx="1" cy="1" r="1"
+                                                    transform="translate(0 14)" fill="none" stroke="#172b4d"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>0006</td>
+                            <td><img src="assets/img/person.jfif" class="rounded-circle me-3" width="50px" height="50px" alt="">Noor Sulaiman</td>
+                            <td><span class="female">female</span></td>
+                            <td>22 Years</td>
+                            <td>0789601601</td>
+                            <td>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>n.sulaiman@yahoo.com</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="48" height="48" viewBox="0 0 48 48">
+                                        <defs>
+                                            <filter id="Ellipse_369" x="0" y="0" width="48" height="48"
+                                                filterUnits="userSpaceOnUse">
+                                                <feOffset dy="3" input="SourceAlpha" />
+                                                <feGaussianBlur stdDeviation="3" result="blur" />
+                                                <feFlood flood-color="#2c2828" flood-opacity="0.11" />
+                                                <feComposite operator="in" in2="blur" />
+                                                <feComposite in="SourceGraphic" />
+                                            </filter>
+                                        </defs>
+                                        <g id="icon_actions" transform="translate(9 6)">
+                                            <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Ellipse_369)">
+                                                <circle id="Ellipse_369-2" data-name="Ellipse 369" cx="15" cy="15"
+                                                    r="15" transform="translate(9 6)" fill="#fff" />
+                                            </g>
+                                            <g id="more-vertical" transform="translate(14 7)">
+                                                <circle id="Ellipse_348" data-name="Ellipse 348" cx="1" cy="1" r="1"
+                                                    transform="translate(0 7)" fill="none" stroke="#172b4d"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                                <circle id="Ellipse_349" data-name="Ellipse 349" cx="1" cy="1" r="1"
+                                                    fill="none" stroke="#172b4d" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" />
+                                                <circle id="Ellipse_350" data-name="Ellipse 350" cx="1" cy="1" r="1"
+                                                    transform="translate(0 14)" fill="none" stroke="#172b4d"
+                                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -273,14 +538,11 @@
     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
     <script>
         $(document).ready(function () {
-            var table = $('#patientstable').DataTable({
-                "bPaginate": false,
-                "bLengthChange": false,
-                "bFilter": true,
-                "bInfo": false,
-                "bAutoWidth": false, "dom": '<lf<t>ip>'
+            $('#example').DataTable({
+                paging: false,
+                ordering: true,
+                info: false, searching: false
             });
-
         });
     </script>
     <script src="assets/vendor/fontawesome/fontawesome.js"></script>

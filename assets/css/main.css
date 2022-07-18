@@ -121,7 +121,7 @@ main .main-content.open {
   font-size: 13px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767) {
   main .main-content {
     padding-left: 0 !important;
   }
