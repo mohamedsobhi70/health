@@ -1,0 +1,16 @@
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  border: none !important ;
+  padding: 10 20px !important;
+}
+
+td {
+  vertical-align: middle !important;
+}
+div.dataTables_wrapper div.dataTables_filter label {
+  float: left;
+}

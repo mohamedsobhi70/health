@@ -23,143 +23,107 @@ body {
   font-size: 14px;
 }
 
+.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 main {
-  background: url(../img/bg.jpg);
-  background-size: 100% 284px;
+  background: url(../img/bg.png);
+  background-size: 100% 300px;
   background-repeat: no-repeat;
 }
 
-main aside .navigation {
+main .menu {
+  width: 276px;
+  position: fixed;
+  left: -276px;
+  top: 0;
+  z-index: 10;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+main .menu.open {
+  left: 0;
+}
+
+main .menu .navigation {
+  border-radius: 10px;
   min-height: 95vh;
   -webkit-box-shadow: 4px 0px 6px #0000001c;
           box-shadow: 4px 0px 6px #0000001c;
 }
 
-main aside .navigation .hide {
+main .menu .navigation .navbar-switch {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   top: 94px;
-  right: -6px;
+  right: -18px;
   width: 18px;
   height: 30px;
 }
 
-main aside .navigation .logo {
+main .menu .navigation .logo {
   margin: 44px 0;
 }
 
-main aside .navigation li {
+main .menu .navigation li {
   margin: 0 16px;
   padding: 18px;
 }
 
-main aside .navigation li.active {
+main .menu .navigation li.active {
   background-color: #f662783b;
 }
 
-main aside .navigation li.active span {
+main .menu .navigation li.active span {
   color: #f66277;
   opacity: 1;
 }
 
-main aside .navigation li span {
+main .menu .navigation li span {
   font-size: 14px;
   opacity: 0.8;
   color: #172b4d;
 }
 
-main .info {
+main .main-content {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  padding-left: 276px;
+  padding-top: 16px;
+  margin: 0 40px;
+}
+
+main .main-content.open {
+  padding-left: 0 !important;
+}
+
+.info {
   -webkit-box-shadow: 0px 4px 6px #0000001c;
           box-shadow: 0px 4px 6px #0000001c;
 }
 
-main .info .title {
+.info .title {
   color: #f66277;
   font-size: 20px;
   padding: 22px;
   font-weight: bold;
 }
 
-main .info .dr-info i {
+.info .dr-info i {
   color: #018e9f;
 }
 
-main .info .dr-info span {
+.info .dr-info span {
   color: #000102;
   font-size: 13px;
 }
 
-main .patient-info {
-  margin: 32px 0;
-  padding: 20px 33px;
-  -webkit-box-shadow: 0px 3px 6px #2c28281c;
-          box-shadow: 0px 3px 6px #2c28281c;
-}
-
-main .patient-info .patient-name h2 {
-  font-size: 24px;
-}
-
-main .patient-info .edit-patient {
-  color: #018e9f;
-  font-size: 14px;
-}
-
-main .patient-info svg path {
-  fill: #018e9f;
-}
-
-main .patient-info .info-title {
-  color: #8898aa;
-}
-
-main .patient-file {
-  margin: 32px 0;
-  padding: 20px 33px;
-  -webkit-box-shadow: 0px 3px 6px #2c28281c !important;
-          box-shadow: 0px 3px 6px #2c28281c !important;
-}
-
-main .patient-file h3 {
-  font-size: 18px;
-  color: #8a98aa;
-}
-
-main .patient-file .expand {
-  color: #018e9f;
-}
-
-main .patient-file .btn {
-  color: #8a98aa;
-  border: 1px solid #8c98a8;
-  border-radius: 10px;
-  padding: 12px;
-  white-space: nowrap;
-}
-
-main .patient-file .btn.active {
-  background-color: #8E8769;
-  color: white;
-  border: none;
-}
-
-main .patient-file textarea::-webkit-input-placeholder {
-  color: #8a98aa;
-  font-size: 14px;
-}
-
-main .patient-file textarea:-ms-input-placeholder {
-  color: #8a98aa;
-  font-size: 14px;
-}
-
-main .patient-file textarea::-ms-input-placeholder {
-  color: #8a98aa;
-  font-size: 14px;
-}
-
-main .patient-file textarea::placeholder {
-  color: #8a98aa;
-  font-size: 14px;
+@media (max-width: 767px) {
+  main .main-content {
+    padding-left: 0 !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */

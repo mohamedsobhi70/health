@@ -1,0 +1,67 @@
+main {
+  .main-content {
+    .patient-info {
+      margin: 32px 0;
+      padding: 20px 33px;
+      box-shadow: 0px 3px 6px #2c28281c;
+
+      .patient-name {
+        h2 {
+          font-size: 24px;
+        }
+      }
+      .edit-patient {
+        color: #018e9f;
+        font-size: 14px;
+      }
+      svg {
+        path {
+          fill: #018e9f;
+        }
+      }
+      .info-title {
+        color: #8898aa;
+      }
+    }
+    .patient-file {
+      margin: 32px 0;
+      padding: 20px 33px;
+      box-shadow: 0px 3px 6px #2c28281c !important;
+      h3 {
+        font-size: 18px;
+        color: #8a98aa;
+      }
+      .expand {
+        color: #018e9f;
+      }
+
+      .btn {
+        color: #8a98aa;
+        border: 1px solid #8c98a8;
+        border-radius: 10px;
+        padding: 12px;
+        white-space: nowrap;
+        &.active {
+          background-color: #8e8769;
+          color: white;
+          border: none;
+          svg {
+            path {
+              fill: #fff;
+            }
+          }
+        }
+        svg {
+          margin-right: 2px;
+          path {
+            fill: #8a98aa ;
+          }
+        }
+      }
+      textarea::placeholder {
+        color: #8a98aa;
+        font-size: 14px;
+      }
+    }
+  }
+}

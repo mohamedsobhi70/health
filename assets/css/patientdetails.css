@@ -1,0 +1,86 @@
+main .main-content .patient-info {
+  margin: 32px 0;
+  padding: 20px 33px;
+  -webkit-box-shadow: 0px 3px 6px #2c28281c;
+          box-shadow: 0px 3px 6px #2c28281c;
+}
+
+main .main-content .patient-info .patient-name h2 {
+  font-size: 24px;
+}
+
+main .main-content .patient-info .edit-patient {
+  color: #018e9f;
+  font-size: 14px;
+}
+
+main .main-content .patient-info svg path {
+  fill: #018e9f;
+}
+
+main .main-content .patient-info .info-title {
+  color: #8898aa;
+}
+
+main .main-content .patient-file {
+  margin: 32px 0;
+  padding: 20px 33px;
+  -webkit-box-shadow: 0px 3px 6px #2c28281c !important;
+          box-shadow: 0px 3px 6px #2c28281c !important;
+}
+
+main .main-content .patient-file h3 {
+  font-size: 18px;
+  color: #8a98aa;
+}
+
+main .main-content .patient-file .expand {
+  color: #018e9f;
+}
+
+main .main-content .patient-file .btn {
+  color: #8a98aa;
+  border: 1px solid #8c98a8;
+  border-radius: 10px;
+  padding: 12px;
+  white-space: nowrap;
+}
+
+main .main-content .patient-file .btn.active {
+  background-color: #8e8769;
+  color: white;
+  border: none;
+}
+
+main .main-content .patient-file .btn.active svg path {
+  fill: #fff;
+}
+
+main .main-content .patient-file .btn svg {
+  margin-right: 2px;
+}
+
+main .main-content .patient-file .btn svg path {
+  fill: #8a98aa;
+}
+
+main .main-content .patient-file textarea::-webkit-input-placeholder {
+  color: #8a98aa;
+  font-size: 14px;
+}
+
+main .main-content .patient-file textarea:-ms-input-placeholder {
+  color: #8a98aa;
+  font-size: 14px;
+}
+
+main .main-content .patient-file textarea::-ms-input-placeholder {
+  color: #8a98aa;
+  font-size: 14px;
+}
+
+main .main-content .patient-file textarea::placeholder {
+  color: #8a98aa;
+  font-size: 14px;
+}
+/*# sourceMappingURL=patientdetails.css.map */

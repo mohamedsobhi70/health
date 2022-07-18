@@ -1,0 +1,78 @@
+main .menu .navigation li.active {
+  background-color: #7764e43a;
+}
+
+main .menu .navigation li.active span {
+  color: #7764e4 !important;
+}
+
+main .main-content .title {
+  color: #7764e4 !important;
+}
+
+main .main-content .stat.new-patients .icon-box {
+  background: #16bc84;
+}
+
+main .main-content .stat.new-visits .icon-box {
+  background: #e54d5b;
+}
+
+main .main-content .stat.total-patients .icon-box {
+  background: #7764e4;
+}
+
+main .main-content .stat.total-visits .icon-box {
+  background: #11cdef;
+}
+
+main .main-content .stat .stat-title p {
+  font-size: 11px;
+  color: #8898aa;
+}
+
+main .main-content .stat .stat-title h3 {
+  font-size: 18px;
+  color: #4d4f5c;
+}
+
+main .main-content .stat .icon-box {
+  width: 50px;
+  height: 50px;
+}
+
+main .main-content .stat .icon-box svg path {
+  fill: white;
+}
+
+main .main-content .stat .yesterday {
+  font-size: 13px;
+}
+
+main .main-content .stat .yesterday span {
+  color: #16bc84;
+}
+
+main .main-content .charts p {
+  font-size: 11px;
+  color: #8898aa;
+}
+
+main .main-content .charts h3 {
+  font-size: 18px;
+  color: #172b4d;
+}
+
+main .main-content .charts button {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  font-size: 14px;
+  border: 1px solid #018e9f;
+  color: #018e9f;
+}
+
+main .main-content .charts button.active, main .main-content .charts button:hover {
+  background: #018e9f;
+  color: white;
+}
+/*# sourceMappingURL=dashboard.css.map */
