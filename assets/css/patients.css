@@ -7,6 +7,11 @@ tr {
   border: none !important;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 td {
   vertical-align: middle !important;
 }
@@ -33,6 +38,44 @@ main .patients-table .search-box input {
 main .patients-table .search-box input:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+main .patients-table .add-patient .btn .overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 43;
+}
+
+main .patients-table .add-patient .btn .filter-options {
+  top: 150%;
+  right: -30%;
+  width: 531px;
+  height: 167px;
+  z-index: 10;
+  -webkit-box-shadow: 0px 3px 6px #0000001a;
+          box-shadow: 0px 3px 6px #0000001a;
+  border: 1px solid #018e9f;
+}
+
+main .patients-table .add-patient .btn .filter-options::before {
+  content: "";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 10px;
+  height: 10px;
+  z-index: 120;
+  top: -6px;
+  right: 5%;
+  background: white;
+  position: absolute;
+  border-right: 1px solid #018e9f;
+  border-top: 1px solid #018e9f;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 main .patients-table .add-patient .btn:not(.add-patient-btn) {
@@ -66,6 +109,113 @@ main .patients-table .add-patient .btn:not(.add-patient-btn).filter .fa-filter {
 main .patients-table .add-patient .add-patient-btn {
   background: #018e9f 0% 0% no-repeat padding-box;
   border-radius: 5px;
+}
+
+.new-patient {
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: -1500px;
+  width: 100vw;
+  z-index: 1000;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.new-patient.show {
+  right: 0;
+}
+
+.new-patient .newpatient-content {
+  overflow-y: auto;
+  width: 80%;
+  border-top: 5px solid #018e9f;
+  height: 100vh;
+}
+
+.new-patient .newpatient-content .close {
+  top: 20px;
+  left: 18%;
+  font-size: 22px;
+}
+
+.new-patient .newpatient-content .title {
+  font-size: 20px;
+  color: #018e9f;
+}
+
+.new-patient .newpatient-content h4 {
+  font-size: 18px;
+}
+
+.new-patient .newpatient-content input {
+  font-size: 14px;
+}
+
+.new-patient .newpatient-content input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.new-patient .newpatient-content input::-webkit-input-placeholder {
+  color: #8a98aa;
+}
+
+.new-patient .newpatient-content input:-ms-input-placeholder {
+  color: #8a98aa;
+}
+
+.new-patient .newpatient-content input::-ms-input-placeholder {
+  color: #8a98aa;
+}
+
+.new-patient .newpatient-content input::placeholder {
+  color: #8a98aa;
+}
+
+.new-patient .newpatient-content select {
+  font-size: 14px;
+  color: #000;
+}
+
+.new-patient .newpatient-content select:empty {
+  color: #8a98aa;
+}
+
+.new-patient .newpatient-content select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: black;
+}
+
+.new-patient .newpatient-content select option[selected] {
+  color: #8a98aa;
+}
+
+.new-patient .newpatient-content .btn-add {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  background: #c3c5c9;
+  border-radius: 5px;
+}
+
+.new-patient .newpatient-content .btn-add:hover {
+  background-color: #018e9f;
+}
+
+.new-patient .newpatient-content .form-check-input:checked {
+  background-color: #16BC84;
+  border-color: #16BC84;
+}
+
+.new-patient .newpatient-content .btn-cancle {
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.new-patient .newpatient-content .btn-save {
+  background: #018E9F 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  color: white;
 }
 
 table.dataTable thead .sorting:before,
