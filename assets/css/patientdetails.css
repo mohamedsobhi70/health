@@ -50,6 +50,9 @@ main .main-content .patient-file .btn.active {
   background-color: #8e8769;
   color: white;
   border: none;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
 }
 
 main .main-content .patient-file .btn.active svg path {
@@ -82,5 +85,113 @@ main .main-content .patient-file textarea::-ms-input-placeholder {
 main .main-content .patient-file textarea::placeholder {
   color: #8a98aa;
   font-size: 14px;
+}
+
+.new-patient {
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: -1500px;
+  width: 100vw;
+  z-index: 1000;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.new-patient.show {
+  right: 0;
+}
+
+.new-patient .newpatient-content {
+  overflow-y: auto;
+  width: 400px;
+  max-width: 90%;
+  border-top: 5px solid #018e9f;
+  height: 100vh;
+}
+
+.new-patient .newpatient-content .close {
+  top: 20px;
+  right: 430px;
+  font-size: 22px;
+}
+
+.new-patient .newpatient-content .title {
+  font-size: 20px;
+  color: #018e9f;
+}
+
+.new-patient .newpatient-content select {
+  font-size: 14px;
+  color: #000;
+}
+
+.new-patient .newpatient-content select:empty {
+  color: #8a98aa;
+}
+
+.new-patient .newpatient-content select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: black;
+}
+
+.new-patient .newpatient-content select option[selected] {
+  color: #8a98aa;
+}
+
+.new-patient .newpatient-content .drop-area {
+  background: #f1f3f9 0% 0% no-repeat padding-box;
+  border: 1px dashed #8a98aa;
+  border-radius: 5px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.new-patient .newpatient-content .drop-area.active {
+  opacity: 0.2;
+  border-style: solid;
+}
+
+.new-patient .newpatient-content .drop-area p {
+  color: #8a98aa;
+}
+
+.new-patient .newpatient-content .file-box:not(:last-of-type) {
+  border-bottom: 1px solid #f1f3f9;
+}
+
+.new-patient .newpatient-content .btn-cancle {
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.new-patient .newpatient-content .btn-save {
+  background: #018e9f 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  color: white;
+}
+
+label.error {
+  font-size: 12px;
+  color: #e54d5b;
+}
+
+input.error,
+select.error {
+  border-color: #e54d5b;
+}
+
+input.error:focus,
+select.error:focus {
+  border-color: #e54d5b;
+}
+
+.input-lable {
+  font-size: 12px;
+  background: white;
+  padding: 5px 10px;
+  top: -16px;
+  left: 10px;
+  color: #8A98AA;
 }
 /*# sourceMappingURL=patientdetails.css.map */

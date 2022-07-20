@@ -224,9 +224,9 @@ table.dataTable thead .sorting_desc:before,
 table.dataTable thead .sorting_asc_disabled:before,
 table.dataTable thead .sorting_desc_disabled:before {
   content: "\02C6" !important;
-  font-size: 25px !important;
-  -webkit-transform: translateY(50%) !important;
-          transform: translateY(50%) !important;
+  font-size: 35px !important;
+  -webkit-transform: translateY(75%) !important;
+          transform: translateY(75%) !important;
 }
 
 table.dataTable thead .sorting:after,
@@ -235,9 +235,9 @@ table.dataTable thead .sorting_desc:after,
 table.dataTable thead .sorting_asc_disabled:after,
 table.dataTable thead .sorting_desc_disabled:after {
   content: "\02C7" !important;
-  font-size: 25px !important;
-  -webkit-transform: translateY(50%) !important;
-          transform: translateY(50%) !important;
+  font-size: 35px !important;
+  -webkit-transform: translateY(100%) !important;
+          transform: translateY(100%) !important;
 }
 
 thead {
