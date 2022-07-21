@@ -3,7 +3,7 @@ body {
   font-family: Arial;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus, select:focus, textarea:focus, button:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }

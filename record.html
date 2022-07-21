@@ -419,74 +419,65 @@
         </div>
     </main>
     <!-- add new patient  -->
-    <div dir="rtl" class="new-patient show position-fixed min-vh-100  position-relative ">
+    <div dir="rtl" class="record show position-fixed min-vh-100  position-relative ">
         <div dir="ltr" class="newpatient-content bg-white px-5 py-4  ">
             <div class="close fw-bold text-white position-absolute" role="button">X</div>
-            <h3 class="title fw-bold mb-4"> Add New Record </h3>
-            <form action="" id="upload-form">
-
-                <select name="Biolab" class="w-50 form-select sex required" aria-label=".sex">
-
-                    <option value="" selected>From Biolab Packages</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <div class="position-relative mb-4">
-                    <label for="liver " class="input-lable position-absolute">Select Package</label>
-                    <select name="liver" class="form-select mt-4 sex required" aria-label=".sex">
-                        <option value="" selected>Liver Function Tests</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
+            <h3 class="title fw-bold mb-4"> Record #3</h3>
+            <div class="row">
+                <div class="col-md-5 mb-4">
+                    <div class="record-item py-2 px-2 fs-14 mb-3"> U/S014 XRAY KNEE BILATERAL STANDING </div>
+                    <div class="record-item py-2 px-2 fs-14 mb-3 active"> U/S014 XRAY KNEE BILATERAL STANDING </div>
+                    <div class="record-item py-2 px-2 fs-14 mb-3"> U/S014 XRAY KNEE BILATERAL STANDING </div>
+                    <div class="record-item py-2 px-2 fs-14 mb-3"> U/S014 XRAY KNEE BILATERAL STANDING </div>
+                    <div class="record-item py-2 px-2 fs-14 mb-3"> U/S014 XRAY KNEE BILATERAL STANDING </div>
+                    <div class="record-item py-2 px-2 fs-14 mb-3"> U/S014 XRAY KNEE BILATERAL STANDING </div>
+                    <div class="record-item py-2 px-2 fs-14 mb-3"> U/S014 XRAY KNEE BILATERAL STANDING </div>
                 </div>
-                <div class="options">
-                    <div class="d-flex my-3 fs-14">
-                        <div class="option-code d-inline-block" style="width: 60px !important">#42</div>
-                        <div class="option-title ">Alanine Aminotransferase (ALT/GPT), Serum</div>
-                    </div>
-                    <div class="d-flex my-3 fs-14">
-                        <div class="option-code d-inline-block" style="width: 60px !important">#334</div>
-                        <div class="option-title ">Aspartate Aminotransferase (AST/GOT), Serum</div>
-                    </div>
-                    <div class="d-flex my-3 fs-14">
-                        <div class="option-code d-inline-block" style="width: 60px !important">#111</div>
-                        <div class="option-title ">Alanine Aminotransferase (ALT/GPT), Serum</div>
-                    </div>
-                    <div class="d-flex my-3 fs-14">
-                        <div class="option-code d-inline-block" style="width: 60px !important">#606</div>
-                        <div class="option-title ">Alanine Aminotransferase (ALT/GPT), Serum</div>
-                    </div>
-                    <div class="d-flex my-3 justify-content-between fs-14">
-                        <div class="option-code d-inline-block " style="width: 60px !important">#606</div>
-                        <div class="option-title " style="flex-basis: 100%;">ANTI-EPIDERMAL BASEMENT MEMBRANE AND
-                            INTRACELLULAR SUBSTANCE ANTIBODIES - TYPING (BPAG2/BP180, BPAG1/BP 230, DESMOGLEIN 1,
-                            DESMOGLEIN 3), Serum</div>
-                    </div>
-                </div>
-                <select name="Biolab" class="w-50 form-select sex required" aria-label=".sex">
+                <div class="col-md-7 mb-4">
+                    <form action="" id="upload-form">
+                        <input name="date" type="text" placeholder="Date Administered" onfocus="(this.type='date')"
+                            onblur="(this.type='text')" class="mt-4 form-control place">
+                        <div role="button"
+                            class="drop-area mt-4 px-5 py-4 d-flex justify-content-center align-items-center flex-column">
 
-                    <option value="" selected>From Biolab Packages</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-                <div class="position-relative mb-4">
-                    <label for="liver " class="input-lable position-absolute">Select Package</label>
-                    <select name="liver" class="form-select mt-4 sex required" aria-label=".sex">
-                        <option value="" selected>Liver Function Tests</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
-                </div>
-                <div class="d-flex justify-content-end mt-5">
-                    <button class="btn btn-cancle fs-14 py-2 px-5 ms-3">Cancle</button>
-                    <button class="btn btn-save fs-14 py-2 px-5 ms-3">Save</button>
-                </div>
+                            <svg id="icon_upload" xmlns="http://www.w3.org/2000/svg" width="61.142" height="48"
+                                viewBox="0 0 61.142 48">
+                                <g id="Group_145" data-name="Group 145">
+                                    <g id="Group_144" data-name="Group 144" transform="translate(0 0)">
+                                        <path id="Path_99" data-name="Path 99"
+                                            d="M50.942,71.067A20.991,20.991,0,0,0,9.6,74.689,11.565,11.565,0,0,0,11.51,97.65h9.552V93.8H11.51a7.705,7.705,0,0,1,0-15.41,1.918,1.918,0,0,0,1.91-1.926A17.183,17.183,0,0,1,47.484,73.09a1.917,1.917,0,0,0,1.624,1.541,9.637,9.637,0,0,1-1.3,19.166H40.167V97.65h7.642a13.5,13.5,0,0,0,3.133-26.583Z"
+                                            transform="translate(0 -55.032)" fill="#8a98aa" />
+                                        <path id="Path_100" data-name="Path 100"
+                                            d="M188.211,249.533l-7.176,7.176,2.53,2.53,4.126-4.108v17.2h3.588v-17.2l4.108,4.108,2.53-2.53-7.176-7.176A1.794,1.794,0,0,0,188.211,249.533Z"
+                                            transform="translate(-158.869 -224.334)" fill="#8a98aa" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <input type="file" class="d-none" name="" id="">
+                            <p class="my-2 text-center">Select or Drag Attachments</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mt-4">
+                                <textarea name="txtarea" id="" class="form-control" placeholder="Write report text here …"
+                                    rows="10"></textarea>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <input name="input1" id="" class="form-control" placeholder="Doctor Name">
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <input name="input2" id="" class="form-control" placeholder="Doctor Mobile">
+                            </div>
+                        </div>
 
-            </form>
+                        <div class="d-flex justify-content-end mt-5">
+                            <button class="btn btn-cancle w-50 fs-14 py-2 px-5 ms-3">Cancle</button>
+                            <button class="btn btn-save w-50 fs-14 py-2 px-5 ms-3">Save</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
         </div>
     </div>
     <!-- end add new patient  -->

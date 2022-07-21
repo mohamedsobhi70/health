@@ -1,0 +1,121 @@
+main .menu .navigation li.active {
+  background-color: #16bc843a;
+}
+
+main .menu .navigation li.active span {
+  color: #16bc84 !important;
+}
+
+main .main-content .title {
+  color: #16bc84 !important;
+}
+
+main .main-content .setting h3 {
+  font-size: 18px;
+  color: #018e9f;
+}
+
+main .main-content .setting p {
+  color: #8e8769;
+  font-size: 16px;
+}
+
+main .main-content .setting label {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+main .main-content .setting .input-box input {
+  font-size: 14px;
+}
+
+main .main-content .setting .input-box svg {
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+main .main-content .waiting-list .waiting-item {
+  -webkit-box-shadow: 0px 3px 6px #0000001a;
+          box-shadow: 0px 3px 6px #0000001a;
+  border: 0.5px solid #11cdef;
+  border-radius: 5px;
+}
+
+main .main-content .waiting-list .waiting-item .bg-waiting {
+  background: #11cdef;
+}
+
+main .main-content #calendar .fc-toolbar-chunk:nth-of-type(2) div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main-content #calendar .fc-toolbar-chunk:nth-of-type(2) div .fc-toolbar-title {
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+main .main-content #calendar .fc-toolbar-chunk:last-of-type .cancle-visits {
+  color: #e54d5b;
+}
+
+main .main-content #calendar .fc-col-header-cell {
+  background: #f1f3f9;
+  padding: 10px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+main .main-content #calendar .fc-timeGridDay-button,
+main .main-content #calendar .fc-timeGridWeek-button,
+main .main-content #calendar .fc-dayGridMonth-button {
+  background: white !important;
+  color: #8a98aa;
+  border-color: #8a98aa;
+}
+
+main .main-content #calendar .fc-timeGridDay-button.active,
+main .main-content #calendar .fc-timeGridWeek-button.active,
+main .main-content #calendar .fc-dayGridMonth-button.active {
+  color: white;
+  background: #8a98aa !important;
+}
+
+main .main-content #calendar .fc-prev-button,
+main .main-content #calendar .fc-next-button {
+  background: white;
+  color: #0d6efd;
+  border: none;
+}
+
+main .main-content #calendar .fc-prev-button:focus,
+main .main-content #calendar .fc-next-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main .main-content #calendar .fc-cancle-button {
+  background: none;
+  border: none;
+}
+
+main .main-content #calendar .fc-col-header-cell {
+  display: none;
+}
+
+main .main-content #calendar .fc-timegrid-slot-lane {
+  background: #f1f3f980;
+}
+
+main .main-content #calendar .fc-timegrid-slot {
+  height: 50px !important;
+}
+/*# sourceMappingURL=visits.css.map */

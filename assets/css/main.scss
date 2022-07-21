@@ -2,7 +2,7 @@ body {
   background: #f1f3f9;
   font-family: Arial;
 }
-input,select,textarea{
+input,select,textarea,button{
   &:focus{box-shadow: none !important;}
 }
 .br-5 {

@@ -171,18 +171,113 @@ main .main-content .patient-file textarea::placeholder {
   color: white;
 }
 
+.record {
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: -1500px;
+  width: 100vw;
+  z-index: 1000;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.record.show {
+  right: 0;
+}
+
+.record .newpatient-content {
+  overflow-y: auto;
+  width: 80%;
+  max-width: 90%;
+  border-top: 5px solid #018e9f;
+  height: 100vh;
+}
+
+.record .newpatient-content .close {
+  top: 20px;
+  right: 430px;
+  font-size: 22px;
+}
+
+.record .newpatient-content .title {
+  font-size: 20px;
+  color: #018e9f;
+}
+
+.record .newpatient-content select {
+  font-size: 14px;
+  color: #000;
+}
+
+.record .newpatient-content select:empty {
+  color: #8a98aa;
+}
+
+.record .newpatient-content select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: black;
+}
+
+.record .newpatient-content select option[selected] {
+  color: #8a98aa;
+}
+
+.record .newpatient-content .drop-area {
+  background: #f1f3f9 0% 0% no-repeat padding-box;
+  border: 1px dashed #8a98aa;
+  border-radius: 5px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.record .newpatient-content .drop-area.active {
+  opacity: 0.2;
+  border-style: solid;
+}
+
+.record .newpatient-content .drop-area p {
+  color: #8a98aa;
+}
+
+.record .newpatient-content .file-box:not(:last-of-type) {
+  border-bottom: 1px solid #f1f3f9;
+}
+
+.record .newpatient-content .btn-cancle {
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.record .newpatient-content .btn-save {
+  background: #018e9f;
+  border-radius: 5px;
+  color: white;
+}
+
+.record .newpatient-content .record-item {
+  border: 1px solid #8a98aa;
+  border-radius: 5px;
+}
+
+.record .newpatient-content .record-item.active {
+  background: #018E9F;
+  border-color: #018E9F;
+  color: white;
+}
+
 label.error {
   font-size: 12px;
   color: #e54d5b;
 }
 
 input.error,
-select.error {
+select.error, textarea.error {
   border-color: #e54d5b;
 }
 
 input.error:focus,
-select.error:focus {
+select.error:focus, textarea.error:focus {
   border-color: #e54d5b;
 }
 
@@ -192,6 +287,6 @@ select.error:focus {
   padding: 5px 10px;
   top: -16px;
   left: 10px;
-  color: #8A98AA;
+  color: #8a98aa;
 }
 /*# sourceMappingURL=patientdetails.css.map */
