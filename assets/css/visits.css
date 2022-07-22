@@ -36,15 +36,19 @@ main .main-content .setting .input-box svg {
           transform: translateY(-50%);
 }
 
-main .main-content .waiting-list .waiting-item {
+main .main-content .waiting-item {
   -webkit-box-shadow: 0px 3px 6px #0000001a;
           box-shadow: 0px 3px 6px #0000001a;
   border: 0.5px solid #11cdef;
   border-radius: 5px;
 }
 
-main .main-content .waiting-list .waiting-item .bg-waiting {
+main .main-content .waiting-item .bg-waiting {
   background: #11cdef;
+}
+
+main .main-content .waiting-list .add-newbtn {
+  background: #018e9f;
 }
 
 main .main-content #calendar .fc-toolbar-chunk:nth-of-type(2) div {
@@ -117,5 +121,36 @@ main .main-content #calendar .fc-timegrid-slot-lane {
 
 main .main-content #calendar .fc-timegrid-slot {
   height: 50px !important;
+  background: #f1f3f980 0% 0% no-repeat padding-box !important;
+  border: 0.5px solid #8c98a841 !important;
+  font-size: 14px;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  background: white !important;
+}
+
+.fc .fc-timegrid-slot-label {
+  background: white;
+}
+
+.fc-v-event {
+  border: none !important;
+}
+
+.fc-h-event {
+  border: 0px !important;
+  background: white !important;
+}
+
+.fc-event-main {
+  color: black !important;
+}
+
+.fc-timegrid-event-harness-inset .fc-timegrid-event,
+.fc-timegrid-event.fc-event-mirror,
+.fc-timegrid-more-link {
+  background: white;
+  max-width: 175px;
 }
 /*# sourceMappingURL=visits.css.map */

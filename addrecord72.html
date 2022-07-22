@@ -9,10 +9,11 @@
     <meta content="HealthCheckMate" name="keywords">
     <link rel="stylesheet" href="assets/vendor/bootstrap-5.0.2/bootstrap.min.css">
     <link rel="stylesheet" href="assets/vendor/fontawesome/fontawesome.css">
-    <link rel="stylesheet" href="assets/vendor/calendar/main.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/visits.css">
-
+    <link rel="stylesheet" href="assets/css/patientdetails.css">
+    <link rel="stylesheet" href="assets/css/addrecord72.css">
+    
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
 
 </head>
 
@@ -58,7 +59,7 @@
                     <img src="assets/img/logo.png" alt="">
                 </div>
                 <ul class="list-unstyled">
-                    <li class="br-15 d-flex align-items-center ">
+                    <li class="br-15 d-flex align-items-center">
                         <a class="text-dark text-decoration-none" href="dashboard.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                                 <g id="icon_dash" transform="translate(-678 -190)">
@@ -77,7 +78,7 @@
                             <span class="ms-2">Dashboard</span>
                         </a>
                     </li>
-                    <li class="br-15 d-flex align-items-center ">
+                    <li class="br-15 d-flex align-items-center active">
                         <a class="text-dark text-decoration-none" href="patients.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                                 <g id="icon_patients" transform="translate(-702 -190)">
@@ -91,8 +92,8 @@
                             <span class="ms-2">Patients</span>
                         </a>
                     </li>
-                    <li class="br-15 d-flex align-items-center active">
-                        <a class="text-dark text-decoration-none" href="visits.html">
+                    <li class="br-15 d-flex align-items-center">
+                        <a class="text-dark text-decoration-none" href="appointments.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                                 <g id="icon_visits" transform="translate(-731 -190)">
                                     <rect id="Rectangle_13844" data-name="Rectangle 13844" width="20" height="20"
@@ -135,7 +136,7 @@
                                 </g>
                             </svg>
 
-                            <span class="ms-2">Visits</span>
+                            <span class="ms-2">Appointments</span>
                         </a>
                     </li>
                     <li class="br-15 d-flex align-items-center">
@@ -216,207 +217,87 @@
         <div class="main-content ">
             <header
                 class="info bg-white mb-3 br-10 d-flex align-items-center justify-content-sm-between justify-content-center">
-                <div class="title d-none d-sm-block">
-                    Visits
+                <div class="title d-sm-block d-none">
+                    Patients
                 </div>
-                <div class="dr-info px-3">
+                <div class="dr-info px-3 my-2">
                     <a class="mx-3 text-decoration-none" href="">
                         <i class="far fa-bell fa-lg"></i>
                     </a>
                     <a class="mx-3 text-decoration-none" href="">
                         <i class="far fa-envelope  fa-lg" "></i> </a>
-                        <a class=" mx-3 text-decoration-none" href="">
-                            <img src="assets/img/person.jfif" class="me-1 rounded-circle" width="50px" height="50px"
+                  <a class=" mx-3 text-decoration-none" href="">
+                            <img src="assets/img/person.png" class="me-1 rounded-circle" width="50px" height="50px"
                                 alt="">
                             <span>Dr. House</span>
                     </a>
                 </div>
             </header>
-            <div class="mt-4 br-10 bg-white p-4">
-                <div class="row">
-                    <div class="col-md-8">
 
-                        <div id='calendar-container'>
-                            <div id='calendar'></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-
-                        <div class="waiting-list">
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <h2 class="fs-18 fw-bold">
-                                    Waiting List
-                                </h2>
-                                <button class="add-newbtn btn text-white py-2 px-3 fs-14">
-                                    + Add New
-                                </button>
-                            </div>
-                            <div id='external-events'>
-                                <div class='fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event'>
-                                    <div class='fc-event-main'>
-                                        <div class="waiting-item mb-3 d-flex br-10 overflow-hidden">
-                                            <div class="bg-waiting p-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13"
-                                                    viewBox="0 0 8 13">
-                                                    <g id="Group_14778" data-name="Group 14778" opacity="0.5">
-                                                        <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(5 5)" fill="#fff" />
-                                                        <circle id="Ellipse_403" data-name="Ellipse 403" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(0 5)" fill="#fff" />
-                                                        <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(5)" fill="#fff" />
-                                                        <circle id="Ellipse_404" data-name="Ellipse 404" cx="1.5"
-                                                            cy="1.5" r="1.5" fill="#fff" />
-                                                        <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(5 10)" fill="#fff" />
-                                                        <circle id="Ellipse_405" data-name="Ellipse 405" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(0 10)" fill="#fff" />
-                                                    </g>
-                                                </svg>
-
-                                            </div>
-                                            <div class="d-flex my-2 border-end  w-100 ms-2 align-items-center">
-                                                <img src="assets/img/person.png" width="24px" height="24px"
-                                                    class="rounded-circle" alt=""> <span class="ms-2 fs-12">Zaid
-                                                    Nishewat</span>
-                                            </div>
-                                            <div class="p-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="3"
-                                                    viewBox="0 0 13 3">
-                                                    <g id="Group_14762" data-name="Group 14762"
-                                                        transform="translate(-10375 -1640) rotate(-90)">
-                                                        <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(-1643 10380)"
-                                                            fill="#8a98aa" />
-                                                        <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(-1643 10375)"
-                                                            fill="#8a98aa" />
-                                                        <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(-1643 10385)"
-                                                            fill="#8a98aa" />
-                                                    </g>
-                                                </svg>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class='fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event'>
-                                    <div class='fc-event-main'>
-                                        <div class="waiting-item mb-3 d-flex br-10 overflow-hidden">
-                                            <div class="bg-waiting p-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13"
-                                                    viewBox="0 0 8 13">
-                                                    <g id="Group_14778" data-name="Group 14778" opacity="0.5">
-                                                        <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(5 5)" fill="#fff" />
-                                                        <circle id="Ellipse_403" data-name="Ellipse 403" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(0 5)" fill="#fff" />
-                                                        <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(5)" fill="#fff" />
-                                                        <circle id="Ellipse_404" data-name="Ellipse 404" cx="1.5"
-                                                            cy="1.5" r="1.5" fill="#fff" />
-                                                        <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(5 10)" fill="#fff" />
-                                                        <circle id="Ellipse_405" data-name="Ellipse 405" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(0 10)" fill="#fff" />
-                                                    </g>
-                                                </svg>
-
-                                            </div>
-                                            <div class="d-flex my-2 border-end  w-100 ms-2 align-items-center">
-                                                <img src="assets/img/person.png" width="24px" height="24px"
-                                                    class="rounded-circle" alt=""> <span class="ms-2 fs-12">Zaid
-                                                    Nishewat</span>
-                                            </div>
-                                            <div class="p-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="3"
-                                                    viewBox="0 0 13 3">
-                                                    <g id="Group_14762" data-name="Group 14762"
-                                                        transform="translate(-10375 -1640) rotate(-90)">
-                                                        <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(-1643 10380)"
-                                                            fill="#8a98aa" />
-                                                        <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(-1643 10375)"
-                                                            fill="#8a98aa" />
-                                                        <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(-1643 10385)"
-                                                            fill="#8a98aa" />
-                                                    </g>
-                                                </svg>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class='fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event'>
-                                    <div class='fc-event-main'>
-                                        <div class="waiting-item mb-3 d-flex br-10 overflow-hidden">
-                                            <div class="bg-waiting p-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13"
-                                                    viewBox="0 0 8 13">
-                                                    <g id="Group_14778" data-name="Group 14778" opacity="0.5">
-                                                        <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(5 5)" fill="#fff" />
-                                                        <circle id="Ellipse_403" data-name="Ellipse 403" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(0 5)" fill="#fff" />
-                                                        <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(5)" fill="#fff" />
-                                                        <circle id="Ellipse_404" data-name="Ellipse 404" cx="1.5"
-                                                            cy="1.5" r="1.5" fill="#fff" />
-                                                        <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(5 10)" fill="#fff" />
-                                                        <circle id="Ellipse_405" data-name="Ellipse 405" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(0 10)" fill="#fff" />
-                                                    </g>
-                                                </svg>
-
-                                            </div>
-                                            <div class="d-flex my-2 border-end  w-100 ms-2 align-items-center">
-                                                <img src="assets/img/person.png" width="24px" height="24px"
-                                                    class="rounded-circle" alt=""> <span class="ms-2 fs-12">Zaid
-                                                    Nishewat</span>
-                                            </div>
-                                            <div class="p-2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="3"
-                                                    viewBox="0 0 13 3">
-                                                    <g id="Group_14762" data-name="Group 14762"
-                                                        transform="translate(-10375 -1640) rotate(-90)">
-                                                        <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(-1643 10380)"
-                                                            fill="#8a98aa" />
-                                                        <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(-1643 10375)"
-                                                            fill="#8a98aa" />
-                                                        <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5"
-                                                            cy="1.5" r="1.5" transform="translate(-1643 10385)"
-                                                            fill="#8a98aa" />
-                                                    </g>
-                                                </svg>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>
-                                    <input type='checkbox' class="d-none" id='drop-remove' checked />
-                                    <label for='drop-remove' class="d-none">remove after drop</label>
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
     </main>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-    <script src="assets/vendor/calendar/main.js"></script>
-    <script src="assets/vendor/calendar/locales-all.js"></script>
+    <!-- add new patient  -->
+    <div dir="rtl" class=" fs-14 new-patient show position-fixed min-vh-100  position-relative ">
+        <div dir="ltr" class="newpatient-content bg-white px-5 py-4  " style="width: 600px !important;">
+            <div class="close fw-bold text-white position-absolute" role="button">X</div>
+            <h3 class="title fw-bold mb-4"> Add New Record </h3>
+            <form action="" id="upload-form">
+                <input name="input1" id="" class="form-control" placeholder="Template Name">
+                <div class="d-flex mt-4 align-items-center">
+                    <p class="mb-0 fs-14 w-50">Template Content</p>
+                    <div class="position-relative w-50 ">
+                        <label for="liver " class="input-lable position-absolute">Select </label>
+                        <select name="liver" class="form-select sex required" aria-label=".sex">
+                            <option value="" selected>Add Annotation</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="mt-4">
+                    <div id="editor"></div>
+
+                </div>
+                <button class="btn btn-view fs-14 mt-5 w-100 py-2 px-5 me-3">View</button>
+                <div class="d-flex justify-content-between mt-3">
+                    <button class="btn btn-cancle fs-14 py-2 px-5 w-50 me-2">Cancle</button>
+                    <button class="btn btn-save fs-14 py-2 px-5 w-50 ms-2">Save</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <!-- end add new patient  -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
     <script src="assets/vendor/fontawesome/fontawesome.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/visits.js"></script>
+    <script src="assets/vendor/bootstrap-5.0.2/bootstrap.min.js"></script>
+    <script src="assets/js/validition.js"></script>
+    <script>
+
+        ClassicEditor
+            .create(document.querySelector('#editor'), {
+                toolbar: {
+                   
+                    shouldNotGroupWhenFull: false
+                },
+                heading: {
+                    options: [
+                        { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+                        { model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+                        { model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' }
+                    ]
+                }
+            })
+            .catch(error => {
+                console.error(error);
+            });
+
+    </script>
 </body>
 
 </html>

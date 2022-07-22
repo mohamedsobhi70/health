@@ -194,7 +194,7 @@ main {
         border-bottom: 1px solid #f1f3f9;
       }
     }
-
+    
     .btn-cancle {
       border: 1px solid #000000;
       border-radius: 5px;
@@ -204,12 +204,13 @@ main {
       border-radius: 5px;
       color: white;
     }
+   
     .record-item {
       border: 1px solid #8a98aa;
       border-radius: 5px;
-      &.active{
-        background: #018E9F;
-        border-color: #018E9F;
+      &.active {
+        background: #018e9f;
+        border-color: #018e9f;
         color: white;
       }
     }
@@ -220,7 +221,8 @@ label.error {
   color: #e54d5b;
 }
 input,
-select ,textarea{
+select,
+textarea {
   &.error {
     &:focus {
       border-color: #e54d5b;
@@ -236,3 +238,7 @@ select ,textarea{
   left: 10px;
   color: #8a98aa;
 }
+ .btn-view {
+      border: 1px solid #018e9f;
+      color: #018e9f;
+    }

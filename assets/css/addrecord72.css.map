@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,CAAC;EACnB,MAAM,EAAE,gBAAgB;CACzB;;AAED,AAEI,YAFQ,CACV,mBAAmB,CACjB,MAAM,CAAC;EACL,KAAK,EAAE,KAAM;CACd",
+    "sources": [
+        "addrecord72.scss"
+    ],
+    "names": [],
+    "file": "addrecord72.css"
+}

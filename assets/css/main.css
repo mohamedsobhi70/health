@@ -32,6 +32,10 @@ input:focus, select:focus, textarea:focus, button:focus {
   font-size: 14px;
 }
 
+.fs-18 {
+  font-size: 18px;
+}
+
 .rotate {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);

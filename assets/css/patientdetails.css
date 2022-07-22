@@ -261,8 +261,8 @@ main .main-content .patient-file textarea::placeholder {
 }
 
 .record .newpatient-content .record-item.active {
-  background: #018E9F;
-  border-color: #018E9F;
+  background: #018e9f;
+  border-color: #018e9f;
   color: white;
 }
 
@@ -272,12 +272,14 @@ label.error {
 }
 
 input.error,
-select.error, textarea.error {
+select.error,
+textarea.error {
   border-color: #e54d5b;
 }
 
 input.error:focus,
-select.error:focus, textarea.error:focus {
+select.error:focus,
+textarea.error:focus {
   border-color: #e54d5b;
 }
 
@@ -288,5 +290,10 @@ select.error:focus, textarea.error:focus {
   top: -16px;
   left: 10px;
   color: #8a98aa;
+}
+
+.btn-view {
+  border: 1px solid #018e9f;
+  color: #018e9f;
 }
 /*# sourceMappingURL=patientdetails.css.map */
