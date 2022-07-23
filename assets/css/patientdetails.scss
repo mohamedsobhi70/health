@@ -237,3 +237,13 @@ textarea {
   border: 1px solid #018e9f;
   color: #018e9f;
 }
+@media (max-width: 767px) {
+  .close {
+   left: 4% !important ;
+   right: auto !important;
+ }
+ .btn-cancle,
+ .btn-save {
+   width: 50% !important;
+ }
+}

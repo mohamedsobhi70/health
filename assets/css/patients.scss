@@ -44,6 +44,9 @@ main {
           z-index: 43;
         }
         .filter-options {
+          .add-condition {
+            color: #018e9f;
+          }
           top: 150%;
           right: -30%;
           width: 531px;
@@ -109,6 +112,7 @@ main {
   .newpatient-content {
     overflow-y: auto;
     width: 80%;
+    max-width: 90%;
     border-top: 5px solid #018e9f;
     height: 100vh;
     .close {
@@ -142,23 +146,24 @@ main {
     .btn-add {
       transition: 0.5s ease;
       background: #c3c5c9;
-      border-radius: 5px; &:hover {
-      background-color: #018e9f;
-    }
+      border-radius: 5px;
+      &:hover {
+        background-color: #018e9f;
+      }
     }
     .form-check-input:checked {
-      background-color: #16BC84;
-      border-color: #16BC84;
-  }
-  .btn-cancle{
-    border: 1px solid #000000;
-    border-radius: 5px;
-  }
-   .btn-save{
-    background: #018E9F 0% 0% no-repeat padding-box;
-border-radius: 5px;
-color: white;
-   }
+      background-color: #16bc84;
+      border-color: #16bc84;
+    }
+    .btn-cancle {
+      border: 1px solid #000000;
+      border-radius: 5px;
+    }
+    .btn-save {
+      background: #018e9f 0% 0% no-repeat padding-box;
+      border-radius: 5px;
+      color: white;
+    }
   }
 }
 
@@ -205,17 +210,18 @@ table.dataTable.table-striped > tbody > tr.odd > * {
   }
 }
 
-label.error {
-  font-size: 12px;
-  color: #e54d5b;
-}
-input,
-select,
-textarea {
-  &.error {
-    &:focus {
-      border-color: #e54d5b;
+@media (max-width: 767px) {
+  .new-patient {
+    .newpatient-content {
+      width: 90%;
+
+      .close {
+        right: 97%;
+      }
+      .btn-cancle,
+      .btn-save {
+        width: 50% !important;
+      }
     }
-    border-color: #e54d5b;
   }
 }

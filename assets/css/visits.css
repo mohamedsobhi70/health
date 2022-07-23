@@ -48,7 +48,7 @@ main .main-content .waiting-item .bg-waiting {
 }
 
 main .main-content .waiting-item .bg-success {
-  background: #16BC84;
+  background: #16bc84;
 }
 
 main .main-content .waiting-list .add-newbtn {
@@ -129,11 +129,6 @@ main .main-content #calendar .fc-timegrid-slot {
   font-size: 14px;
 }
 
-.fc .fc-scrollgrid-section-body table,
-.fc .fc-scrollgrid-section-footer table {
-  border: 0.5px solid #8c98a841 !important;
-}
-
 .fc .fc-timegrid-col.fc-day-today {
   background: #f1f3f980 !important;
 }
@@ -184,7 +179,87 @@ main .main-content #calendar .fc-timegrid-slot {
   display: inline;
 }
 
-.fc-dayGridMonth-view .waiting-item div:first-child, .fc-dayGridMonth-view .waiting-item div:last-child, .fc-dayGridMonth-view .waiting-item div span {
+.fc-dayGridMonth-view .waiting-item div:first-child, .fc-dayGridMonth-view .waiting-item div:last-child,
+.fc-dayGridMonth-view .waiting-item div span {
   display: none !important;
+}
+
+.new-patient {
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: -100%;
+  width: 100vw;
+  z-index: 1000;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.new-patient.show {
+  right: 0;
+}
+
+.new-patient .newpatient-content {
+  overflow-y: auto;
+  width: 424px;
+  max-width: 90%;
+  border-top: 5px solid #018e9f;
+  height: 100vh;
+}
+
+.new-patient .newpatient-content .close {
+  top: 20px;
+  right: 450px;
+  font-size: 22px;
+}
+
+.new-patient .newpatient-content .title {
+  font-size: 20px;
+  color: #018e9f;
+}
+
+.new-patient .newpatient-content .search-box input[name="search"] {
+  accent-color: #8a98aa;
+}
+
+.new-patient .newpatient-content .search-box input[name="search"] + label {
+  color: #8a98aa;
+}
+
+.new-patient .newpatient-content .search-box input[name="search"]:checked {
+  accent-color: #8e8769;
+}
+
+.new-patient .newpatient-content .search-box input[name="search"]:checked + label {
+  color: #8e8769;
+}
+
+.new-patient .newpatient-content .patient-item {
+  background: #F1F3F980;
+}
+
+.new-patient .newpatient-content .patient-item.selected {
+  border: 1px solid #018e9f;
+  background: white;
+}
+
+.new-patient .newpatient-content .patient-item select:focus + .lable {
+  color: #018e9f;
+}
+
+.new-patient .newpatient-content .patient-item .lable {
+  top: -10px;
+  left: 20px;
+  color: #8a98aa;
+}
+
+.new-patient .newpatient-content .btn-cancle {
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.new-patient .newpatient-content .btn-save {
+  background: #018e9f 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  color: white;
 }
 /*# sourceMappingURL=visits.css.map */

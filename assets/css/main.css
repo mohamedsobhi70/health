@@ -134,6 +134,23 @@ main .main-content .info .dr-info span {
   font-size: 13px;
 }
 
+label.error {
+  font-size: 12px;
+  color: #e54d5b;
+}
+
+input.error,
+select.error,
+textarea.error {
+  border-color: #e54d5b;
+}
+
+input.error:focus,
+select.error:focus,
+textarea.error:focus {
+  border-color: #e54d5b;
+}
+
 @media (max-width: 767px) {
   main .main-content {
     padding-left: 0 !important;

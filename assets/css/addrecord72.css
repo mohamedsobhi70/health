@@ -5,4 +5,11 @@
 .new-patient .newpatient-content .close {
   right: 630px;
 }
+
+@media (max-width: 767px) {
+  .close {
+    left: 4% !important;
+    right: auto !important;
+  }
+}
 /*# sourceMappingURL=addrecord72.css.map */
