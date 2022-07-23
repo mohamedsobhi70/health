@@ -1,0 +1,87 @@
+.cancle-vist {
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: -120%;
+  width: 100vw;
+  z-index: 1000;
+  transition: all 0.5s ease;
+  &.show {
+    right: 0;
+  }
+  .cancle-content {
+    overflow-y: auto;
+    width: 400px;
+    max-width: 90%;
+    border-top: 5px solid #018e9f;
+    height: 100vh;
+    .close {
+      top: 20px;
+      right: 430px;
+      font-size: 22px;
+    }
+    .title {
+      font-size: 20px;
+      color: #e54d5b;
+    }
+    input {
+      &:checked {
+        accent-color: #e54d5b;
+        & + .patient-lbl {
+          border: 1px solid #e54d5b;
+          .patient-num {
+            display: block !important;
+          }
+        }
+      }
+    }
+    label.error {
+      font-size: 12px;
+      color: #e54d5b;
+    }
+    input,
+    select,
+    textarea {
+      &.error {
+        &:focus {
+          border-color: #e54d5b;
+        }
+        border-color: #e54d5b;
+      }
+    }
+    .time-section {
+      border-bottom: 1px solid #f1f3f9;
+      label {
+        font-size: 12px;
+        top: -10px;
+        left: 10px;
+      }
+    }
+    .patients-section {
+      .patient-item {
+        .patient-lbl {
+          box-shadow: 0px 3px 6px #0000001a;
+        }
+      }
+      label {
+        &.all {
+          color: #8a98aa;
+        }
+        span {
+          &.sec {
+            color: #8a98aa;
+          }
+        }
+      }
+    }
+  }
+  .btn-cancle {
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  .btn-save {
+    background: #018e9f 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    color: white;
+  }
+}
+

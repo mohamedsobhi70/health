@@ -47,6 +47,10 @@ main .main-content .waiting-item .bg-waiting {
   background: #11cdef;
 }
 
+main .main-content .waiting-item .bg-success {
+  background: #16BC84;
+}
+
 main .main-content .waiting-list .add-newbtn {
   background: #018e9f;
 }
@@ -121,9 +125,17 @@ main .main-content #calendar .fc-timegrid-slot-lane {
 
 main .main-content #calendar .fc-timegrid-slot {
   height: 50px !important;
-  background: #f1f3f980 0% 0% no-repeat padding-box !important;
   border: 0.5px solid #8c98a841 !important;
   font-size: 14px;
+}
+
+.fc .fc-scrollgrid-section-body table,
+.fc .fc-scrollgrid-section-footer table {
+  border: 0.5px solid #8c98a841 !important;
+}
+
+.fc .fc-timegrid-col.fc-day-today {
+  background: #f1f3f980 !important;
 }
 
 .fc .fc-daygrid-day.fc-day-today {
@@ -152,5 +164,27 @@ main .main-content #calendar .fc-timegrid-slot {
 .fc-timegrid-more-link {
   background: white;
   max-width: 175px;
+}
+
+.fc-dayGridMonth-view .fc-daygrid-day-events {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fc-dayGridMonth-view .waiting-item {
+  border: none !important;
+  border-radius: 50% !important;
+  display: inline;
+}
+
+.fc-dayGridMonth-view .waiting-item div:first-child, .fc-dayGridMonth-view .waiting-item div:last-child, .fc-dayGridMonth-view .waiting-item div span {
+  display: none !important;
 }
 /*# sourceMappingURL=visits.css.map */

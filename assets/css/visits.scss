@@ -46,6 +46,9 @@ main {
       .bg-waiting {
         background: #11cdef;
       }
+      .bg-success {
+        background: #16BC84;
+      }
     }
     .waiting-list {
       .add-newbtn {
@@ -111,14 +114,18 @@ main {
       }
       .fc-timegrid-slot {
         height: 50px !important;
-        background: #f1f3f980 0% 0% no-repeat padding-box !important;
         border: 0.5px solid #8c98a841 !important;
-
         font-size: 14px;
       }
-      
     }
   }
+}
+.fc .fc-scrollgrid-section-body table,
+.fc .fc-scrollgrid-section-footer table {
+  border: 0.5px solid #8c98a841 !important;
+}
+.fc .fc-timegrid-col.fc-day-today {
+  background: #f1f3f980 !important;
 }
 .fc .fc-daygrid-day.fc-day-today {
   background: white !important;
@@ -141,4 +148,19 @@ main {
 .fc-timegrid-more-link {
   background: white;
   max-width: 175px;
+}
+.fc-dayGridMonth-view{
+  .fc-daygrid-day-events{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .waiting-item{
+    border: none !important;
+    border-radius: 50%!important;
+    display: inline;
+   div {&:first-child,&:last-child,span{
+      display: none !important;
+    }}
+  }
 }

@@ -249,11 +249,47 @@
                             <i class="fas fa-filter "></i>
                             <div class="position-absolute text-end d-none filter-options fs-12 bg-white br-10 p-3">
                                 <div class="d-flex align-items-center mb-3">
-                                    <div class="bg-warning">where</div>
-                                    <div class="w-75 p-1 border-3 border-warning br-5">fdkdsjflkjeflkdvkl</div>
+                                    <div class="w-25 px-5 ">where</div>
+                                    <div class="w-75 d-flex p-1 border-3 border-warning br-5">
+                                        <span class="border m-0 p-2">Criteria <i
+                                                class="fa fa-chevron-down ms-3"></i></span>
+                                        <span class="border m-0 p-2">Contains <i
+                                                class="fa fa-chevron-down ms-3"></i></span>
+                                        <span class="border m-0 p-2">Enter Value <i
+                                                class="fa fa-chevron-down ms-3"></i></span>
+                                        <span class="border m-0 p-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                                <rect id="Rectangle_97" data-name="Rectangle 97" width="16" height="16" fill="none"/>
+                                              </svg>
+                                              
+                                        </span>
+                                        <span class="border m-0 p-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="14" viewBox="0 0 10 14">
+                                                <g id="Group_15152" data-name="Group 15152" transform="translate(-90.792 -82.5)">
+                                                  <circle id="Ellipse_427" data-name="Ellipse 427" cx="1" cy="1" r="1" transform="translate(90.792 82.5)" fill="#c3c5c9"/>
+                                                  <circle id="Ellipse_432" data-name="Ellipse 432" cx="1" cy="1" r="1" transform="translate(90.792 86.5)" fill="#c3c5c9"/>
+                                                  <circle id="Ellipse_435" data-name="Ellipse 435" cx="1" cy="1" r="1" transform="translate(90.792 90.5)" fill="#c3c5c9"/>
+                                                  <circle id="Ellipse_438" data-name="Ellipse 438" cx="1" cy="1" r="1" transform="translate(90.792 94.5)" fill="#c3c5c9"/>
+                                                  <circle id="Ellipse_428" data-name="Ellipse 428" cx="1" cy="1" r="1" transform="translate(94.792 82.5)" fill="#c3c5c9"/>
+                                                  <circle id="Ellipse_431" data-name="Ellipse 431" cx="1" cy="1" r="1" transform="translate(94.792 86.5)" fill="#c3c5c9"/>
+                                                  <circle id="Ellipse_434" data-name="Ellipse 434" cx="1" cy="1" r="1" transform="translate(94.792 90.5)" fill="#c3c5c9"/>
+                                                  <circle id="Ellipse_437" data-name="Ellipse 437" cx="1" cy="1" r="1" transform="translate(94.792 94.5)" fill="#c3c5c9"/>
+                                                  <circle id="Ellipse_429" data-name="Ellipse 429" cx="1" cy="1" r="1" transform="translate(98.792 82.5)" fill="#c3c5c9"/>
+                                                  <circle id="Ellipse_430" data-name="Ellipse 430" cx="1" cy="1" r="1" transform="translate(98.792 86.5)" fill="#c3c5c9"/>
+                                                  <circle id="Ellipse_433" data-name="Ellipse 433" cx="1" cy="1" r="1" transform="translate(98.792 90.5)" fill="#c3c5c9"/>
+                                                  <circle id="Ellipse_436" data-name="Ellipse 436" cx="1" cy="1" r="1" transform="translate(98.792 94.5)" fill="#c3c5c9"/>
+                                                </g>
+                                              </svg>
+                                              
+                                        </span>
+
+                                    </div>
                                 </div>
                                 <div class="d-flex align-items-center mb-3">
-                                    <div class="bg-warning">where</div>
+                                    <div class="w-25 px-4">
+                                        <span class="border m-0 p-2">And <i
+                                                class="fa fa-chevron-down ms-3"></i></span>
+                                    </div>
                                     <div class="w-75 p-1 border-3 border-warning br-5">fdkdsjflkjeflkdvkl</div>
                                 </div>
 
@@ -558,131 +594,133 @@
         <div dir="ltr" class="newpatient-content bg-white px-5 py-4  ">
             <div class="close fw-bold text-white position-absolute" role="button">X</div>
             <h3 class="title fw-bold mb-4"> Add New Patient </h3>
-            <div class="personal-informations">
-                <h4 class="fw-bold mb-3">Personal Information</h4>
-                <div class="row mb-5 ">
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <input type="text" placeholder="First Name*" class="form-control">
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <input type="text" placeholder="Second Name*" class="form-control">
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <input type="text" placeholder="Third Name*" class="form-control">
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <input type="text" placeholder="Last Name*" class="form-control">
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <input type="text" placeholder="Date of Birth*" onblur="(this.type='text')"
-                            onfocus="(this.type='date')" class="form-control place">
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <select class="form-select sex" aria-label=".sex">
-                            <option selected>Sex*</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <input type="text" placeholder="National ID" class="form-control">
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <select class="form-select company " aria-label=".company">
-                            <option selected>Company</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <select class="form-select company " aria-label=".company">
-                            <option selected>Occupation</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                    <div class="col-sm-6 mb-4">
-                        <input type="text" placeholder="Address" class="form-control">
-                    </div>
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <select class="form-select company " aria-label=".company">
-                            <option selected>how did you hear about us?</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-
-                </div>
-            </div>
-            <div class="">
-                <h4 class="fw-bold mb-3">Contact Information</h4>
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="d-flex  mb-4">
-                            <input type="Email" placeholder="Email" class="form-control">
-                            <button class="btn p-1 ms-2 px-3 border text-white btn-add">+</button>
+            <form action="" id="upload-form">
+                <div class="personal-informations">
+                    <h4 class="fw-bold mb-3">Personal Information</h4>
+                    <div class="row mb-5 ">
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <input name="input1" type="text" placeholder="First Name*" class="form-control">
                         </div>
-                        <div class="d-flex mb-2 align-items-center">
-                            <div class="row w-100">
-                                <div class="col-4">
-                                    <select class="form-select company " aria-label=".company">
-                                        <option selected>Jor (+962)</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <div class="col-8">
-                                    <input type="text" placeholder="Mobile No.*" class="form-control">
-
-                                </div>
-                            </div>
-                            <button class="btn p-1 ms-2 px-3 border text-white btn-add">+</button>
-
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <input name="input2" type="text" placeholder="Second Name*" class="form-control">
                         </div>
-                        <div class="d-flex justify-content-end">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label fs-12" for="flexCheckDefault">
-                                    WhatsApp
-                                </label>
-                            </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <input name="input3" type="text" placeholder="Third Name*" class="form-control">
                         </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="d-flex mb-4 align-items-center">
-                            <div class="row w-100">
-                                <div class="col-sm-6">
-                                    <select class="form-select company " aria-label=".company">
-                                        <option selected>Insurance*</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-6">
-                                    <select class="form-select company " aria-label=".company">
-                                        <option selected>Insurance Subscription No.</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <button class="btn p-1 ms-2 px-3 border text-white btn-add">+</button>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <input name="input4" type="text" placeholder="Last Name*" class="form-control">
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <input name="input5" type="text" placeholder="Date of Birth*" onblur="(this.type='text')"
+                                onfocus="(this.type='date')" class="form-control place">
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <select name="input6" class="form-select sex" aria-label=".sex">
+                                <option selected>Sex*</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <input type="text" placeholder="National ID" class="form-control">
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <select class="form-select company " aria-label=".company">
+                                <option selected>Company</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <select class="form-select company " aria-label=".company">
+                                <option selected>Occupation</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6 mb-4">
+                            <input type="text" placeholder="Address" class="form-control">
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4">
+                            <select class="form-select company " aria-label=".company">
+                                <option selected>how did you hear about us?</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
 
-                        </div>
                     </div>
                 </div>
-            </div>
-        <div class="d-flex justify-content-end mt-5">
-            <button class="btn btn-cancle fs-14 py-2 px-5 ms-3">Cancle</button>
-            <button class="btn btn-save fs-14 py-2 px-5 ms-3">Save</button>
-        </div>
+                <div class="">
+                    <h4 class="fw-bold mb-3">Contact Information</h4>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="d-flex  mb-4">
+                                <input type="Email" placeholder="Email" class="form-control">
+                                <button class="btn p-1 ms-2 px-3 border text-white btn-add">+</button>
+                            </div>
+                            <div class="d-flex mb-2 align-items-center">
+                                <div class="row w-100">
+                                    <div class="col-4">
+                                        <select class="form-select company " aria-label=".company">
+                                            <option selected>Jor (+962)</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" name="input7" placeholder="Mobile No.*" class="form-control">
+
+                                    </div>
+                                </div>
+                                <button class="btn p-1 ms-2 px-3 border text-white btn-add">+</button>
+
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label fs-12" for="flexCheckDefault">
+                                        WhatsApp
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="d-flex mb-4 align-items-center">
+                                <div class="row w-100">
+                                    <div class="col-sm-6">
+                                        <select name="input8" class="form-select company " aria-label=".company">
+                                            <option value selected>Insurance*</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <select class="form-select company " aria-label=".company">
+                                            <option value="" selected>Insurance Subscription No.</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button class="btn p-1 ms-2 px-3 border text-white btn-add">+</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end mt-5">
+                    <button class="btn btn-cancle fs-14 py-2 px-5 ms-3">Cancle</button>
+                    <button class="btn btn-save fs-14 py-2 px-5 ms-3">Save</button>
+                </div>
+            </form>
         </div>
     </div>
     <!-- end add new patient  -->
@@ -698,8 +736,11 @@
             });
         });
     </script>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
     <script src="assets/vendor/fontawesome/fontawesome.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/validition.js"></script>
     <script src="assets/js/patients.js"></script>
 </body>
 

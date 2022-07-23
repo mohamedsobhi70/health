@@ -125,18 +125,9 @@ main .main-content .patient-file textarea::placeholder {
   color: #000;
 }
 
-.new-patient .newpatient-content select:empty {
-  color: #8a98aa;
-}
-
 .new-patient .newpatient-content select:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: black;
-}
-
-.new-patient .newpatient-content select option[selected] {
-  color: #8a98aa;
 }
 
 .new-patient .newpatient-content .drop-area {

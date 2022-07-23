@@ -161,6 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var calendar = new Calendar(calendarEl, {
     themeSystem: "bootstrap5",
+    dayMaxEvents: true, // allow "more" link when too many events
     initialDate: new Date(),
     headerToolbar: {
       left: "dayGridMonth,timeGridWeek,timeGridDay",
@@ -210,7 +211,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     eventContent: {
       html: ` <div class="waiting-item h-100 d-flex br-10 overflow-hidden">
-    <div class="bg-waiting p-2">
+    <div class="bg-success p-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13"
             viewBox="0 0 8 13">
             <g id="Group_14778" data-name="Group 14778" opacity="0.5">
@@ -262,6 +263,7 @@ document.addEventListener("DOMContentLoaded", function () {
         end: "2022-07-22T09:15:00",
       },
     ],
+   
   });
 
   calendar.render();

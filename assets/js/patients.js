@@ -4,7 +4,6 @@ let newPatientClose = document.querySelector(".new-patient .close");
 let filter = document.querySelector(".filter-icon");
 let filterOptions = document.querySelector(".filter-options");
 filter.addEventListener("click", () => {
-  console.log("fpdoklejfgijree");
   filterOptions.classList.toggle("d-none");
 });
 

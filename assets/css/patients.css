@@ -114,7 +114,7 @@ main .patients-table .add-patient .add-patient-btn {
 .new-patient {
   background: rgba(0, 0, 0, 0.7);
   top: 0;
-  right: -1500px;
+  right: -100%;
   width: 100vw;
   z-index: 1000;
   -webkit-transition: all 0.5s ease;
@@ -174,21 +174,10 @@ main .patients-table .add-patient .add-patient-btn {
 
 .new-patient .newpatient-content select {
   font-size: 14px;
-  color: #000;
 }
 
-.new-patient .newpatient-content select:empty {
-  color: #8a98aa;
-}
-
-.new-patient .newpatient-content select:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: black;
-}
-
-.new-patient .newpatient-content select option[selected] {
-  color: #8a98aa;
+.new-patient .newpatient-content select:invalid {
+  color: gray;
 }
 
 .new-patient .newpatient-content .btn-add {
@@ -266,5 +255,22 @@ table.dataTable.table-striped > tbody > tr.odd > * {
   table tr th:nth-of-type(6) {
     display: none;
   }
+}
+
+label.error {
+  font-size: 12px;
+  color: #e54d5b;
+}
+
+input.error,
+select.error,
+textarea.error {
+  border-color: #e54d5b;
+}
+
+input.error:focus,
+select.error:focus,
+textarea.error:focus {
+  border-color: #e54d5b;
 }
 /*# sourceMappingURL=patients.css.map */
