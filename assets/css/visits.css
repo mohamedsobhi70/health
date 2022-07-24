@@ -115,10 +115,6 @@ main .main-content #calendar .fc-cancle-button {
   border: none;
 }
 
-main .main-content #calendar .fc-col-header-cell {
-  display: none;
-}
-
 main .main-content #calendar .fc-timegrid-slot-lane {
   background: #f1f3f980;
 }
@@ -130,7 +126,11 @@ main .main-content #calendar .fc-timegrid-slot {
 }
 
 .fc .fc-timegrid-col.fc-day-today {
-  background: #f1f3f980 !important;
+  background: #FFFFFF  !important;
+}
+
+.fc .fc-daygrid-day-number {
+  font-size: 14px;
 }
 
 .fc .fc-daygrid-day.fc-day-today {
@@ -148,6 +148,15 @@ main .main-content #calendar .fc-timegrid-slot {
 .fc-h-event {
   border: 0px !important;
   background: white !important;
+}
+
+#calendar .fc-col-header-cell {
+  background: #F1F3F9 !important;
+}
+
+.fc .fc-col-header-cell-cushion {
+  font-size: 11px;
+  color: #8898aa !important;
 }
 
 .fc-event-main {
@@ -234,7 +243,7 @@ main .main-content #calendar .fc-timegrid-slot {
 }
 
 .new-patient .newpatient-content .patient-item {
-  background: #F1F3F980;
+  background: #f1f3f980;
 }
 
 .new-patient .newpatient-content .patient-item.selected {

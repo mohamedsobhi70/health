@@ -22,13 +22,15 @@ document.addEventListener("DOMContentLoaded", function () {
   var calendar = new Calendar(calendarEl, {
     themeSystem: "bootstrap5",
     dayMaxEvents: true, // allow "more" link when too many events
-    initialDate: new Date(),
+    initialView: "timeGridDay",
+    initialDate: "2022-07-22",
     headerToolbar: {
       left: "dayGridMonth,timeGridWeek,timeGridDay",
       center: "prev,title,next",
       right: "cancle",
     },
-    events: "/cgi-bin/shlk/getshlkruns.pl",
+    stickyHeaderDates: true,
+    // events: "/cgi-bin/shlk/getshlkruns.pl",
     selectable: true,
     buttonIcons: true,
     selectMirror: true,
@@ -40,25 +42,43 @@ document.addEventListener("DOMContentLoaded", function () {
     slotMinTime: "9:00:00",
     slotMaxTime: "12:00:00",
     allDaySlot: false,
-    dayHeaders: true,
-    dayHeaderFormat: {
-      weekday: "short",
-      month: "numeric",
-      day: "numeric",
-      omitCommas: true,
-    },
+    dayHeaders: false,
+    // dayHeaderFormat:{ weekday: 'short', month: 'numeric', day: 'numeric', omitCommas: true},
     titleFormat: {
       // will produce something like "Tuesday, September 18, 2018"
       month: "short",
       day: "numeric",
       weekday: "short",
     },
-    eventLimit: true, // for all non-TimeGrid views
     views: {
-      timeGrid: {
-        eventLimit: 5, // adjust to 6 only for timeGridWeek/timeGridDay
+      dayGridMonth: {
+        // name of view
+        titleFormat: { year: "numeric", month: "short" },
+        dayHeaders: true,
+
+        moreLinkDidMount: function (arg) {
+          arg.el.innerHTML = `${arg.num} <p class='fs-12 text-success'> Slots Available</p>`;
+        },
+        // other view-specific options here
+      },
+      week: {
+        titleFormat: { year: "numeric", month: "short", omitCommas: true },
+        dayHeaders: true,
+
+        // other view-specific options here
       },
     },
+
+    // moreLinkContent: function (args) {
+    //   if (args.num > 0) {
+    //     return  args.num + "<p class='fs-12 text-success'> Slots Available</p>";
+    //   }
+    //   else{
+    //     return  args.num + "<p class='fs-12 text-danger'> Slots Available</p>";
+
+    //   }
+    // },
+
     allDayDefault: false,
     editable: true,
     droppable: true, // this allows things to be dropped onto the calendar

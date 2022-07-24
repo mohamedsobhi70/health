@@ -7,11 +7,12 @@
     <title>Health CheckMate</title>
     <meta content="Health CheckMate website" name="description">
     <meta content="HealthCheckMate" name="keywords">
-    <link rel="stylesheet" href="assets/vendor/bootstrap-5.0.2/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="assets/vendor/bootstrap-5.0.2/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="assets/vendor/fontawesome/fontawesome.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/dashboard.css">
+
 
 </head>
 
@@ -230,169 +231,8 @@
                     </a>
                 </div>
             </header>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 mb-3">
-                    <div class="stat new-patients br-10 bg-white p-3">
-                        <div class="d-flex mt-2 justify-content-between align-items-center">
-                            <div class="stat-title">
-                                <p class="">Today’s New Patients</p>
-                                <h3 class="my-2">19</h3>
-                            </div>
-                            <div
-                                class="icon-box me-2 rounded-circle d-inline-flex justify-content-center align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="14" viewBox="0 0 24 14">
-                                    <path id="icon_inc"
-                                        d="M23.923.618A1,1,0,0,0,23,0H17a1,1,0,0,0,0,2h3.586L13.5,9.086,9.207,4.793a1,1,0,0,0-1.414,0l-7.5,7.5a1,1,0,1,0,1.414,1.414L8.5,6.914l4.293,4.293a1,1,0,0,0,1.414,0L22,3.414V7a1,1,0,0,0,2,0V1a.991.991,0,0,0-.077-.382"
-                                        transform="translate(0)" fill="#8a98aa" />
-                                </svg>
+            <div id='calendar'></div>
 
-                            </div>
-                        </div>
-                        <p class="yesterday mt-2">
-                            <span class="me-2">+3.48%</span>Since Yesterday
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3">
-                    <div class="stat new-visits br-10 bg-white p-3">
-                        <div class="d-flex mt-2 justify-content-between align-items-center">
-                            <div class="stat-title">
-                                <p class="">Today’s Visits</p>
-                                <h3 class="my-2">54</h3>
-                            </div>
-                            <div
-                                class="icon-box me-2 rounded-circle d-inline-flex justify-content-center align-items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="14" viewBox="0 0 24 14">
-                                    <path id="icon_dec"
-                                        d="M23.923,13.382A1,1,0,0,1,23,14H17a1,1,0,0,1,0-2h3.586L13.5,4.914,9.207,9.207a1,1,0,0,1-1.414,0l-7.5-7.5A1,1,0,1,1,1.707.293L8.5,7.086l4.293-4.293a1,1,0,0,1,1.414,0L22,10.586V7a1,1,0,0,1,2,0v6a.991.991,0,0,1-.077.382"
-                                        transform="translate(0)" fill="#8a98aa" />
-                                </svg>
-
-                            </div>
-                        </div>
-                        <p class="yesterday mt-2">
-                            <span class="me-2">+3.48%</span>Since Yesterday
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3">
-                    <div class="stat total-patients br-10 bg-white p-3">
-                        <div class="d-flex mt-2 justify-content-between align-items-center">
-                            <div class="stat-title">
-                                <p class="">Total Patients</p>
-                                <h3 class="my-2">924</h3>
-                            </div>
-                            <div
-                                class="icon-box me-2  rounded-circle d-inline-flex justify-content-center align-items-center">
-
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                    <g id="icon_patients" transform="translate(-702 -190)">
-                                        <rect id="Rectangle_13843" data-name="Rectangle 13843" width="20" height="20"
-                                            transform="translate(702 190)" fill="none" />
-                                        <path id="Path_142701" data-name="Path 142701"
-                                            d="M49.229,24.848H32.542a.923.923,0,0,1-.783-.914,16.313,16.313,0,0,1,.1-2.217A8.943,8.943,0,0,1,36.4,15.064c.341-.2.706-.359,1.076-.544a5.416,5.416,0,0,1-2.065-4.087,5.3,5.3,0,0,1,1.743-4.228,5.482,5.482,0,0,1,7.221,8.249c-.03.026-.06.053-.092.078l.2.088a9.1,9.1,0,0,1,4.8,4.819A9.8,9.8,0,0,1,50,23.955a1.051,1.051,0,0,1-.253.587,1.86,1.86,0,0,1-.522.307M33.6,22.993H48.171a7.286,7.286,0,0,0-14.572,0m7.265-9.121A3.649,3.649,0,1,0,37.24,10.2v.013a3.645,3.645,0,0,0,3.623,3.661"
-                                            transform="translate(671.246 185.151)" fill="#f66277" />
-                                    </g>
-                                </svg>
-
-                            </div>
-                        </div>
-                        <p class="yesterday mt-2">
-                            <span class="me-2">+3.48%</span>Since last month
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-3">
-                    <div class="stat total-visits br-10 bg-white p-3">
-                        <div class="d-flex mt-2 justify-content-between align-items-center">
-                            <div class="stat-title">
-                                <p class="">Total Visits</p>
-                                <h3 class="my-2">321765</h3>
-                            </div>
-                            <div
-                                class="icon-box me-2 rounded-circle d-inline-flex justify-content-center align-items-center">
-
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                    <g id="icon_visits" transform="translate(-731 -190)">
-                                        <rect id="Rectangle_13844" data-name="Rectangle 13844" width="20" height="20"
-                                            transform="translate(731 190)" fill="none" />
-                                        <g id="Group_15119" data-name="Group 15119"
-                                            transform="translate(-10.091 0.255)">
-                                            <path id="Path_142690" data-name="Path 142690"
-                                                d="M61.091,7.049a6.471,6.471,0,0,1,.329-.988,3.037,3.037,0,0,1,2.747-1.747c.331-.012.662,0,1.024,0,0-.285-.008-.562,0-.839a.778.778,0,0,1,1.553,0c.01.208,0,.416,0,.625v.206h3.52V3.569a.78.78,0,1,1,1.558-.079c0,.026,0,.053,0,.079v.746h3.553c0-.276-.009-.554,0-.83a.778.778,0,0,1,1.553,0c.01.2,0,.4,0,.606v.237h.98a3.051,3.051,0,0,1,2.4,1.093,2.937,2.937,0,0,1,.758,1.944c.008,1.5,0,3.007,0,4.51a.779.779,0,1,1-1.557.045.5.5,0,0,1,0-.055V7.549a1.673,1.673,0,0,0-.318-1.043,1.536,1.536,0,0,0-1.2-.626c-.343-.017-.687,0-1.056,0V6.6a.782.782,0,1,1-1.564-.01v-.71H71.822v.785A.779.779,0,0,1,70.61,7.3a.731.731,0,0,1-.344-.623c0-.26,0-.52,0-.794H66.749v.733a.782.782,0,1,1-1.563-.007V5.848a9.212,9.212,0,0,0-1.348.09,1.522,1.522,0,0,0-1.189,1.6V19.507a1.523,1.523,0,0,0,.886,1.5,2.009,2.009,0,0,0,.808.169c1.938.014,3.876.007,5.814.008a.781.781,0,0,1,.8.638.8.8,0,0,1-.5.877.752.752,0,0,0-.077.047H63.823a.38.38,0,0,0-.085-.038,3.033,3.033,0,0,1-2.327-1.727,7.017,7.017,0,0,1-.32-.97Z"
-                                                transform="translate(680 187)" fill="#16bc84" />
-                                            <path id="Path_142691" data-name="Path 142691"
-                                                d="M75.9,22.747c-.24-.052-.484-.09-.719-.158a4.577,4.577,0,0,1-3.44-3.636A4.719,4.719,0,0,1,80.585,15.9a4.577,4.577,0,0,1-.552,5.085A4.521,4.521,0,0,1,77,22.7a1.632,1.632,0,0,0-.167.042Zm.462-7.888a3.163,3.163,0,1,0,3.171,3.166,3.164,3.164,0,0,0-3.171-3.166"
-                                                transform="translate(679.979 186.998)" fill="#16bc84" />
-                                            <path id="Path_142692" data-name="Path 142692"
-                                                d="M66.755,10.944a.78.78,0,1,1-.788-.772h0a.774.774,0,0,1,.784.764v.008"
-                                                transform="translate(679.995 186.998)" fill="#16bc84" />
-                                            <path id="Path_142693" data-name="Path 142693"
-                                                d="M69.38,11.735a.78.78,0,1,1,.775-.785v0a.774.774,0,0,1-.767.781H69.38"
-                                                transform="translate(679.991 186.998)" fill="#16bc84" />
-                                            <path id="Path_142694" data-name="Path 142694"
-                                                d="M72.777,10.172a.78.78,0,1,1-.784.776v0a.774.774,0,0,1,.776-.772h.008"
-                                                transform="translate(679.986 186.998)" fill="#16bc84" />
-                                            <path id="Path_142695" data-name="Path 142695"
-                                                d="M76.953,10.961a.78.78,0,1,1-.771-.789h0a.774.774,0,0,1,.766.782v.007"
-                                                transform="translate(679.982 186.998)" fill="#16bc84" />
-                                            <path id="Path_142696" data-name="Path 142696"
-                                                d="M66.755,14.365a.78.78,0,1,1-.771-.789h0a.774.774,0,0,1,.766.782v.007"
-                                                transform="translate(679.995 186.998)" fill="#16bc84" />
-                                            <path id="Path_142697" data-name="Path 142697"
-                                                d="M69.369,13.571a.78.78,0,1,1-.775.785v0a.774.774,0,0,1,.767-.781h.008"
-                                                transform="translate(679.991 186.998)" fill="#16bc84" />
-                                            <path id="Path_142698" data-name="Path 142698"
-                                                d="M66.755,17.757a.78.78,0,1,1-.772-.788h0a.774.774,0,0,1,.768.78v.008"
-                                                transform="translate(679.995 186.997)" fill="#16bc84" />
-                                            <path id="Path_142699" data-name="Path 142699"
-                                                d="M70.154,17.74a.78.78,0,1,1-.789-.771h0a.774.774,0,0,1,.785.763v.008"
-                                                transform="translate(679.991 186.997)" fill="#16bc84" />
-                                            <path id="Path_142700" data-name="Path 142700"
-                                                d="M77.148,17.243h.362a.78.78,0,0,1,0,1.559q-.576.007-1.152,0a.765.765,0,0,1-.773-.757v-.009q-.009-.82,0-1.64a.779.779,0,0,1,1.558.009c.005.272,0,.544,0,.837"
-                                                transform="translate(679.978 186.997)" fill="#16bc84" />
-                                        </g>
-                                    </g>
-                                </svg>
-
-
-                            </div>
-                        </div>
-                        <p class="yesterday mt-2">
-                            <span class="me-2">+3.48%</span>Since last month
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row charts">
-                <div class="col-md-8 mb-3">
-                    <div class="bg-white p-4 br-10">
-                        <div class="d-flex mb-5 justify-content-between align-items-center">
-                            <div class="">
-                                <p class="mb-0">OVERVIEW</p>
-                                <h3 class="my-2">Total Patients</h3>
-                            </div>
-                            <div class=" d-flex">
-                                <button class="btn  mx-2 px-3 py-2 active">Month</button>
-                                <button class="btn  mx-2 px-3 py-2">Week</button>
-                            </div>
-                        </div>
-                        <div id="totalPatients" style="height: 450px; width: 100%;">
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="bg-white p-4 br-10">
-                        <div class="mb-5">
-                            <p class="mb-0">PERFORMANCE</p>
-                            <h3 class="my-2">Visits</h3>
-                        </div>
-                        <div id="visits" style="height: 450px; width: 100%;"></div>
-
-                    </div>
-                </div>
-            </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>

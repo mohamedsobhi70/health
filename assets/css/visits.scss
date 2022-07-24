@@ -106,9 +106,7 @@ main {
         background: none;
         border: none;
       }
-      .fc-col-header-cell {
-        display: none;
-      }
+
       .fc-timegrid-slot-lane {
         background: #f1f3f980;
       }
@@ -122,7 +120,10 @@ main {
 }
 
 .fc .fc-timegrid-col.fc-day-today {
-  background: #f1f3f980 !important;
+  background: #FFFFFF  !important;
+}
+.fc .fc-daygrid-day-number{
+  font-size: 14px;
 }
 .fc .fc-daygrid-day.fc-day-today {
   background: white !important;
@@ -136,6 +137,13 @@ main {
 .fc-h-event {
   border: 0px !important;
   background: white !important;
+}
+ #calendar .fc-col-header-cell{
+background: #F1F3F9 !important;
+}
+.fc .fc-col-header-cell-cushion {
+  font-size: 11px;
+  color: #8898aa !important;
 }
 .fc-event-main {
   color: black !important;
@@ -207,9 +215,9 @@ main {
       }
     }
     .patient-item {
-      background: #F1F3F980;
+      background: #f1f3f980;
       &.selected {
-        border:1px solid #018e9f;
+        border: 1px solid #018e9f;
         background: white;
       }
       select {
