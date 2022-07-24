@@ -160,3 +160,16 @@ document.querySelector(".add-newbtn").addEventListener("click", () => {
 document.querySelector(".new-patient .close").addEventListener("click", () => {
   document.querySelector(".new-patient").classList.remove("show");
 });
+let patientItemsinput = document.querySelectorAll(".patient-item input");
+patientItemsinput.forEach((item) =>
+  item.addEventListener("click", function () {
+    if (this.hasAttribute("checked")) {
+      this.parentElement.parentElement.classList.remove("selected");
+    } else {
+      this.parentElement.parentElement.classList.add("selected");
+      this.parentElement.parentElement
+        .querySelector(".patient-select")
+        .classList.remove("d-none");
+    }
+  })
+);
