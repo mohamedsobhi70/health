@@ -33,6 +33,7 @@ main {
   background: url(../img/bg.png);
   background-size: 100% 300px;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   .menu {
     width: 276px;
     position: fixed;

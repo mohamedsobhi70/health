@@ -213,7 +213,8 @@
             </div>
         </aside>
         <div class="main-content ">
-            <header class="info bg-white mb-3 br-10 d-flex align-items-center justify-content-sm-between justify-content-center">
+            <header
+                class="info bg-white mb-3 br-10 d-flex align-items-center justify-content-sm-between justify-content-center">
                 <div class="title d-none d-sm-block">
                     Dashboard
                 </div>
@@ -365,7 +366,7 @@
                 </div>
             </div>
             <div class="row charts">
-                <div class="col-md-8 mb-3">
+                <div class="col-md-8 mb-4">
                     <div class="bg-white p-4 br-10">
                         <div class="d-flex mb-5 justify-content-between align-items-center">
                             <div class="">
@@ -380,9 +381,8 @@
                         <div id="totalPatients" style="height: 450px; width: 100%;">
                         </div>
                     </div>
-
                 </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-4 mb-4">
                     <div class="bg-white p-4 br-10">
                         <div class="mb-5">
                             <p class="mb-0">PERFORMANCE</p>
@@ -392,7 +392,31 @@
 
                     </div>
                 </div>
+                <div class="col-md-8 mb-4">
+                    <div class="bg-white p-4 br-10">
+                        <div class="d-flex mb-5 justify-content-between align-items-center">
+                            <div class="">
+                                <p class="mb-0">OVERVIEW</p>
+                                <h3 class="my-2">Total Visits</h3>
+                            </div>
+
+                        </div>
+                        <div id="totalVisits" style="height: 350px; width: 100%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="bg-white p-4 br-10">
+                        <div class="">
+                            <p class="mb-0">REFERALS</p>
+                            <h3 class="my-2">How did you hear about us</h3>
+                        </div>
+                        <div id="referals" style="height: 500px; width: 100%;"></div>
+
+                    </div>
+                </div>
             </div>
+        </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
