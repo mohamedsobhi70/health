@@ -4,10 +4,10 @@ main {
       li {
         &.active {
           background-color: #7764e43a;
-         span {
-          color: #7764e4 !important;
-        }}
-       
+          span {
+            color: #7764e4 !important;
+          }
+        }
       }
     }
   }
@@ -83,6 +83,15 @@ main {
           color: white;
         }
       }
+.canvasjs-chart-credit {
+  display: none;
+}
+    }
+    .circle {
+      border: 5px solid #222;
+      width: 15px;
+      height: 15px;
     }
   }
 }
+

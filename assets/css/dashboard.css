@@ -75,4 +75,14 @@ main .main-content .charts button.active, main .main-content .charts button:hove
   background: #018e9f;
   color: white;
 }
+
+main .main-content .charts .canvasjs-chart-credit {
+  display: none;
+}
+
+main .main-content .circle {
+  border: 5px solid #222;
+  width: 15px;
+  height: 15px;
+}
 /*# sourceMappingURL=dashboard.css.map */
