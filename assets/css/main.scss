@@ -6,13 +6,13 @@ input,select,textarea,button{
   &:focus{box-shadow: none !important;}
 }
 .br-5 {
-  border-radius: 5px;
+  border-radius: 5px !important;
 }
 .br-10 {
-  border-radius: 10px;
+  border-radius: 10px !important;
 }
 .br-15 {
-  border-radius: 15px;
+  border-radius: 15px !important;
 }
 .border-e {
   border-color: #eee;

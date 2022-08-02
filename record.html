@@ -17,7 +17,7 @@
 
 <body>
     <main class="">
-        <aside class="menu me-3 open">
+        <aside class="menu mr-3 open">
             <div class="navigation py-5  bg-white my-3 p-2 br-10">
                 <div class="navbar-switch position-absolute bg-white d-flex align-items-center" role="button">
 
@@ -73,7 +73,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span class="ms-2">Dashboard</span>
+                            <span class="ml-2">Dashboard</span>
                         </a>
                     </li>
                     <li class="br-15 d-flex align-items-center active">
@@ -87,7 +87,7 @@
                                         transform="translate(671.246 185.151)" fill="#f66277" />
                                 </g>
                             </svg>
-                            <span class="ms-2">Patients</span>
+                            <span class="ml-2">Patients</span>
                         </a>
                     </li>
                     <li class="br-15 d-flex align-items-center">
@@ -134,7 +134,7 @@
                                 </g>
                             </svg>
 
-                            <span class="ms-2">Appointments</span>
+                            <span class="ml-2">Appointments</span>
                         </a>
                     </li>
                     <li class="br-15 d-flex align-items-center">
@@ -159,7 +159,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span class="ms-2">My Packages</span>
+                            <span class="ml-2">My Packages</span>
                         </a>
                     </li>
                     <li class="br-15 d-flex align-items-center">
@@ -187,7 +187,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span class="ms-2">Templates</span>
+                            <span class="ml-2">Templates</span>
                         </a>
                     </li>
                     <li class="br-15 d-flex align-items-center">
@@ -206,7 +206,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span class="ms-2">Settings</span>
+                            <span class="ml-2">Settings</span>
                         </a>
                     </li>
                 </ul>
@@ -225,7 +225,7 @@
                     <a class="mx-3 text-decoration-none" href="">
                         <i class="far fa-envelope  fa-lg" "></i> </a>
                   <a class=" mx-3 text-decoration-none" href="">
-                            <img src="assets/img/person.png" class="me-1 rounded-circle" width="50px" height="50px"
+                            <img src="assets/img/person.png" class="mr-1 rounded-circle" width="50px" height="50px"
                                 alt="">
                             <span>Dr. House</span>
                     </a>
@@ -235,7 +235,7 @@
                 <div class="d-flex justify-content-between align-items-center flex-wrap">
                     <div class="patient-name d-flex  align-items-center">
                         <img src="assets/img/person.png" class="rounded-circle" width="64px" height="64px" alt="">
-                        <h2 class="ms-3 fw-bold">Mohammed Adel Omar</h2>
+                        <h2 class="ml-3 fw-bold">Mohammed Adel Omar</h2>
                     </div>
                     <a href="" class="edit-patient d-flex align-items-center mt-3 mt-sm-0 text-decoration-none">
                         <svg id="icon_edit" xmlns="http://www.w3.org/2000/svg" width="16" height="15.999"
@@ -250,7 +250,7 @@
                                 d="M394.708.986a1.659,1.659,0,0,0-2.345,0l-.918.918,2.345,2.345.918-.918a1.658,1.658,0,0,0,0-2.345Zm0,0"
                                 transform="translate(-379.194 -0.501)" fill="#8a98aa" />
                         </svg>
-                        <span class="ms-1">Edit Patient Details</span>
+                        <span class="ml-1">Edit Patient Details</span>
                     </a>
                 </div>
                 <div class="d-flex mt-4 align-items-center flex-wrap">
@@ -279,7 +279,7 @@
             </div>
             <div class="patient-file bg-white  br-10">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="ms-3 fw-bold">Patient File</h3>
+                    <h3 class="ml-3 fw-bold">Patient File</h3>
                     <div role="button" class="fs-14 expand">Expand <i class="fas fa-chevron-down"></i></div>
                 </div>
                 <div class="d-flex mt-3 overflow-hidden files">
@@ -436,7 +436,7 @@
                 <div class="col-md-7 mb-4">
                     <form action="" id="upload-form">
                         <input name="date" type="text" placeholder="Date Administered" onfocus="(this.type='date')"
-                            onblur="(this.type='text')" class="mt-4 form-control place">
+                            onblur="(this.type='text')" class="form-control place">
                         <div role="button"
                             class="drop-area mt-4 px-5 py-4 d-flex justify-content-center align-items-center flex-column">
 
@@ -453,8 +453,11 @@
                                     </g>
                                 </g>
                             </svg>
-                            <input type="file" class="d-none" name="" id="">
+                            <input type="file"  class="d-none file-input" name="" id="">
                             <p class="my-2 text-center">Select or Drag Attachments</p>
+                        </div>
+                        <div class="files-area my-3">
+
                         </div>
                         <div class="row">
                             <div class="col-12 mt-4">
@@ -470,8 +473,8 @@
                         </div>
 
                         <div class="d-flex justify-content-end mt-5">
-                            <button class="btn btn-cancle w-50 fs-14 py-2 px-5 ms-3">Cancle</button>
-                            <button class="btn btn-save w-50 fs-14 py-2 px-5 ms-3">Save</button>
+                            <button class="btn btn-cancle w-50 fs-14 py-2 px-5 ">Cancle</button>
+                            <button class="btn btn-save w-50 fs-14 py-2 px-5 ml-3">Save</button>
                         </div>
 
                     </form>

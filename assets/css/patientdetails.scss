@@ -38,14 +38,12 @@ main {
       .btn {
         color: #8a98aa;
         border: 1px solid #8c98a8;
-        border-radius: 10px;
-        padding: 12px;
+        border-radius: 5px;
         white-space: nowrap;
         &.active {
           background-color: #8e8769;
           color: white;
           border: none;
-          order: -1;
           svg {
             path {
               fill: #fff;
@@ -62,6 +60,54 @@ main {
       textarea::placeholder {
         color: #8a98aa;
         font-size: 14px;
+      }
+
+      .diagnosis {
+        .item {
+          font-size: 14px;
+          box-shadow: 0px 3px 6px #00000029;
+          border-radius: 10px;
+          padding: 10px;
+          color: #8c98a8;
+          svg {
+            margin-right: 10px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+          }
+          .num {
+            background: #00000029;
+            display: inline-flex;
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+          }
+          &.colored {
+            color: #018e9f;
+            .num {
+              background: #018e9f;
+              color: white;
+            }
+            svg {
+              path {
+                fill: #018e9f;
+              }
+            }
+          }
+        }
+        .add-diagnosis {
+          background: #8c98a8;
+          transition: 0.3s ease;
+          color: white;
+          &:hover {
+            background: #018e9f;
+          }
+        }
       }
     }
   }
@@ -94,13 +140,11 @@ main {
     }
 
     select {
-     
       font-size: 14px;
       color: #000;
       &:focus {
         box-shadow: none;
       }
-      
     }
     .drop-area {
       background: #f1f3f9 0% 0% no-repeat padding-box;
@@ -120,16 +164,21 @@ main {
         border-bottom: 1px solid #f1f3f9;
       }
     }
-    .btn-cancle {
-      border: 1px solid #000000;
-      border-radius: 5px;
-    }
-    .btn-save {
-      background: #018e9f 0% 0% no-repeat padding-box;
-      border-radius: 5px;
-      color: white;
+    .options {
+      & > div:nth-child(odd) {
+        background: #f1f3f9;
+      }
     }
   }
+}
+.btn-cancle {
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+.btn-save {
+  background: #018e9f 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  color: white;
 }
 .record {
   background: rgba(0, 0, 0, 0.7);
@@ -229,7 +278,7 @@ textarea {
   font-size: 12px;
   background: white;
   padding: 5px 10px;
-  top: -16px;
+  top: -19px;
   left: 10px;
   color: #8a98aa;
 }
@@ -239,11 +288,14 @@ textarea {
 }
 @media (max-width: 767px) {
   .close {
-   left: 4% !important ;
-   right: auto !important;
- }
- .btn-cancle,
- .btn-save {
-   width: 50% !important;
- }
+    left: 4% !important ;
+    right: auto !important;
+  }
+  .btn-cancle,
+  .btn-save {
+    width: 50% !important;
+  }
+}
+.gray {
+  background: #f1f3f9;
 }

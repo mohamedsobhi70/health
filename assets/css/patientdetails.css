@@ -41,8 +41,7 @@ main .main-content .patient-file .expand {
 main .main-content .patient-file .btn {
   color: #8a98aa;
   border: 1px solid #8c98a8;
-  border-radius: 10px;
-  padding: 12px;
+  border-radius: 5px;
   white-space: nowrap;
 }
 
@@ -50,9 +49,6 @@ main .main-content .patient-file .btn.active {
   background-color: #8e8769;
   color: white;
   border: none;
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
 }
 
 main .main-content .patient-file .btn.active svg path {
@@ -85,6 +81,71 @@ main .main-content .patient-file textarea::-ms-input-placeholder {
 main .main-content .patient-file textarea::placeholder {
   color: #8a98aa;
   font-size: 14px;
+}
+
+main .main-content .patient-file .diagnosis .item {
+  font-size: 14px;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+  padding: 10px;
+  color: #8c98a8;
+}
+
+main .main-content .patient-file .diagnosis .item svg {
+  margin-right: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20px;
+  height: 20px;
+}
+
+main .main-content .patient-file .diagnosis .item .num {
+  background: #00000029;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+}
+
+main .main-content .patient-file .diagnosis .item.colored {
+  color: #018e9f;
+}
+
+main .main-content .patient-file .diagnosis .item.colored .num {
+  background: #018e9f;
+  color: white;
+}
+
+main .main-content .patient-file .diagnosis .item.colored svg path {
+  fill: #018e9f;
+}
+
+main .main-content .patient-file .diagnosis .add-diagnosis {
+  background: #8c98a8;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  color: white;
+}
+
+main .main-content .patient-file .diagnosis .add-diagnosis:hover {
+  background: #018e9f;
 }
 
 .new-patient {
@@ -151,12 +212,16 @@ main .main-content .patient-file textarea::placeholder {
   border-bottom: 1px solid #f1f3f9;
 }
 
-.new-patient .newpatient-content .btn-cancle {
+.new-patient .newpatient-content .options > div:nth-child(odd) {
+  background: #f1f3f9;
+}
+
+.btn-cancle {
   border: 1px solid #000000;
   border-radius: 5px;
 }
 
-.new-patient .newpatient-content .btn-save {
+.btn-save {
   background: #018e9f 0% 0% no-repeat padding-box;
   border-radius: 5px;
   color: white;
@@ -278,7 +343,7 @@ textarea.error:focus {
   font-size: 12px;
   background: white;
   padding: 5px 10px;
-  top: -16px;
+  top: -19px;
   left: 10px;
   color: #8a98aa;
 }
@@ -297,5 +362,9 @@ textarea.error:focus {
   .btn-save {
     width: 50% !important;
   }
+}
+
+.gray {
+  background: #f1f3f9;
 }
 /*# sourceMappingURL=patientdetails.css.map */

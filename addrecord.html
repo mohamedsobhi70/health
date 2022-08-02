@@ -17,7 +17,7 @@
 
 <body>
     <main class="">
-        <aside class="menu me-3 open">
+        <aside class="menu mr-3 open">
             <div class="navigation py-5  bg-white my-3 p-2 br-10">
                 <div class="navbar-switch position-absolute bg-white d-flex align-items-center" role="button">
 
@@ -73,7 +73,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span class="ms-2">Dashboard</span>
+                            <span class="ml-2">Dashboard</span>
                         </a>
                     </li>
                     <li class="br-15 d-flex align-items-center active">
@@ -87,7 +87,7 @@
                                         transform="translate(671.246 185.151)" fill="#f66277" />
                                 </g>
                             </svg>
-                            <span class="ms-2">Patients</span>
+                            <span class="ml-2">Patients</span>
                         </a>
                     </li>
                     <li class="br-15 d-flex align-items-center">
@@ -134,7 +134,7 @@
                                 </g>
                             </svg>
 
-                            <span class="ms-2">Appointments</span>
+                            <span class="ml-2">Appointments</span>
                         </a>
                     </li>
                     <li class="br-15 d-flex align-items-center">
@@ -159,7 +159,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span class="ms-2">My Packages</span>
+                            <span class="ml-2">My Packages</span>
                         </a>
                     </li>
                     <li class="br-15 d-flex align-items-center">
@@ -187,7 +187,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span class="ms-2">Templates</span>
+                            <span class="ml-2">Templates</span>
                         </a>
                     </li>
                     <li class="br-15 d-flex align-items-center">
@@ -206,7 +206,7 @@
                                     </g>
                                 </g>
                             </svg>
-                            <span class="ms-2">Settings</span>
+                            <span class="ml-2">Settings</span>
                         </a>
                     </li>
                 </ul>
@@ -225,7 +225,7 @@
                     <a class="mx-3 text-decoration-none" href="">
                         <i class="far fa-envelope  fa-lg" "></i> </a>
                   <a class=" mx-3 text-decoration-none" href="">
-                            <img src="assets/img/person.png" class="me-1 rounded-circle" width="50px" height="50px"
+                            <img src="assets/img/person.png" class="mr-1 rounded-circle" width="50px" height="50px"
                                 alt="">
                             <span>Dr. House</span>
                     </a>
@@ -235,7 +235,7 @@
                 <div class="d-flex justify-content-between align-items-center flex-wrap">
                     <div class="patient-name d-flex  align-items-center">
                         <img src="assets/img/person.png" class="rounded-circle" width="64px" height="64px" alt="">
-                        <h2 class="ms-3 fw-bold">Mohammed Adel Omar</h2>
+                        <h2 class="ml-3 font-weight-bold">Mohammed Adel Omar</h2>
                     </div>
                     <a href="" class="edit-patient d-flex align-items-center mt-3 mt-sm-0 text-decoration-none">
                         <svg id="icon_edit" xmlns="http://www.w3.org/2000/svg" width="16" height="15.999"
@@ -250,7 +250,7 @@
                                 d="M394.708.986a1.659,1.659,0,0,0-2.345,0l-.918.918,2.345,2.345.918-.918a1.658,1.658,0,0,0,0-2.345Zm0,0"
                                 transform="translate(-379.194 -0.501)" fill="#8a98aa" />
                         </svg>
-                        <span class="ms-1">Edit Patient Details</span>
+                        <span class="ml-1">Edit Patient Details</span>
                     </a>
                 </div>
                 <div class="d-flex mt-4 align-items-center flex-wrap">
@@ -279,7 +279,7 @@
             </div>
             <div class="patient-file bg-white  br-10">
                 <div class="d-flex justify-content-between align-items-center">
-                    <h3 class="ms-3 fw-bold">Patient File</h3>
+                    <h3 class="ml-3 font-weight-bold">Patient File</h3>
                     <div role="button" class="fs-14 expand">Expand <i class="fas fa-chevron-down"></i></div>
                 </div>
                 <div class="d-flex mt-3 overflow-hidden files">
@@ -421,11 +421,11 @@
     <!-- add new patient  -->
     <div dir="rtl" class="new-patient show position-fixed min-vh-100  position-relative ">
         <div dir="ltr" class="newpatient-content bg-white px-5 py-4  ">
-            <div class="close fw-bold text-white position-absolute" role="button">X</div>
-            <h3 class="title fw-bold mb-4"> Add New Record </h3>
+            <div class="close font-weight-bold text-white position-absolute" role="button">X</div>
+            <h3 class="title font-weight-bold mb-4"> Add New Record </h3>
             <form action="" id="upload-form">
 
-                <select name="Biolab" class="w-50 form-select sex required" aria-label=".sex">
+                <select name="Biolab" class="w-50  form-control gray" aria-label=".sex">
 
                     <option value="" selected>From Biolab Packages</option>
                     <option value="1">One</option>
@@ -434,7 +434,7 @@
                 </select>
                 <div class="position-relative mb-4">
                     <label for="liver " class="input-lable position-absolute">Select Package</label>
-                    <select name="liver" class="form-select mt-4 sex required" aria-label=".sex">
+                    <select name="liver" class="form-control mt-4 sex required" aria-label=".sex">
                         <option value="" selected>Liver Function Tests</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -442,30 +442,30 @@
                     </select>
                 </div>
                 <div class="options">
-                    <div class="d-flex my-3 fs-14">
+                    <div class="d-flex  p-2 fs-14">
                         <div class="option-code d-inline-block" style="width: 60px !important">#42</div>
                         <div class="option-title ">Alanine Aminotransferase (ALT/GPT), Serum</div>
                     </div>
-                    <div class="d-flex my-3 fs-14">
+                    <div class="d-flex  p-2 fs-14">
                         <div class="option-code d-inline-block" style="width: 60px !important">#334</div>
                         <div class="option-title ">Aspartate Aminotransferase (AST/GOT), Serum</div>
                     </div>
-                    <div class="d-flex my-3 fs-14">
+                    <div class="d-flex  p-2 fs-14">
                         <div class="option-code d-inline-block" style="width: 60px !important">#111</div>
                         <div class="option-title ">Alanine Aminotransferase (ALT/GPT), Serum</div>
                     </div>
-                    <div class="d-flex my-3 fs-14">
+                    <div class="d-flex  p-2 fs-14">
                         <div class="option-code d-inline-block" style="width: 60px !important">#606</div>
                         <div class="option-title ">Alanine Aminotransferase (ALT/GPT), Serum</div>
                     </div>
-                    <div class="d-flex my-3 justify-content-between fs-14">
+                    <div class="d-flex  p-2 justify-content-between fs-14">
                         <div class="option-code d-inline-block " style="width: 60px !important">#606</div>
                         <div class="option-title " style="flex-basis: 100%;">ANTI-EPIDERMAL BASEMENT MEMBRANE AND
                             INTRACELLULAR SUBSTANCE ANTIBODIES - TYPING (BPAG2/BP180, BPAG1/BP 230, DESMOGLEIN 1,
                             DESMOGLEIN 3), Serum</div>
                     </div>
                 </div>
-                <select name="Biolab" class="w-50 form-select sex required" aria-label=".sex">
+                <select name="Biolab" class="w-50 gray form-control sex required" aria-label=".sex">
 
                     <option value="" selected>From Biolab Packages</option>
                     <option value="1">One</option>
@@ -474,7 +474,7 @@
                 </select>
                 <div class="position-relative mb-4">
                     <label for="liver " class="input-lable position-absolute">Select Package</label>
-                    <select name="liver" class="form-select mt-4 sex required" aria-label=".sex">
+                    <select name="liver" class="form-control mt-4 sex required" aria-label=".sex">
                         <option value="" selected>Liver Function Tests</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -482,8 +482,8 @@
                     </select>
                 </div>
                 <div class="d-flex justify-content-end mt-5">
-                    <button class="btn btn-cancle fs-14 py-2 px-5 ms-3">Cancle</button>
-                    <button class="btn btn-save fs-14 py-2 px-5 ms-3">Save</button>
+                    <button class="btn btn-cancle fs-14 py-2 px-5 ml-3">Cancle</button>
+                    <button class="btn btn-save fs-14 py-2 px-5 ml-3">Save</button>
                 </div>
 
             </form>
@@ -496,7 +496,6 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
     <script src="assets/vendor/fontawesome/fontawesome.js"></script>
     <script src="assets/vendor/bootstrap-5.0.2/bootstrap.min.js"></script>
-    <script src="assets/js/dragdrop.js"></script>
     <script src="assets/js/validition.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

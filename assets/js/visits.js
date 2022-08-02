@@ -164,6 +164,7 @@ let patientItemsinput = document.querySelectorAll(".patient-item input");
 patientItemsinput.forEach((item) =>
   item.addEventListener("click", function () {
     if (this.hasAttribute("checked")) {
+      item.checked=false;
       this.parentElement.parentElement.classList.remove("selected");
     } else {
       this.parentElement.parentElement.classList.add("selected");
