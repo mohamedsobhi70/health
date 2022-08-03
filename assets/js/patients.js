@@ -22,6 +22,9 @@ $(document).ready(function () {
     info: false,
     dom: '<"pull-left"f><"pull-right"l>tip',
   });
+  document.querySelector(
+    "#patients-table1_filter"
+  ).firstChild.firstChild.textContent = "";
 });
 
 document.querySelector(".btn-add-email").addEventListener("click", function () {
@@ -41,19 +44,21 @@ document.querySelector(".btn-add-email").addEventListener("click", function () {
   }
 });
 
-document.querySelector(".btn-add-mobile").addEventListener("click", function () {
-  console.log(this.parentElement);
-  if (
-    document
-      .querySelector(".btn-add-mobile")
-      .parentElement.querySelector("input").value !== ""
-  ) {
-    document.querySelector(".mobiles-field").innerHTML += `
+document
+  .querySelector(".btn-add-mobile")
+  .addEventListener("click", function () {
+    console.log(this.parentElement);
+    if (
+      document
+        .querySelector(".btn-add-mobile")
+        .parentElement.querySelector("input").value !== ""
+    ) {
+      document.querySelector(".mobiles-field").innerHTML += `
     <p class="text-secondary m-0 fs-12">${
       document
         .querySelector(".btn-add-mobile")
         .parentElement.querySelector("input").value
     }</p>
     `;
-  }
-});
+    }
+  });

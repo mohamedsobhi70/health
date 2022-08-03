@@ -73,25 +73,94 @@ main {
         }
       }
     }
-    table {
-      thead{
+    .month-calendar {
+      .week-days {
+        background: #f1f3f9;
+        color: #a3a6b4;
         height: 45px;
-        color: #8898AA;
         font-weight: bold;
-        font-size: 11px;
-        width: 100%;
+        div {
+          width: calc(100% / 7);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
-      tr{
-        height: 45px;
-        width: 100%;
+      .days {
+        .day {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-end;
+          padding: 10px;
+          color: #8c98a8;
+          width: calc(100% / 7);
+          height: 135px;
+          border: 0.5px solid #eaf0f4;
+          position: relative;
+        }
+        .event-content {
+          top: 50%;
+          left: 50%;
+          transform: translate((-50%, -50%));
+          .event-imgs {
+            width: 13px;
+          }
+          .slots {
+            color: #16bc84 !important;
+            &.empty {
+              color: #e54d5b !important;
+            }
+          }
+        }
+        .prev-date,
+        .next-date {
+          color: #8c98a83d;
+        }
       }
-      td {
-        text-align: center;
-        border: 1px solid #ddd;
-        &:first-of-type {
-          background: #fff;
-          color: #8898AA;
-          width: 80px !important;
+      table {
+        .month-tr {
+          height: 45px;
+          width: 100%;
+          td {
+            height: 135px;
+            width: 145px;
+          }
+        }
+        td {
+          text-align: center;
+          border: 1px solid #eaf0f4;
+        }
+        thead {
+          height: 45px !important;
+          background: #f1f3f9;
+          color: #8898aa;
+          font-weight: bold;
+          font-size: 11px;
+          width: 100%;
+        }
+      }
+    }
+    .week-calendar {
+      table {
+        thead {
+          height: 45px;
+          color: #8898aa;
+          font-weight: bold;
+          font-size: 11px;
+          width: 100%;
+        }
+        tr {
+          height: 45px;
+          width: 100%;
+        }
+        td {
+          text-align: center;
+          border: 1px solid #ddd;
+          &:first-of-type {
+            background: #fff;
+            color: #8898aa;
+            width: 80px !important;
+          }
         }
       }
     }
@@ -165,7 +234,6 @@ main {
           }
         }
       }
-
       .bg-Scheduled {
         background: #8a98aa;
       }

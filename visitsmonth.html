@@ -239,811 +239,127 @@
                         <a href="visits.html" class="day m-0 d-block p-2 border-right ">day</a>
                     </div>
                     <div class="d-flex align-items-center">
-                        <i class="fa fa-chevron-left mx-3"></i>
-                        <p class="mb-0 fs-18 font-weight-bold">Jan 2022</p>
-                        <i class="fa fa-chevron-right mx-3"></i>
+                        <div class="prev">
+                            <i class="fa fa-chevron-left mx-3 "></i>
+                        </div>
+                        <p class="mb-0 fs-18 font-weight-bold date">Jan 2022</p>
+                        <div class="next">
+                            <i class="fa fa-chevron-right mx-3 "></i>
+                        </div>
                     </div>
                     <a href="#" class="fs-14 hidden">Cancel Visits </a>
                 </div>
-                <div class="day-calendar fs-14">
-                    <div class="d-flex bg-gray border-top border-right border-left">
-                        <span class="time d-inline-flex justify-content-center align-items-center border-right bg-white"
-                            style="width: 80px; height: 50px;">9:00 AM</span>
-                        <div class="w-100 d-flex align-items-center">
-                            <div class="waiting-item popup-open m-1  position-relative d-inline-flex ">
-                                <div class="bg-Checked p-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13">
-                                        <g id="Group_14778" data-name="Group 14778" opacity="0.5">
-                                            <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5 5)" fill="#fff" />
-                                            <circle id="Ellipse_403" data-name="Ellipse 403" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(0 5)" fill="#fff" />
-                                            <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5)" fill="#fff" />
-                                            <circle id="Ellipse_404" data-name="Ellipse 404" cx="1.5" cy="1.5" r="1.5"
-                                                fill="#fff" />
-                                            <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5 10)" fill="#fff" />
-                                            <circle id="Ellipse_405" data-name="Ellipse 405" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(0 10)" fill="#fff" />
-                                        </g>
-                                    </svg>
-
-                                </div>
-                                <div class="d-flex my-2 border-right w-100 ml-2 align-items-center">
-                                    <img src="assets/img/person.png" width="24px" height="24px" class="rounded-circle"
-                                        alt="">
-                                    <span class="ml-2 fs-12">Mohammed Omar</span>
-                                </div>
-                                <div class="p-2 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="3" viewBox="0 0 13 3">
-                                        <g id="Group_14762" data-name="Group 14762"
-                                            transform="translate(-10375 -1640) rotate(-90)">
-                                            <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10380)" fill="#8a98aa" />
-                                            <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10375)" fill="#8a98aa" />
-                                            <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10385)" fill="#8a98aa" />
-                                        </g>
-                                    </svg>
-                                    <div class="popup  position-absolute fs-12 w-100  d-none">
-                                        <p class="font-weight-bold">Change Status To:</p>
-                                        <div class="row status pb-4 mx-1  border-bottom">
-                                            <div class="col-6 p-0 mb-2 Scheduled">
-                                                <input type="radio" name="status" id="Scheduled">
-                                                <label for="Scheduled">Scheduled</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Checked">
-                                                <input type="radio" name="status" id="Checked">
-                                                <label for="Checked">Checked In</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Progress">
-                                                <input type="radio" name="status" id="Progress">
-                                                <label for="Progress">In Progress</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Completed">
-                                                <input type="radio" name="status" id="Completed">
-                                                <label for="Completed">Completed</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Paid">
-                                                <input type="radio" name="status" id="Paid">
-                                                <label for="Paid">Paid</label>
-                                            </div>
-                                        </div>
-                                        <div class=" p-2 border-bottom">
-                                            <a href="#" class="d-block my-2">View Patient Profile</a>
-                                            <a href="#" class="d-block my-2">Reschedule Visit</a>
-                                        </div>
-                                        <a href="#" class="text-danger d-block  p-2">Cancel Visit</a>
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
+                <div class="month-calendar ">
+                    <div class="week-days d-flex w-100 align-items-center ">
+                        <div >Sun</div>
+                        <div >Mon</div>
+                        <div >Tue</div>
+                        <div >Wed</div>
+                        <div >Thu</div>
+                        <div >Fri</div>
+                        <div >Sat</div>
                     </div>
-                    <div class="d-flex bg-gray border-top border-right border-left">
-                        <span class="time d-inline-flex justify-content-center align-items-center border-right bg-white"
-                            style="width: 80px; height: 50px;">9:15 AM</span>
-                        <div class="w-100 d-flex align-items-center">
-                            <div class="waiting-item popup-open m-1  position-relative d-inline-flex ">
-                                <div class="bg-Scheduled p-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13">
-                                        <g id="Group_14778" data-name="Group 14778" opacity="0.5">
-                                            <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5 5)" fill="#fff" />
-                                            <circle id="Ellipse_403" data-name="Ellipse 403" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(0 5)" fill="#fff" />
-                                            <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5)" fill="#fff" />
-                                            <circle id="Ellipse_404" data-name="Ellipse 404" cx="1.5" cy="1.5" r="1.5"
-                                                fill="#fff" />
-                                            <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5 10)" fill="#fff" />
-                                            <circle id="Ellipse_405" data-name="Ellipse 405" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(0 10)" fill="#fff" />
-                                        </g>
-                                    </svg>
-
-                                </div>
-                                <div class="d-flex my-2 border-right w-100 ml-2 align-items-center">
-                                    <img src="assets/img/person.png" width="24px" height="24px" class="rounded-circle"
-                                        alt="">
-                                    <span class="ml-2 fs-12">Mohammed Omar</span>
-                                </div>
-                                <div class="p-2 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="3" viewBox="0 0 13 3">
-                                        <g id="Group_14762" data-name="Group 14762"
-                                            transform="translate(-10375 -1640) rotate(-90)">
-                                            <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10380)" fill="#8a98aa" />
-                                            <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10375)" fill="#8a98aa" />
-                                            <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10385)" fill="#8a98aa" />
-                                        </g>
-                                    </svg>
-                                    <div class="popup  position-absolute fs-12 w-100  d-none">
-                                        <p class="font-weight-bold">Change Status To:</p>
-                                        <div class="row   pb-4 mx-1  border-bottom">
-                                            <div class="col-6  p-0 Scheduled">
-                                                <input type="radio" name="status" id="Scheduled">
-                                                <label for="Scheduled">Scheduled</label>
-                                            </div>
-                                            <div class="col-6  p-0 Checked">
-                                                <input type="radio" name="status" id="Checked">
-                                                <label for="Checked">Checked In</label>
-                                            </div>
-                                            <div class="col-6  p-0 Progress">
-                                                <input type="radio" name="status" id="Progress">
-                                                <label for="Progress">In Progress</label>
-                                            </div>
-                                            <div class="col-6  p-0 Completed">
-                                                <input type="radio" name="status" id="Completed">
-                                                <label for="Completed">Completed</label>
-                                            </div>
-                                            <div class="col-6  p-0 Paid">
-                                                <input type="radio" name="status" id="Paid">
-                                                <label for="Paid">Paid</label>
-                                            </div>
-                                        </div>
-                                        <div class=" p-2 border-bottom">
-                                            <a href="#" class="d-block my-2">View Patient Profile</a>
-                                            <a href="#" class="d-block my-2">Reschedule Visit</a>
-                                        </div>
-                                        <a href="#" class="text-danger d-block  p-2">Cancel Visit</a>
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
+                    <div class="days w-100 fs-14 d-flex flex-wrap">
+                        
                     </div>
-                    <div class="d-flex bg-gray border-top border-right border-left">
-                        <span class="time d-inline-flex justify-content-center align-items-center border-right bg-white"
-                            style="width: 80px; height: 50px;">9:30 AM</span>
-                        <div class="w-100 d-flex align-items-center">
-                            <div class="waiting-item popup-open m-1  position-relative d-inline-flex ">
-                                <div class="bg-Paid p-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13">
-                                        <g id="Group_14778" data-name="Group 14778" opacity="0.5">
-                                            <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5 5)" fill="#fff" />
-                                            <circle id="Ellipse_403" data-name="Ellipse 403" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(0 5)" fill="#fff" />
-                                            <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5)" fill="#fff" />
-                                            <circle id="Ellipse_404" data-name="Ellipse 404" cx="1.5" cy="1.5" r="1.5"
-                                                fill="#fff" />
-                                            <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5 10)" fill="#fff" />
-                                            <circle id="Ellipse_405" data-name="Ellipse 405" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(0 10)" fill="#fff" />
-                                        </g>
-                                    </svg>
+<!-- 
+                    <table class=" table-responsive">
+                        <thead class="text-center">
+                            <td>Sun </td>
+                            <td>Mon </td>
+                            <td>Tue </td>
+                            <td>Wed </td>
+                            <td>Thu </td>
+                            <td>Fri </td>
+                            <td>Sat </td>
+                        </thead>
 
-                                </div>
-                                <div class="d-flex my-2 border-right w-100 ml-2 align-items-center">
-                                    <img src="assets/img/person.png" width="24px" height="24px" class="rounded-circle"
-                                        alt="">
-                                    <span class="ml-2 fs-12">Mohammed Omar</span>
-                                </div>
-                                <div class="p-2 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="3" viewBox="0 0 13 3">
-                                        <g id="Group_14762" data-name="Group 14762"
-                                            transform="translate(-10375 -1640) rotate(-90)">
-                                            <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10380)" fill="#8a98aa" />
-                                            <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10375)" fill="#8a98aa" />
-                                            <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10385)" fill="#8a98aa" />
-                                        </g>
-                                    </svg>
-                                    <div class="popup  position-absolute fs-12 w-100  d-none">
-                                        <p class="font-weight-bold">Change Status To:</p>
-                                        <div class="row status pb-4 mx-1  border-bottom">
-                                            <div class="col-6 p-0 mb-2 Scheduled">
-                                                <input type="radio" name="status" id="Scheduled">
-                                                <label for="Scheduled">Scheduled</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Checked">
-                                                <input type="radio" name="status" id="Checked">
-                                                <label for="Checked">Checked In</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Progress">
-                                                <input type="radio" name="status" id="Progress">
-                                                <label for="Progress">In Progress</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Completed">
-                                                <input type="radio" name="status" id="Completed">
-                                                <label for="Completed">Completed</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Paid">
-                                                <input type="radio" name="status" id="Paid">
-                                                <label for="Paid">Paid</label>
-                                            </div>
-                                        </div>
-                                        <div class=" p-2 border-bottom">
-                                            <a href="#" class="d-block my-2">View Patient Profile</a>
-                                            <a href="#" class="d-block my-2">Reschedule Visit</a>
-                                        </div>
-                                        <a href="#" class="text-danger d-block  p-2">Cancel Visit</a>
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="d-flex bg-gray border-top border-right border-left">
-                        <span class="time d-inline-flex justify-content-center align-items-center border-right bg-white"
-                            style="width: 80px; height: 50px;">9:45 AM</span>
-                        <div class="w-100 d-flex align-items-center">
-
-                            <div class="waiting-item popup-open m-1  position-relative d-inline-flex ">
-                                <div class="bg-Progress p-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13">
-                                        <g id="Group_14778" data-name="Group 14778" opacity="0.5">
-                                            <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5 5)" fill="#fff" />
-                                            <circle id="Ellipse_403" data-name="Ellipse 403" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(0 5)" fill="#fff" />
-                                            <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5)" fill="#fff" />
-                                            <circle id="Ellipse_404" data-name="Ellipse 404" cx="1.5" cy="1.5" r="1.5"
-                                                fill="#fff" />
-                                            <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5 10)" fill="#fff" />
-                                            <circle id="Ellipse_405" data-name="Ellipse 405" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(0 10)" fill="#fff" />
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="d-flex my-2 border-right w-100 ml-2 align-items-center">
-                                    <img src="assets/img/person.png" width="24px" height="24px" class="rounded-circle"
-                                        alt="">
-                                    <span class="ml-2 fs-12">Mohammed Omar</span>
-                                </div>
-                                <div class="p-2 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="3" viewBox="0 0 13 3">
-                                        <g id="Group_14762" data-name="Group 14762"
-                                            transform="translate(-10375 -1640) rotate(-90)">
-                                            <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10380)" fill="#8a98aa" />
-                                            <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10375)" fill="#8a98aa" />
-                                            <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10385)" fill="#8a98aa" />
-                                        </g>
-                                    </svg>
-                                    <div class="popup  position-absolute fs-12 w-100  d-none">
-                                        <p class="font-weight-bold">Change Status To:</p>
-                                        <div class="row status pb-4 mx-1  border-bottom">
-                                            <div class="col-6 p-0 mb-2 Scheduled">
-                                                <input type="radio" name="status" id="Scheduled">
-                                                <label for="Scheduled">Scheduled</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Checked">
-                                                <input type="radio" name="status" id="Checked">
-                                                <label for="Checked">Checked In</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Progress">
-                                                <input type="radio" name="status" id="Progress">
-                                                <label for="Progress">In Progress</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Completed">
-                                                <input type="radio" name="status" id="Completed">
-                                                <label for="Completed">Completed</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Paid">
-                                                <input type="radio" name="status" id="Paid">
-                                                <label for="Paid">Paid</label>
-                                            </div>
-                                        </div>
-                                        <div class=" p-2 border-bottom">
-                                            <a href="#" class="d-block my-2">View Patient Profile</a>
-                                            <a href="#" class="d-block my-2">Reschedule Visit</a>
-                                        </div>
-                                        <a href="#" class="text-danger d-block  p-2">Cancel Visit</a>
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div class="d-flex bg-gray border-top border-right border-left">
-                        <span class="time d-inline-flex justify-content-center align-items-center border-right bg-white"
-                            style="width: 80px; height: 50px;">10:00 AM</span>
-                        <div class="w-100 d-flex align-items-center">
-                            <div class="waiting-item popup-open m-1  position-relative d-inline-flex ">
-                                <div class="bg-Progress p-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13">
-                                        <g id="Group_14778" data-name="Group 14778" opacity="0.5">
-                                            <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5 5)" fill="#fff" />
-                                            <circle id="Ellipse_403" data-name="Ellipse 403" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(0 5)" fill="#fff" />
-                                            <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5)" fill="#fff" />
-                                            <circle id="Ellipse_404" data-name="Ellipse 404" cx="1.5" cy="1.5" r="1.5"
-                                                fill="#fff" />
-                                            <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5 10)" fill="#fff" />
-                                            <circle id="Ellipse_405" data-name="Ellipse 405" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(0 10)" fill="#fff" />
-                                        </g>
-                                    </svg>
-
-                                </div>
-                                <div class="d-flex my-2 border-right w-100 ml-2 align-items-center">
-                                    <img src="assets/img/person.png" width="24px" height="24px" class="rounded-circle"
-                                        alt="">
-                                    <span class="ml-2 fs-12">Mohammed Omar</span>
-                                </div>
-                                <div class="p-2 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="3" viewBox="0 0 13 3">
-                                        <g id="Group_14762" data-name="Group 14762"
-                                            transform="translate(-10375 -1640) rotate(-90)">
-                                            <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10380)" fill="#8a98aa" />
-                                            <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10375)" fill="#8a98aa" />
-                                            <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10385)" fill="#8a98aa" />
-                                        </g>
-                                    </svg>
-                                    <div class="popup  position-absolute fs-12 w-100  d-none">
-                                        <p class="font-weight-bold">Change Status To:</p>
-                                        <div class="row status pb-4 mx-1  border-bottom">
-                                            <div class="col-6 p-0 mb-2 Scheduled">
-                                                <input type="radio" name="status" id="Scheduled">
-                                                <label for="Scheduled">Scheduled</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Checked">
-                                                <input type="radio" name="status" id="Checked">
-                                                <label for="Checked">Checked In</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Progress">
-                                                <input type="radio" name="status" id="Progress">
-                                                <label for="Progress">In Progress</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Completed">
-                                                <input type="radio" name="status" id="Completed">
-                                                <label for="Completed">Completed</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Paid">
-                                                <input type="radio" name="status" id="Paid">
-                                                <label for="Paid">Paid</label>
-                                            </div>
-                                        </div>
-                                        <div class=" p-2 border-bottom">
-                                            <a href="#" class="d-block my-2">View Patient Profile</a>
-                                            <a href="#" class="d-block my-2">Reschedule Visit</a>
-                                        </div>
-                                        <a href="#" class="text-danger d-block  p-2">Cancel Visit</a>
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="d-flex bg-gray border-top border-right border-left">
-                        <span class="time d-inline-flex justify-content-center align-items-center border-right bg-white"
-                            style="width: 80px; height: 50px;">10:15 AM</span>
-                        <div class="w-100 d-flex align-items-center">
-                            <div class="waiting-item popup-open m-1  position-relative d-inline-flex ">
-                                <div class="bg-Completed p-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13">
-                                        <g id="Group_14778" data-name="Group 14778" opacity="0.5">
-                                            <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5 5)" fill="#fff" />
-                                            <circle id="Ellipse_403" data-name="Ellipse 403" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(0 5)" fill="#fff" />
-                                            <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5)" fill="#fff" />
-                                            <circle id="Ellipse_404" data-name="Ellipse 404" cx="1.5" cy="1.5" r="1.5"
-                                                fill="#fff" />
-                                            <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5 10)" fill="#fff" />
-                                            <circle id="Ellipse_405" data-name="Ellipse 405" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(0 10)" fill="#fff" />
-                                        </g>
-                                    </svg>
-
-                                </div>
-                                <div class="d-flex my-2 border-right w-100 ml-2 align-items-center">
-                                    <img src="assets/img/person.png" width="24px" height="24px" class="rounded-circle"
-                                        alt="">
-                                    <span class="ml-2 fs-12">Mohammed Omar</span>
-                                </div>
-                                <div class="p-2 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="3" viewBox="0 0 13 3">
-                                        <g id="Group_14762" data-name="Group 14762"
-                                            transform="translate(-10375 -1640) rotate(-90)">
-                                            <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10380)" fill="#8a98aa" />
-                                            <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10375)" fill="#8a98aa" />
-                                            <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10385)" fill="#8a98aa" />
-                                        </g>
-                                    </svg>
-                                    <div class="popup  position-absolute fs-12 w-100  d-none">
-                                        <p class="font-weight-bold">Change Status To:</p>
-                                        <div class="row status pb-4 mx-1  border-bottom">
-                                            <div class="col-6 p-0 mb-2 Scheduled">
-                                                <input type="radio" name="status" id="Scheduled">
-                                                <label for="Scheduled">Scheduled</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Checked">
-                                                <input type="radio" name="status" id="Checked">
-                                                <label for="Checked">Checked In</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Progress">
-                                                <input type="radio" name="status" id="Progress">
-                                                <label for="Progress">In Progress</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Completed">
-                                                <input type="radio" name="status" id="Completed">
-                                                <label for="Completed">Completed</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Paid">
-                                                <input type="radio" name="status" id="Paid">
-                                                <label for="Paid">Paid</label>
-                                            </div>
-                                        </div>
-                                        <div class=" p-2 border-bottom">
-                                            <a href="#" class="d-block my-2">View Patient Profile</a>
-                                            <a href="#" class="d-block my-2">Reschedule Visit</a>
-                                        </div>
-                                        <a href="#" class="text-danger d-block  p-2">Cancel Visit</a>
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="d-flex bg-gray border-top border-right border-left">
-                        <span class="time d-inline-flex justify-content-center align-items-center border-right bg-white"
-                            style="width: 80px; height: 50px;">10:30 AM</span>
-                        <div class="w-100 d-flex align-items-center">
-                            <div class="waiting-item popup-open m-1  position-relative d-inline-flex ">
-                                <div class="bg-Paid p-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13">
-                                        <g id="Group_14778" data-name="Group 14778" opacity="0.5">
-                                            <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5 5)" fill="#fff" />
-                                            <circle id="Ellipse_403" data-name="Ellipse 403" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(0 5)" fill="#fff" />
-                                            <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5)" fill="#fff" />
-                                            <circle id="Ellipse_404" data-name="Ellipse 404" cx="1.5" cy="1.5" r="1.5"
-                                                fill="#fff" />
-                                            <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5 10)" fill="#fff" />
-                                            <circle id="Ellipse_405" data-name="Ellipse 405" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(0 10)" fill="#fff" />
-                                        </g>
-                                    </svg>
-
-                                </div>
-                                <div class="d-flex my-2 border-right w-100 ml-2 align-items-center">
-                                    <img src="assets/img/person.png" width="24px" height="24px" class="rounded-circle"
-                                        alt="">
-                                    <span class="ml-2 fs-12">Mohammed Omar</span>
-                                </div>
-                                <div class="p-2 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="3" viewBox="0 0 13 3">
-                                        <g id="Group_14762" data-name="Group 14762"
-                                            transform="translate(-10375 -1640) rotate(-90)">
-                                            <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10380)" fill="#8a98aa" />
-                                            <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10375)" fill="#8a98aa" />
-                                            <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10385)" fill="#8a98aa" />
-                                        </g>
-                                    </svg>
-                                    <div class="popup  position-absolute fs-12 w-100  d-none">
-                                        <p class="font-weight-bold">Change Status To:</p>
-                                        <div class="row status pb-4 mx-1  border-bottom">
-                                            <div class="col-6 p-0 mb-2 Scheduled">
-                                                <input type="radio" name="status" id="Scheduled">
-                                                <label for="Scheduled">Scheduled</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Checked">
-                                                <input type="radio" name="status" id="Checked">
-                                                <label for="Checked">Checked In</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Progress">
-                                                <input type="radio" name="status" id="Progress">
-                                                <label for="Progress">In Progress</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Completed">
-                                                <input type="radio" name="status" id="Completed">
-                                                <label for="Completed">Completed</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Paid">
-                                                <input type="radio" name="status" id="Paid">
-                                                <label for="Paid">Paid</label>
-                                            </div>
-                                        </div>
-                                        <div class=" p-2 border-bottom">
-                                            <a href="#" class="d-block my-2">View Patient Profile</a>
-                                            <a href="#" class="d-block my-2">Reschedule Visit</a>
-                                        </div>
-                                        <a href="#" class="text-danger d-block  p-2">Cancel Visit</a>
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="d-flex bg-gray border-top border-right border-left">
-                        <span class="time d-inline-flex justify-content-center align-items-center border-right bg-white"
-                            style="width: 80px; height: 50px;">10:45 AM</span>
-                        <div class="w-100 d-flex align-items-center">
-                            <div class="waiting-item popup-open m-1  position-relative d-inline-flex ">
-                                <div class="bg-Checked p-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13">
-                                        <g id="Group_14778" data-name="Group 14778" opacity="0.5">
-                                            <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5 5)" fill="#fff" />
-                                            <circle id="Ellipse_403" data-name="Ellipse 403" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(0 5)" fill="#fff" />
-                                            <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5)" fill="#fff" />
-                                            <circle id="Ellipse_404" data-name="Ellipse 404" cx="1.5" cy="1.5" r="1.5"
-                                                fill="#fff" />
-                                            <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(5 10)" fill="#fff" />
-                                            <circle id="Ellipse_405" data-name="Ellipse 405" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(0 10)" fill="#fff" />
-                                        </g>
-                                    </svg>
-
-                                </div>
-                                <div class="d-flex my-2 border-right w-100 ml-2 align-items-center">
-                                    <img src="assets/img/person.png" width="24px" height="24px" class="rounded-circle"
-                                        alt="">
-                                    <span class="ml-2 fs-12">Mohammed Omar</span>
-                                </div>
-                                <div class="p-2 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="3" viewBox="0 0 13 3">
-                                        <g id="Group_14762" data-name="Group 14762"
-                                            transform="translate(-10375 -1640) rotate(-90)">
-                                            <circle id="Ellipse_398" data-name="Ellipse 398" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10380)" fill="#8a98aa" />
-                                            <circle id="Ellipse_399" data-name="Ellipse 399" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10375)" fill="#8a98aa" />
-                                            <circle id="Ellipse_400" data-name="Ellipse 400" cx="1.5" cy="1.5" r="1.5"
-                                                transform="translate(-1643 10385)" fill="#8a98aa" />
-                                        </g>
-                                    </svg>
-                                    <div class="popup  position-absolute fs-12 w-100  d-none">
-                                        <p class="font-weight-bold">Change Status To:</p>
-                                        <div class="row status pb-4 mx-1  border-bottom">
-                                            <div class="col-6 p-0 mb-2 Scheduled">
-                                                <input type="radio" name="status" id="Scheduled">
-                                                <label for="Scheduled">Scheduled</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Checked">
-                                                <input type="radio" name="status" id="Checked">
-                                                <label for="Checked">Checked In</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Progress">
-                                                <input type="radio" name="status" id="Progress">
-                                                <label for="Progress">In Progress</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Completed">
-                                                <input type="radio" name="status" id="Completed">
-                                                <label for="Completed">Completed</label>
-                                            </div>
-                                            <div class="col-6 p-0 mb-2 Paid">
-                                                <input type="radio" name="status" id="Paid">
-                                                <label for="Paid">Paid</label>
-                                            </div>
-                                        </div>
-                                        <div class=" p-2 border-bottom">
-                                            <a href="#" class="d-block my-2">View Patient Profile</a>
-                                            <a href="#" class="d-block my-2">Reschedule Visit</a>
-                                        </div>
-                                        <a href="#" class="text-danger d-block  p-2">Cancel Visit</a>
-
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="d-flex bg-gray border-top border-right border-left">
-                        <span class="time d-inline-flex justify-content-center align-items-center border-right bg-white"
-                            style="width: 80px; height: 50px;">11:00 AM</span>
-                        <div class="w-100 d-flex align-items-center">
-
-
-                        </div>
-                    </div>
-                    <div class="d-flex bg-gray border-top border-right border-left">
-                        <span class="time d-inline-flex justify-content-center align-items-center border-right bg-white"
-                            style="width: 80px; height: 50px;">11:15 AM</span>
-                        <div class="w-100 d-flex align-items-center">
-
-                        </div>
-                    </div>
-                    <div class="d-flex bg-gray border-top border-right border-left">
-                        <span class="time d-inline-flex justify-content-center align-items-center border-right bg-white"
-                            style="width: 80px; height: 50px;">11:30 AM</span>
-                        <div class="w-100 d-flex align-items-center">
-
-
-                        </div>
-                    </div>
-                    <div class="d-flex bg-gray border-top border-right border-left">
-                        <span class="time d-inline-flex justify-content-center align-items-center border-right bg-white"
-                            style="width: 80px; height: 50px;">11:45 AM</span>
-                        <div class="w-100 d-flex align-items-center">
-                        </div>
-                    </div>
-                    <div class="d-flex  border">
-                        <span class="time d-inline-flex justify-content-center align-items-center border-right bg-white"
-                            style="width: 80px; height: 50px;">12:00 AM</span>
-                        <div class="w-100 d-flex align-items-center">
-                        </div>
-                    </div>
+                        <tr class="month-tr">
+                            <td>
+                               
+                            </td>
+                            <td>
+                               
+                            </td>
+                            <td>
+                               
+                            </td>
+                            <td>
+                               
+                            </td>
+                            <td>
+                               
+                            </td>
+                            <td>
+                               
+                            </td>
+                            <td>
+                               
+                            </td>
+                        </tr>
+                        <tr class="month-tr">
+                            <td>
+                               
+                            </td>
+                            <td>
+                               
+                            </td>
+                            <td>
+                               
+                            </td>
+                            <td>
+                               
+                            </td>
+                            <td>
+                               
+                            </td>
+                            <td>
+                               
+                            </td>
+                            <td>
+                               
+                            </td>
+                        </tr>
+                        <tr class="month-tr">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="month-tr">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="month-tr">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                       
+                    </table> -->
 
                 </div>
 
             </div>
         </div>
     </main>
-    <!-- add new patient  -->
-    <div dir="rtl" class="new-patient  position-fixed min-vh-100  position-relative ">
-        <div dir="ltr" class="newpatient-content bg-white px-4 py-4  ">
-            <div class="close font-weight-bold text-white position-absolute" role="button">X</div>
-            <h3 class="title font-weight-bold m-4"> Add New Patient </h3>
-            <form action="" id="upload-form">
-                <div class="row search-box">
-                    <div class="col-md-6 d-flex align-items-center">
-                        <input type="radio" name="search" id="" checked>
-                        <label for="search" class="fs-14 mx-2">Search Existing</label>
-                    </div>
-                    <div class="col-md-6 d-flex align-items-center">
-                        <input type="radio" name="search" id="">
-                        <label for="search" class="fs-14 mx-2">Add New Patient</label>
-                    </div>
-                    <div class="col-md-6"></div>
-                </div>
-                <input type="text" name="input1" class="form-control fs-14 mt-3" placeholder="First Name*">
-                <div class="patients-section ">
-                    <div class="patient-item p-3 br-10  mt-3">
-                        <div class="d-flex align-items-center">
-                            <input type="checkbox" class="">
-                            <label for="for" class="fs-14 mx-2">001</label>
-                            <div class="">
-                                <img src="assets/img/person.png" width="50px" height="50px" class="rounded-circle"
-                                    alt="">
-                                <span class="fs-14 ml-2">Mohammed Adel Bkietan Omar</span>
-                            </div>
-                        </div>
-                        <div class="row patient-select d-none mt-3">
-                            <div class="col-6 position-relative">
-                                <select name="" class="form-control ">
-                                    <option selected>New Visit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                                <span class="bg-white lable px-2 position-absolute fs-12">Visit Type</span>
 
-                            </div>
-                            <div class="col-6 position-relative">
-                                <select name="" class="form-control ">
-                                    <option selected>Gig</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                                <span class="bg-white lable px-2 position-absolute fs-12">Insurance</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="patient-item p-3 br-10  mt-3">
-                        <div class="d-flex align-items-center">
-                            <input type="checkbox">
-                            <label for="for" class="fs-14 mx-2">002</label>
-                            <div class="">
-                                <img src="assets/img/person.png" width="50px" height="50px" class="rounded-circle"
-                                    alt="">
-                                <span class="fs-14 ml-2">Noor Amer Mahmoud Sulaiman</span>
-                            </div>
-                        </div>
-                        <div class="row patient-select d-none mt-3">
-                            <div class="col-6 position-relative">
-                                <select name="" class="form-control ">
-                                    <option selected>New Visit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                                <span class="bg-white lable px-2 position-absolute fs-12">Visit Type</span>
-
-                            </div>
-                            <div class="col-6 position-relative">
-                                <select name="" class="form-control ">
-                                    <option selected>Gig</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                                <span class="bg-white lable px-2 position-absolute fs-12">Insurance</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="patient-item p-3 br-10  mt-3">
-                        <div class="d-flex align-items-center">
-                            <input type="checkbox">
-                            <label for="for" class="fs-14 mx-2">003</label>
-                            <div class="">
-                                <img src="assets/img/person.png" width="50px" height="50px" class="rounded-circle"
-                                    alt="">
-                                <span class="fs-14 ml-2">Hamzah Raed Suliman Majali</span>
-                            </div>
-                        </div>
-                        <div class="row patient-select d-none mt-3">
-                            <div class="col-6 position-relative">
-                                <select name="" class="form-control ">
-                                    <option selected>New Visit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                                <span class="bg-white lable px-2 position-absolute fs-12">Visit Type</span>
-
-                            </div>
-                            <div class="col-6 position-relative">
-                                <select name="" class="form-control ">
-                                    <option selected>Gig</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                                <span class="bg-white lable px-2 position-absolute fs-12">Insurance</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-end mt-5">
-                    <button class="btn btn-cancle fs-14 py-2 w-50 px-5 ml-3">Cancle</button>
-                    <button class="btn btn-save fs-14 py-2 w-50 px-5 ml-3">Save</button>
-                </div>
-            </form>
-        </div>
-    </div>
     <script src="assets/vendor/fontawesome/fontawesome.js"></script>
-    <script src="assets/js/main.js"></script></body>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/date.js"></script>
+
+</body>
 
 </html>
