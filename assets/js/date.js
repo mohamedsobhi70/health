@@ -75,7 +75,7 @@ let calendarRender = () => {
       </div>
       </div>
 
-      <div class="fs-12 my-2 text-center">20 Appointments</div>
+      <div class="fs-14 mt-3 mb-2 text-center">20 Appointments</div>
       <div class="fs-12 text-center slots">5 Slots Available</div>
     </div>`;
 
@@ -104,7 +104,7 @@ let calendarRender = () => {
         </div>
         </div>
   
-        <div class="fs-12 my-2 text-center">20 Appointments</div>
+        <div class="fs-14 mt-3 mb-2 text-center">20 Appointments</div>
         <div class="fs-12 text-center slots empty">0 Slots Available</div>
       </div>`;
 
@@ -133,7 +133,7 @@ let calendarRender = () => {
           </div>
           </div>
     
-          <div class="fs-12 my-2 text-center">20 Appointments</div>
+          <div class="fs-14 mt-3 mb-2 text-center">20 Appointments</div>
           <div class="fs-12 text-center slots">5 Slots Available</div>
         </div>`;
 };

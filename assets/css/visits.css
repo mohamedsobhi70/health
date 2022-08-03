@@ -120,6 +120,10 @@ main .main-content .month-calendar .days .event-content {
           transform: translate(-50%, -50%);
 }
 
+main .main-content .month-calendar .days .event-content div:not(:first-of-type) {
+  white-space: nowrap;
+}
+
 main .main-content .month-calendar .days .event-content .event-imgs {
   width: 13px;
 }
@@ -216,27 +220,27 @@ main .main-content .waiting-item .popup {
 }
 
 main .main-content .waiting-item .popup .status .Scheduled > input {
-  accent-color: #8a98aa;
+  accent-color: #818d9c;
 }
 
 main .main-content .waiting-item .popup .status .Scheduled > input:checked ~ label {
-  color: #8a98aa;
+  color: #818d9c;
 }
 
 main .main-content .waiting-item .popup .status .Checked > input {
-  accent-color: #56cbeb;
+  accent-color: #20a1c5;
 }
 
 main .main-content .waiting-item .popup .status .Checked > input:checked ~ label {
-  color: #56cbeb;
+  color: #20a1c5;
 }
 
 main .main-content .waiting-item .popup .status .Progress > input {
-  accent-color: #f5913c;
+  accent-color: #d97d30;
 }
 
 main .main-content .waiting-item .popup .status .Progress > input:checked ~ label {
-  color: #f5913c;
+  color: #d97d30;
 }
 
 main .main-content .waiting-item .popup .status .Completed > input {
@@ -278,6 +282,14 @@ main .main-content .waiting-item .bg-Completed {
 
 main .main-content .waiting-item .bg-Paid {
   background: #16bc84;
+}
+
+main .main-content .fa-chevron-left, main .main-content .fa-chevron-right {
+  color: #007bff;
+}
+
+main .main-content .cancle-visit {
+  color: #E54D5B;
 }
 
 main .main-content .waiting-list .waiting-item {
