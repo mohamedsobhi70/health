@@ -39,140 +39,162 @@ main {
         }
       }
     }
+    .time {
+      width: 80px !important;
+      height: 50px;
+      color: #8898aa;
+    }
+    .bg-gray {
+      background: #f1f3f980;
+    }
+    .calendar-type {
+      a {
+        width: 70px;
+        border: 1px solid #8a98aa;
+        text-align: center;
+        color: #8a98aa;
+        &.active {
+          background: #8a98aa;
+          color: white;
+        }
+        &.day {
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+          overflow: hidden;
+        }
+        &.week {
+          border-left: none !important;
+          border-right: none !important;
+        }
+        &.month {
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+          overflow: hidden;
+        }
+      }
+    }
+    table {
+      thead{
+        height: 45px;
+        color: #8898AA;
+        font-weight: bold;
+        font-size: 11px;
+        width: 100%;
+      }
+      tr{
+        height: 45px;
+        width: 100%;
+      }
+      td {
+        text-align: center;
+        border: 1px solid #ddd;
+        &:first-of-type {
+          background: #fff;
+          color: #8898AA;
+          width: 80px !important;
+        }
+      }
+    }
     .waiting-item {
       box-shadow: 0px 3px 6px #0000001a;
-      border: 0.5px solid #11cdef;
       border-radius: 5px;
-      .bg-waiting {
-        background: #11cdef;
+      background: white;
+      width: 200px;
+      &.week {
+        width: 120px;
       }
-      .bg-success {
+      > div:first-of-type {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        overflow: hidden;
+      }
+      .popup {
+        background: #ffffff;
+        box-shadow: 0px 3px 6px #0000001a;
+        border-radius: 5px;
+        padding: 10px;
+        top: 120%;
+        right: 0;
+        left: 0;
+        z-index: 1000000000;
+        .status {
+          .Scheduled {
+            > input {
+              &:checked ~ label {
+                color: #8a98aa;
+              }
+              accent-color: #8a98aa;
+            }
+          }
+          .Checked {
+            > input {
+              &:checked ~ label {
+                color: #56cbeb;
+              }
+              accent-color: #56cbeb;
+            }
+          }
+          .Progress {
+            > input {
+              &:checked ~ label {
+                color: #f5913c;
+              }
+              accent-color: #f5913c;
+            }
+          }
+          .Completed {
+            > input {
+              &:checked ~ label {
+                color: #8e8769;
+              }
+              accent-color: #8e8769;
+            }
+          }
+          .Paid {
+            > input {
+              &:checked ~ label {
+                color: #52b888;
+              }
+              accent-color: #52b888;
+            }
+          }
+
+          label {
+            margin-bottom: 0;
+            color: #8a98aa;
+          }
+        }
+      }
+
+      .bg-Scheduled {
+        background: #8a98aa;
+      }
+      .bg-Checked {
+        background: #56cbeb;
+      }
+      .bg-Progress {
+        background: #f5913c;
+      }
+      .bg-Completed {
+        background: #8e8769;
+      }
+      .bg-Paid {
         background: #16bc84;
       }
     }
     .waiting-list {
-      .add-newbtn {
-        background: #018e9f;
+      .waiting-item {
+        border: 1px solid #56cbeb;
       }
     }
-    #calendar {
-      .fc-toolbar-chunk {
-        &:nth-of-type(2) {
-          div {
-            display: flex;
-            align-items: center;
-            .fc-toolbar-title {
-              font-size: 18px;
-              text-transform: capitalize;
-              font-weight: bold;
-              margin: 0 10px;
-            }
-          }
-        }
-        &:last-of-type {
-          .cancle-visits {
-            color: #e54d5b;
-          }
-        }
-      }
-      .fc-col-header-cell {
-        background: #f1f3f9;
-        padding: 10px;
-        font-size: 14px;
-        text-transform: capitalize;
-      }
-
-      .fc-timeGridDay-button,
-      .fc-timeGridWeek-button,
-      .fc-dayGridMonth-button {
-        background: white !important;
-        color: #8a98aa;
-        border-color: #8a98aa;
-        &.active {
-          color: white;
-          background: #8a98aa !important;
-        }
-      }
-      .fc-prev-button,
-      .fc-next-button {
-        background: white;
-        color: #0d6efd;
-        border: none;
-        &:focus {
-          box-shadow: none;
-        }
-      }
-      .fc-cancle-button {
-        background: none;
-        border: none;
-      }
-
-      .fc-timegrid-slot-lane {
-        background: #f1f3f980;
-      }
-      .fc-timegrid-slot {
-        height: 50px !important;
-        border: 0.5px solid #8c98a841 !important;
-        font-size: 14px;
-      }
+    .add-newbtn {
+      background: #018e9f;
+      border: 1px solid #018e9f;
+      border-radius: 5px;
     }
   }
 }
 
-.fc .fc-timegrid-col.fc-day-today {
-  background: #FFFFFF  !important;
-}
-.fc .fc-daygrid-day-number{
-  font-size: 14px;
-}
-.fc .fc-daygrid-day.fc-day-today {
-  background: white !important;
-}
-.fc .fc-timegrid-slot-label {
-  background: white;
-}
-.fc-v-event {
-  border: none !important;
-}
-.fc-h-event {
-  border: 0px !important;
-  background: white !important;
-}
- #calendar .fc-col-header-cell{
-background: #F1F3F9 !important;
-}
-.fc .fc-col-header-cell-cushion {
-  font-size: 11px;
-  color: #8898aa !important;
-}
-.fc-event-main {
-  color: black !important;
-}
-.fc-timegrid-event-harness-inset .fc-timegrid-event,
-.fc-timegrid-event.fc-event-mirror,
-.fc-timegrid-more-link {
-  background: white;
-  max-width: 175px;
-}
-.fc-dayGridMonth-view {
-  .fc-daygrid-day-events {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-  }
-  .waiting-item {
-    border: none !important;
-    border-radius: 50% !important;
-    display: inline;
-    div {
-      &:first-child,
-      &:last-child,
-      span {
-        display: none !important;
-      }
-    }
-  }
-}
 .new-patient {
   background: rgba(0, 0, 0, 0.7);
   top: 0;

@@ -2,6 +2,12 @@ body {
   background: #f1f3f9;
   font-family: Arial;
 }
+.hidden{
+visibility: hidden;
+}
+a:hover{
+  text-decoration: none;
+}
 input,select,textarea,button{
   &:focus{box-shadow: none !important;}
 }

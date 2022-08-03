@@ -36,161 +36,172 @@ main .main-content .setting .input-box svg {
           transform: translateY(-50%);
 }
 
-main .main-content .waiting-item {
-  -webkit-box-shadow: 0px 3px 6px #0000001a;
-          box-shadow: 0px 3px 6px #0000001a;
-  border: 0.5px solid #11cdef;
-  border-radius: 5px;
+main .main-content .time {
+  width: 80px !important;
+  height: 50px;
+  color: #8898aa;
 }
 
-main .main-content .waiting-item .bg-waiting {
-  background: #11cdef;
-}
-
-main .main-content .waiting-item .bg-success {
-  background: #16bc84;
-}
-
-main .main-content .waiting-list .add-newbtn {
-  background: #018e9f;
-}
-
-main .main-content #calendar .fc-toolbar-chunk:nth-of-type(2) div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main .main-content #calendar .fc-toolbar-chunk:nth-of-type(2) div .fc-toolbar-title {
-  font-size: 18px;
-  text-transform: capitalize;
-  font-weight: bold;
-  margin: 0 10px;
-}
-
-main .main-content #calendar .fc-toolbar-chunk:last-of-type .cancle-visits {
-  color: #e54d5b;
-}
-
-main .main-content #calendar .fc-col-header-cell {
-  background: #f1f3f9;
-  padding: 10px;
-  font-size: 14px;
-  text-transform: capitalize;
-}
-
-main .main-content #calendar .fc-timeGridDay-button,
-main .main-content #calendar .fc-timeGridWeek-button,
-main .main-content #calendar .fc-dayGridMonth-button {
-  background: white !important;
-  color: #8a98aa;
-  border-color: #8a98aa;
-}
-
-main .main-content #calendar .fc-timeGridDay-button.active,
-main .main-content #calendar .fc-timeGridWeek-button.active,
-main .main-content #calendar .fc-dayGridMonth-button.active {
-  color: white;
-  background: #8a98aa !important;
-}
-
-main .main-content #calendar .fc-prev-button,
-main .main-content #calendar .fc-next-button {
-  background: white;
-  color: #0d6efd;
-  border: none;
-}
-
-main .main-content #calendar .fc-prev-button:focus,
-main .main-content #calendar .fc-next-button:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-main .main-content #calendar .fc-cancle-button {
-  background: none;
-  border: none;
-}
-
-main .main-content #calendar .fc-timegrid-slot-lane {
+main .main-content .bg-gray {
   background: #f1f3f980;
 }
 
-main .main-content #calendar .fc-timegrid-slot {
-  height: 50px !important;
-  border: 0.5px solid #8c98a841 !important;
-  font-size: 14px;
+main .main-content .calendar-type a {
+  width: 70px;
+  border: 1px solid #8a98aa;
+  text-align: center;
+  color: #8a98aa;
 }
 
-.fc .fc-timegrid-col.fc-day-today {
-  background: #FFFFFF  !important;
+main .main-content .calendar-type a.active {
+  background: #8a98aa;
+  color: white;
 }
 
-.fc .fc-daygrid-day-number {
-  font-size: 14px;
+main .main-content .calendar-type a.day {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
 }
 
-.fc .fc-daygrid-day.fc-day-today {
-  background: white !important;
+main .main-content .calendar-type a.week {
+  border-left: none !important;
+  border-right: none !important;
 }
 
-.fc .fc-timegrid-slot-label {
-  background: white;
+main .main-content .calendar-type a.month {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
 }
 
-.fc-v-event {
-  border: none !important;
-}
-
-.fc-h-event {
-  border: 0px !important;
-  background: white !important;
-}
-
-#calendar .fc-col-header-cell {
-  background: #F1F3F9 !important;
-}
-
-.fc .fc-col-header-cell-cushion {
+main .main-content table thead {
+  height: 45px;
+  color: #8898AA;
+  font-weight: bold;
   font-size: 11px;
-  color: #8898aa !important;
+  width: 100%;
 }
 
-.fc-event-main {
-  color: black !important;
+main .main-content table tr {
+  height: 45px;
+  width: 100%;
 }
 
-.fc-timegrid-event-harness-inset .fc-timegrid-event,
-.fc-timegrid-event.fc-event-mirror,
-.fc-timegrid-more-link {
+main .main-content table td {
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+main .main-content table td:first-of-type {
+  background: #fff;
+  color: #8898AA;
+  width: 80px !important;
+}
+
+main .main-content .waiting-item {
+  -webkit-box-shadow: 0px 3px 6px #0000001a;
+          box-shadow: 0px 3px 6px #0000001a;
+  border-radius: 5px;
   background: white;
-  max-width: 175px;
+  width: 200px;
 }
 
-.fc-dayGridMonth-view .fc-daygrid-day-events {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+main .main-content .waiting-item.week {
+  width: 120px;
 }
 
-.fc-dayGridMonth-view .waiting-item {
-  border: none !important;
-  border-radius: 50% !important;
-  display: inline;
+main .main-content .waiting-item > div:first-of-type {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
 }
 
-.fc-dayGridMonth-view .waiting-item div:first-child, .fc-dayGridMonth-view .waiting-item div:last-child,
-.fc-dayGridMonth-view .waiting-item div span {
-  display: none !important;
+main .main-content .waiting-item .popup {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 6px #0000001a;
+          box-shadow: 0px 3px 6px #0000001a;
+  border-radius: 5px;
+  padding: 10px;
+  top: 120%;
+  right: 0;
+  left: 0;
+  z-index: 1000000000;
+}
+
+main .main-content .waiting-item .popup .status .Scheduled > input {
+  accent-color: #8a98aa;
+}
+
+main .main-content .waiting-item .popup .status .Scheduled > input:checked ~ label {
+  color: #8a98aa;
+}
+
+main .main-content .waiting-item .popup .status .Checked > input {
+  accent-color: #56cbeb;
+}
+
+main .main-content .waiting-item .popup .status .Checked > input:checked ~ label {
+  color: #56cbeb;
+}
+
+main .main-content .waiting-item .popup .status .Progress > input {
+  accent-color: #f5913c;
+}
+
+main .main-content .waiting-item .popup .status .Progress > input:checked ~ label {
+  color: #f5913c;
+}
+
+main .main-content .waiting-item .popup .status .Completed > input {
+  accent-color: #8e8769;
+}
+
+main .main-content .waiting-item .popup .status .Completed > input:checked ~ label {
+  color: #8e8769;
+}
+
+main .main-content .waiting-item .popup .status .Paid > input {
+  accent-color: #52b888;
+}
+
+main .main-content .waiting-item .popup .status .Paid > input:checked ~ label {
+  color: #52b888;
+}
+
+main .main-content .waiting-item .popup .status label {
+  margin-bottom: 0;
+  color: #8a98aa;
+}
+
+main .main-content .waiting-item .bg-Scheduled {
+  background: #8a98aa;
+}
+
+main .main-content .waiting-item .bg-Checked {
+  background: #56cbeb;
+}
+
+main .main-content .waiting-item .bg-Progress {
+  background: #f5913c;
+}
+
+main .main-content .waiting-item .bg-Completed {
+  background: #8e8769;
+}
+
+main .main-content .waiting-item .bg-Paid {
+  background: #16bc84;
+}
+
+main .main-content .waiting-list .waiting-item {
+  border: 1px solid #56cbeb;
+}
+
+main .main-content .add-newbtn {
+  background: #018e9f;
+  border: 1px solid #018e9f;
+  border-radius: 5px;
 }
 
 .new-patient {

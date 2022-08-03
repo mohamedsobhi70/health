@@ -3,6 +3,14 @@ body {
   font-family: Arial;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 input:focus, select:focus, textarea:focus, button:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
