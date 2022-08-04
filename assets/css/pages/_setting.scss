@@ -1,0 +1,45 @@
+main {
+  &.setting-page {
+    .menu {
+      .navigation {
+        li {
+          &.active {
+            background-color: #fdb6643a;
+            span {
+              color: #fdb664 !important;
+            }
+          }
+        }
+      }
+    }
+    .main-content {
+      .title {
+        color: #fdb664 !important;
+      }
+      .setting {
+        h3 {
+          font-size: 18px;
+          color: #018e9f;
+        }
+        p {
+          color: #8e8769;
+          font-size: 16px;
+        }
+        label {
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+        .input-box {
+          input {
+            font-size: 14px;
+          }
+          svg {
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+}

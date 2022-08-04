@@ -28,6 +28,7 @@
         accent-color: #e54d5b;
         & + .patient-lbl {
           border: 1px solid #e54d5b;
+          border-radius: 5px;
           .patient-num {
             display: block !important;
           }
@@ -84,4 +85,3 @@
     color: white;
   }
 }
-

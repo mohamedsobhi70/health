@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="assets/vendor/bootstrap-5.0.2/bootstrap.min.css">
     <link rel="stylesheet" href="assets/vendor/fontawesome/fontawesome.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/canclevisit.css">
 
 
 </head>
@@ -251,8 +250,8 @@
                     </div>
                 </div>
                 <div class="patients-section my-4">
-                    <input type="radio" name="all" class="mr-2" id="all">
-                    <label for="all" class="select-all mb-0 fs-14">Select All Patients</label>
+                    <input type="checkbox" name="all" class="mr-2 select-all" id="all">
+                    <label for="all" class="mb-0 fs-14">Select All Patients</label>
                     <div class="patient-item my-4 d-flex ">
                         <input type="checkbox" name="patient1" class="mr-2" checked>
                         <label for="patient1" class="w-100 patient-lbl fs-14 p-2 rounded-3">
@@ -359,7 +358,23 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
     <script src="assets/vendor/fontawesome/fontawesome.js"></script>
     <script src="assets/vendor/bootstrap-5.0.2/bootstrap.min.js"></script>
-    <!-- <script src="assets/js/dragdrop.js"></script> -->
+    <script>
+        let selectAll = document.querySelector(".select-all");
+        let chckbox = document.querySelectorAll(".patient-item input[type='checkbox']");
+        selectAll.addEventListener("click", function () {
+            console.log(selectAll.checked);
+            if (!selectAll.checked == false) {
+                chckbox.forEach(itm => itm.checked = true);
+                console.log("notchecked and now checed");
+            }
+            else  {
+                selectAll.checked = false;
+                chckbox.forEach(itm => itm.checked = false);
+                console.log("checked and now notcheced");
+
+            }
+        })
+    </script>
     <script src="assets/js/validition.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

@@ -1,0 +1,98 @@
+main {
+  &.dashboard {
+    .menu {
+      .navigation {
+        li {
+          &.active {
+            background-color: #7764e43a;
+            span {
+              color: #7764e4 !important;
+            }
+          }
+        }
+      }
+    }
+    .main-content {
+      .title {
+        color: #7764e4 !important;
+      }
+      .stat {
+        &.new-patients {
+          .icon-box {
+            background: #16bc84;
+          }
+        }
+        &.new-visits {
+          .icon-box {
+            background: #e54d5b;
+          }
+        }
+        &.total-patients {
+          .icon-box {
+            background: #7764e4;
+          }
+        }
+        &.total-visits {
+          .icon-box {
+            background: #11cdef;
+          }
+        }
+        .stat-title {
+          p {
+            font-size: 11px;
+            color: #8898aa;
+          }
+          h3 {
+            font-size: 18px;
+            color: #4d4f5c;
+          }
+        }
+
+        .icon-box {
+          width: 50px;
+          height: 50px;
+          svg {
+            path {
+              fill: white;
+            }
+          }
+        }
+        .yesterday {
+          font-size: 13px;
+          span {
+            color: #16bc84;
+          }
+        }
+      }
+      .charts {
+        p {
+          font-size: 11px;
+          color: #8898aa;
+        }
+        h3 {
+          font-size: 18px;
+          color: #172b4d;
+        }
+        button {
+          transition: 0.5s ease;
+          font-size: 14px;
+          border: 1px solid #018e9f;
+          color: #018e9f;
+          &.active,
+          &:hover {
+            background: #018e9f;
+            color: white;
+          }
+        }
+        .canvasjs-chart-credit {
+          display: none;
+        }
+      }
+      .circle {
+        border: 5px solid #222;
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+main {
+  &.add-record72-page {
+    .add-record {
+      .newpatient-content {
+        .close {
+          right: 630px;
+        }
+      }
+    }
+    .add-record {
+      background: rgba(0, 0, 0, 0.7);
+      top: 0;
+      right: -120%;
+      width: 100vw;
+      z-index: 1000;
+      transition: all 0.5s ease;
+      &.show {
+        right: 0;
+      }
+      .newpatient-content {
+        overflow-y: auto;
+        width: 600px;
+        max-width: 90%;
+        border-top: 5px solid #018e9f;
+        height: 100vh;
+        .close {
+          top: 20px;
+          right: 640px;
+          font-size: 22px;
+        }
+        .title {
+          font-size: 20px;
+          color: #018e9f;
+        }
+        h4 {
+          font-size: 18px;
+        }
+        input {
+          font-size: 14px;
+          &:focus {
+            box-shadow: none;
+          }
+          &::placeholder {
+            color: #8a98aa;
+          }
+        }
+        
+        
+        .ck-editor__editable {
+          height: 300px !important;
+        }
+        .btn-cancle {
+          border: 1px solid #000000;
+          border-radius: 5px;
+        }
+        .btn-save {
+          background: #018e9f 0% 0% no-repeat padding-box;
+          border-radius: 5px;
+          color: white;
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+      .close {
+        left: 4% !important ;
+        right: auto !important;
+      }
+    }
+  }
+}

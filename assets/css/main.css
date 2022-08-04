@@ -1,5 +1,23 @@
+:root {
+  /* Colors: */
+  --color-17d0f2: #17d0f2;
+  --color-f5913c: #f5913c;
+  --color-f1f3f980: #f1f3f980;
+  --color-f1f3f9: #f1f3f9;
+  --color-8c98a841: #8c98a841;
+  --color-f5f6fa: #f5f6fa;
+  --color-7764e4: #7764e4;
+  --color-11cdef: #11cdef;
+  --color-16bc84: #16bc84;
+  --color-e54d5b: #e54d5b;
+  --color-8a98aa: #8a98aa;
+  --color-8c98a8: #8c98a8;
+  --color-172b4d: #172b4d;
+  --color-8898aa: #8898aa;
+}
+
 body {
-  background: #f1f3f9;
+  background: var(--color-f1f3f9);
   font-family: Arial;
 }
 
@@ -11,9 +29,11 @@ a:hover {
   text-decoration: none;
 }
 
-input:focus, select:focus, textarea:focus, button:focus {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  box-shadow: none !important;
 }
 
 .br-5 {
@@ -45,8 +65,7 @@ input:focus, select:focus, textarea:focus, button:focus {
 }
 
 .rotate {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 main {
@@ -55,28 +74,22 @@ main {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
 main .menu {
   width: 276px;
   position: fixed;
   left: -276px;
   top: 0;
   z-index: 10;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-
 main .menu.open {
   left: 0;
 }
-
 main .menu .navigation {
   border-radius: 10px;
   min-height: 95vh;
-  -webkit-box-shadow: 4px 0px 6px #0000001c;
-          box-shadow: 4px 0px 6px #0000001c;
+  box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.1098039216);
 }
-
 main .menu .navigation .navbar-switch {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -85,59 +98,46 @@ main .menu .navigation .navbar-switch {
   width: 18px;
   height: 30px;
 }
-
 main .menu .navigation .logo {
   margin: 44px 0;
 }
-
 main .menu .navigation li {
   margin: 0 16px;
   padding: 18px;
 }
-
 main .menu .navigation li.active {
-  background-color: #f662783b;
+  background-color: rgba(246, 98, 119, 0.231372549);
 }
-
 main .menu .navigation li.active span {
   color: #f66277;
   opacity: 1;
 }
-
 main .menu .navigation li span {
   font-size: 14px;
   opacity: 0.8;
   color: #172b4d;
 }
-
 main .main-content {
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   padding-left: 276px;
   padding-top: 16px;
   margin: 0 40px;
 }
-
 main .main-content.open {
   padding-left: 0 !important;
 }
-
 main .main-content .info {
-  -webkit-box-shadow: 0px 4px 6px #0000001c;
-          box-shadow: 0px 4px 6px #0000001c;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1098039216);
 }
-
 main .main-content .info .title {
   color: #f66277;
   font-size: 20px;
   padding: 22px;
   font-weight: bold;
 }
-
 main .main-content .info .dr-info i {
   color: #018e9f;
 }
-
 main .main-content .info .dr-info span {
   color: #000102;
   font-size: 13px;
@@ -153,7 +153,6 @@ select.error,
 textarea.error {
   border-color: #e54d5b;
 }
-
 input.error:focus,
 select.error:focus,
 textarea.error:focus {
@@ -168,4 +167,1034 @@ textarea.error:focus {
     padding: 10px 0;
   }
 }
-/*# sourceMappingURL=main.css.map */
+main.dashboard .menu .navigation li.active {
+  background-color: rgba(119, 100, 228, 0.2274509804);
+}
+main.dashboard .menu .navigation li.active span {
+  color: #7764e4 !important;
+}
+main.dashboard .main-content .title {
+  color: #7764e4 !important;
+}
+main.dashboard .main-content .stat.new-patients .icon-box {
+  background: #16bc84;
+}
+main.dashboard .main-content .stat.new-visits .icon-box {
+  background: #e54d5b;
+}
+main.dashboard .main-content .stat.total-patients .icon-box {
+  background: #7764e4;
+}
+main.dashboard .main-content .stat.total-visits .icon-box {
+  background: #11cdef;
+}
+main.dashboard .main-content .stat .stat-title p {
+  font-size: 11px;
+  color: #8898aa;
+}
+main.dashboard .main-content .stat .stat-title h3 {
+  font-size: 18px;
+  color: #4d4f5c;
+}
+main.dashboard .main-content .stat .icon-box {
+  width: 50px;
+  height: 50px;
+}
+main.dashboard .main-content .stat .icon-box svg path {
+  fill: white;
+}
+main.dashboard .main-content .stat .yesterday {
+  font-size: 13px;
+}
+main.dashboard .main-content .stat .yesterday span {
+  color: #16bc84;
+}
+main.dashboard .main-content .charts p {
+  font-size: 11px;
+  color: #8898aa;
+}
+main.dashboard .main-content .charts h3 {
+  font-size: 18px;
+  color: #172b4d;
+}
+main.dashboard .main-content .charts button {
+  transition: 0.5s ease;
+  font-size: 14px;
+  border: 1px solid #018e9f;
+  color: #018e9f;
+}
+main.dashboard .main-content .charts button.active, main.dashboard .main-content .charts button:hover {
+  background: #018e9f;
+  color: white;
+}
+main.dashboard .main-content .charts .canvasjs-chart-credit {
+  display: none;
+}
+main.dashboard .main-content .circle {
+  border: 5px solid #222;
+  width: 15px;
+  height: 15px;
+}
+
+main.patient-page .menu .navigation li.active {
+  background-color: rgba(246, 98, 119, 0.2274509804);
+}
+main.patient-page .menu .navigation li.active span {
+  color: #f66277 !important;
+}
+main.patient-page .patients-table .filters-section {
+  top: 10px;
+  right: 30px;
+}
+main.patient-page .patients-table td {
+  vertical-align: middle !important;
+}
+main.patient-page .patients-table thead {
+  background: #f1f3f9 !important;
+}
+main.patient-page .patients-table thead th {
+  color: #8898aa;
+  font-weight: 400;
+  font-size: 12px;
+}
+main.patient-page .patients-table table.dataTable.table-striped > tbody > tr.odd > * {
+  box-shadow: inset 0 0 0 999px #f7fafc !important;
+}
+main.patient-page .patients-table .male {
+  color: #018e9f;
+}
+main.patient-page .patients-table .female {
+  color: #c257c6;
+}
+main.patient-page .patients-table #patients-table1_filter {
+  text-align: left !important;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+main.patient-page .patients-table #patients-table1_filter input {
+  background: #f7fafc;
+  border: 1px solid #dadde2;
+  border-radius: 5px;
+  opacity: 0.6;
+}
+main.patient-page .patients-table .add-patient .btn .overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 43;
+}
+main.patient-page .patients-table .add-patient .btn .filter-options {
+  top: 150%;
+  right: -30%;
+  width: 531px;
+  height: 167px;
+  z-index: 10;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1019607843);
+  border: 1px solid #018e9f;
+}
+main.patient-page .patients-table .add-patient .btn .filter-options .add-condition {
+  color: #018e9f;
+}
+main.patient-page .patients-table .add-patient .btn .filter-options::before {
+  content: "";
+  display: inline-flex;
+  width: 10px;
+  height: 10px;
+  z-index: 120;
+  top: -6px;
+  right: 5%;
+  background: white;
+  position: absolute;
+  border-right: 1px solid #018e9f;
+  border-top: 1px solid #018e9f;
+  transform: rotate(-45deg);
+}
+main.patient-page .patients-table .add-patient .btn:not(.add-patient-btn) {
+  width: 40px;
+  height: 40px;
+}
+main.patient-page .patients-table .add-patient .btn:not(.add-patient-btn).bars {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1019607843);
+  border: 1px solid #018e9f;
+  border-radius: 10px;
+}
+main.patient-page .patients-table .add-patient .btn:not(.add-patient-btn).bars .fa-bars {
+  color: #018e9f;
+}
+main.patient-page .patients-table .add-patient .btn:not(.add-patient-btn).filter {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 10px;
+}
+main.patient-page .patients-table .add-patient .btn:not(.add-patient-btn).filter .fa-filter {
+  color: #8898aa;
+}
+main.patient-page .patients-table .add-patient .add-patient-btn {
+  background: #018e9f 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+}
+@media (max-width: 992px) {
+  main.patient-page .patients-table table tr td:nth-of-type(1),
+main.patient-page .patients-table table tr th:nth-of-type(1),
+main.patient-page .patients-table table tr td:nth-of-type(3),
+main.patient-page .patients-table table tr th:nth-of-type(3),
+main.patient-page .patients-table table tr td:nth-of-type(4),
+main.patient-page .patients-table table tr th:nth-of-type(4),
+main.patient-page .patients-table table tr td:nth-of-type(6),
+main.patient-page .patients-table table tr th:nth-of-type(6) {
+    display: none;
+  }
+}
+main .new-patient {
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: -120%;
+  width: 100vw;
+  z-index: 1000;
+  transition: all 0.5s ease;
+}
+main .new-patient.show {
+  right: 0;
+}
+main .new-patient .newpatient-content {
+  overflow-y: auto;
+  width: 80%;
+  max-width: 90%;
+  border-top: 5px solid #018e9f;
+  height: 100vh;
+}
+main .new-patient .newpatient-content .close {
+  top: 20px;
+  left: 18%;
+  font-size: 22px;
+}
+main .new-patient .newpatient-content .title {
+  font-size: 20px;
+  color: #018e9f;
+}
+main .new-patient .newpatient-content h4 {
+  font-size: 18px;
+}
+main .new-patient .newpatient-content input {
+  font-size: 14px;
+}
+main .new-patient .newpatient-content input:focus {
+  box-shadow: none;
+}
+main .new-patient .newpatient-content input::-moz-placeholder {
+  color: #8a98aa;
+}
+main .new-patient .newpatient-content input:-ms-input-placeholder {
+  color: #8a98aa;
+}
+main .new-patient .newpatient-content input::placeholder {
+  color: #8a98aa;
+}
+main .new-patient .newpatient-content select {
+  font-size: 14px;
+}
+main .new-patient .newpatient-content select:invalid {
+  color: gray;
+}
+main .new-patient .newpatient-content .btn-add {
+  transition: 0.5s ease;
+  background: #c3c5c9;
+  border-radius: 5px;
+}
+main .new-patient .newpatient-content .btn-add:hover {
+  background-color: #018e9f;
+}
+main .new-patient .newpatient-content .form-check-input:checked {
+  background-color: #16bc84;
+  border-color: #16bc84;
+}
+main .new-patient .newpatient-content .btn-cancle {
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+main .new-patient .newpatient-content .btn-save {
+  background: #018e9f 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .new-patient .newpatient-content {
+    width: 90%;
+  }
+  .new-patient .newpatient-content .close {
+    right: 97%;
+  }
+  .new-patient .newpatient-content .btn-cancle,
+.new-patient .newpatient-content .btn-save {
+    width: 50% !important;
+  }
+}
+main .main-content .patient-info {
+  margin: 32px 0;
+  padding: 20px 33px;
+  box-shadow: 0px 3px 6px rgba(44, 40, 40, 0.1098039216);
+}
+main .main-content .patient-info .patient-name h2 {
+  font-size: 24px;
+}
+main .main-content .patient-info .edit-patient {
+  color: #018e9f;
+  font-size: 14px;
+}
+main .main-content .patient-info svg path {
+  fill: #018e9f;
+}
+main .main-content .patient-info .info-title {
+  color: #8898aa;
+}
+main .main-content .patient-file {
+  margin: 32px 0;
+  padding: 20px 33px;
+  box-shadow: 0px 3px 6px rgba(44, 40, 40, 0.1098039216) !important;
+}
+main .main-content .patient-file h3 {
+  font-size: 18px;
+  color: #8a98aa;
+}
+main .main-content .patient-file .expand {
+  color: #018e9f;
+}
+main .main-content .patient-file .btn {
+  color: #8a98aa;
+  border: 1px solid #8c98a8;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+main .main-content .patient-file .btn.active {
+  background-color: #8e8769;
+  color: white;
+  border: none;
+}
+main .main-content .patient-file .btn.active svg path {
+  fill: #fff;
+}
+main .main-content .patient-file .btn svg {
+  margin-right: 2px;
+}
+main .main-content .patient-file .btn svg path {
+  fill: #8a98aa;
+}
+main .main-content .patient-file textarea::-moz-placeholder {
+  color: #8a98aa;
+  font-size: 14px;
+}
+main .main-content .patient-file textarea:-ms-input-placeholder {
+  color: #8a98aa;
+  font-size: 14px;
+}
+main .main-content .patient-file textarea::placeholder {
+  color: #8a98aa;
+  font-size: 14px;
+}
+main .main-content .patient-file .diagnosis .item {
+  font-size: 14px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 10px;
+  padding: 10px;
+  color: #8c98a8;
+}
+main .main-content .patient-file .diagnosis .item svg {
+  margin-right: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+main .main-content .patient-file .diagnosis .item .num {
+  background: rgba(0, 0, 0, 0.1607843137);
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+}
+main .main-content .patient-file .diagnosis .item.colored {
+  color: #018e9f;
+}
+main .main-content .patient-file .diagnosis .item.colored .num {
+  background: #018e9f;
+  color: white;
+}
+main .main-content .patient-file .diagnosis .item.colored svg path {
+  fill: #018e9f;
+}
+main .main-content .patient-file .diagnosis .add-diagnosis {
+  background: #8c98a8;
+  transition: 0.3s ease;
+  color: white;
+}
+main .main-content .patient-file .diagnosis .add-diagnosis:hover {
+  background: #018e9f;
+}
+
+.new-patient {
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: -1500px;
+  width: 100vw;
+  z-index: 1000;
+  transition: all 0.5s ease;
+}
+.new-patient.show {
+  right: 0;
+}
+.new-patient .newpatient-content {
+  overflow-y: auto;
+  width: 400px;
+  max-width: 90%;
+  border-top: 5px solid #018e9f;
+  height: 100vh;
+}
+.new-patient .newpatient-content .close {
+  top: 20px;
+  right: 430px;
+  font-size: 22px;
+}
+.new-patient .newpatient-content .title {
+  font-size: 20px;
+  color: #018e9f;
+}
+.new-patient .newpatient-content select {
+  font-size: 14px;
+  color: #000;
+}
+.new-patient .newpatient-content select:focus {
+  box-shadow: none;
+}
+.new-patient .newpatient-content .drop-area {
+  background: #f1f3f9 0% 0% no-repeat padding-box;
+  border: 1px dashed #8a98aa;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+.new-patient .newpatient-content .drop-area.active {
+  opacity: 0.2;
+  border-style: solid;
+}
+.new-patient .newpatient-content .drop-area p {
+  color: #8a98aa;
+}
+.new-patient .newpatient-content .file-box:not(:last-of-type) {
+  border-bottom: 1px solid #f1f3f9;
+}
+.new-patient .newpatient-content .options > div:nth-child(odd) {
+  background: #f1f3f9;
+}
+
+.btn-cancle {
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.btn-save {
+  background: #018e9f 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  color: white;
+}
+
+.record {
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: -1500px;
+  width: 100vw;
+  z-index: 1000;
+  transition: all 0.5s ease;
+}
+.record.show {
+  right: 0;
+}
+.record .newpatient-content {
+  overflow-y: auto;
+  width: 1070px;
+  max-width: 90%;
+  border-top: 5px solid #018e9f;
+  height: 100vh;
+}
+.record .newpatient-content .close {
+  top: 20px;
+  right: 1100px;
+  font-size: 22px;
+}
+.record .newpatient-content .title {
+  font-size: 20px;
+  color: #018e9f;
+}
+.record .newpatient-content select {
+  font-size: 14px;
+  color: #000;
+}
+.record .newpatient-content select:empty {
+  color: #8a98aa;
+}
+.record .newpatient-content select:focus {
+  box-shadow: none;
+  color: black;
+}
+.record .newpatient-content select option[selected] {
+  color: #8a98aa;
+}
+.record .newpatient-content .drop-area {
+  background: #f1f3f9 0% 0% no-repeat padding-box;
+  border: 1px dashed #8a98aa;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+.record .newpatient-content .drop-area.active {
+  opacity: 0.2;
+  border-style: solid;
+}
+.record .newpatient-content .drop-area p {
+  color: #8a98aa;
+}
+.record .newpatient-content .file-box:not(:last-of-type) {
+  border-bottom: 1px solid #f1f3f9;
+}
+.record .newpatient-content .btn-cancle {
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+.record .newpatient-content .btn-save {
+  background: #018e9f;
+  border-radius: 5px;
+  color: white;
+}
+.record .newpatient-content .record-item {
+  border: 1px solid #8a98aa;
+  border-radius: 5px;
+}
+.record .newpatient-content .record-item.active {
+  background: #018e9f;
+  border-color: #018e9f;
+  color: white;
+}
+
+label.error {
+  font-size: 12px;
+  color: #e54d5b;
+}
+
+input.error,
+select.error,
+textarea.error {
+  border-color: #e54d5b;
+}
+input.error:focus,
+select.error:focus,
+textarea.error:focus {
+  border-color: #e54d5b;
+}
+
+.input-lable {
+  font-size: 12px;
+  background: white;
+  padding: 5px 10px;
+  top: -19px;
+  left: 10px;
+  color: #8a98aa;
+}
+
+.btn-view {
+  border: 1px solid #018e9f;
+  color: #018e9f;
+}
+
+@media (max-width: 767px) {
+  .close {
+    left: 4% !important;
+    right: auto !important;
+  }
+  .btn-cancle,
+.btn-save {
+    width: 50% !important;
+  }
+}
+.gray {
+  background: #f1f3f9;
+}
+
+main.visits-page .menu .navigation li.active {
+  background-color: rgba(22, 188, 132, 0.2274509804);
+}
+main.visits-page .menu .navigation li.active span {
+  color: #16bc84 !important;
+}
+main.visits-page .main-content .title {
+  color: #16bc84 !important;
+}
+main.visits-page .main-content .setting h3 {
+  font-size: 18px;
+  color: #018e9f;
+}
+main.visits-page .main-content .setting p {
+  color: #8e8769;
+  font-size: 16px;
+}
+main.visits-page .main-content .setting label {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+main.visits-page .main-content .setting .input-box input {
+  font-size: 14px;
+}
+main.visits-page .main-content .setting .input-box svg {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main.visits-page .main-content .time {
+  width: 80px !important;
+  height: 50px;
+  color: #8898aa;
+}
+main.visits-page .main-content .bg-gray {
+  background: rgba(241, 243, 249, 0.5019607843);
+}
+main.visits-page .main-content .calendar-type a {
+  width: 70px;
+  border: 1px solid #8a98aa;
+  text-align: center;
+  color: #8a98aa;
+}
+main.visits-page .main-content .calendar-type a.active {
+  background: #8a98aa;
+  color: white;
+}
+main.visits-page .main-content .calendar-type a.day {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+main.visits-page .main-content .calendar-type a.week {
+  border-left: none !important;
+  border-right: none !important;
+}
+main.visits-page .main-content .calendar-type a.month {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
+}
+main.visits-page .main-content .month-calendar .week-days {
+  background: #f1f3f9;
+  color: #a3a6b4;
+  height: 45px;
+  font-weight: bold;
+}
+main.visits-page .main-content .month-calendar .week-days div {
+  width: 14.2857142857%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main.visits-page .main-content .month-calendar .days .day {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 10px;
+  color: #8c98a8;
+  width: 14.2857142857%;
+  height: 135px;
+  border: 0.5px solid #eaf0f4;
+  position: relative;
+}
+main.visits-page .main-content .month-calendar .days .event-content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main.visits-page .main-content .month-calendar .days .event-content div:not(:first-of-type) {
+  white-space: nowrap;
+}
+main.visits-page .main-content .month-calendar .days .event-content .event-imgs {
+  width: 13px;
+}
+main.visits-page .main-content .month-calendar .days .event-content .slots {
+  color: #16bc84 !important;
+}
+main.visits-page .main-content .month-calendar .days .event-content .slots.empty {
+  color: #e54d5b !important;
+}
+main.visits-page .main-content .month-calendar .days .prev-date,
+main.visits-page .main-content .month-calendar .days .next-date {
+  color: rgba(140, 152, 168, 0.2392156863);
+}
+main.visits-page .main-content .month-calendar table .month-tr {
+  height: 45px;
+  width: 100%;
+}
+main.visits-page .main-content .month-calendar table .month-tr td {
+  height: 135px;
+  width: 145px;
+}
+main.visits-page .main-content .month-calendar table td {
+  text-align: center;
+  border: 1px solid #eaf0f4;
+}
+main.visits-page .main-content .month-calendar table thead {
+  height: 45px !important;
+  background: #f1f3f9;
+  color: #8898aa;
+  font-weight: bold;
+  font-size: 11px;
+  width: 100%;
+}
+main.visits-page .main-content .week-calendar table thead {
+  height: 45px;
+  color: #8898aa;
+  font-weight: bold;
+  font-size: 11px;
+  width: 100%;
+}
+main.visits-page .main-content .week-calendar table tr {
+  height: 45px;
+  width: 100%;
+}
+main.visits-page .main-content .week-calendar table td {
+  text-align: center;
+  border: 1px solid #ddd;
+}
+main.visits-page .main-content .week-calendar table td:first-of-type {
+  background: #fff;
+  color: #8898aa;
+  width: 80px !important;
+}
+main.visits-page .main-content .waiting-item {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 5px;
+  background: white;
+  width: 200px;
+}
+main.visits-page .main-content .waiting-item.week {
+  width: 120px;
+}
+main.visits-page .main-content .waiting-item > div:first-of-type {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
+}
+main.visits-page .main-content .waiting-item .popup {
+  background: #ffffff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 5px;
+  padding: 10px;
+  top: 120%;
+  right: 0;
+  left: 0;
+  z-index: 1000000000;
+}
+main.visits-page .main-content .waiting-item .popup .status .Scheduled > input {
+  accent-color: #818d9c;
+}
+main.visits-page .main-content .waiting-item .popup .status .Scheduled > input:checked ~ label {
+  color: #818d9c;
+}
+main.visits-page .main-content .waiting-item .popup .status .Checked > input {
+  accent-color: #20a1c5;
+}
+main.visits-page .main-content .waiting-item .popup .status .Checked > input:checked ~ label {
+  color: #20a1c5;
+}
+main.visits-page .main-content .waiting-item .popup .status .Progress > input {
+  accent-color: #d97d30;
+}
+main.visits-page .main-content .waiting-item .popup .status .Progress > input:checked ~ label {
+  color: #d97d30;
+}
+main.visits-page .main-content .waiting-item .popup .status .Completed > input {
+  accent-color: #8e8769;
+}
+main.visits-page .main-content .waiting-item .popup .status .Completed > input:checked ~ label {
+  color: #8e8769;
+}
+main.visits-page .main-content .waiting-item .popup .status .Paid > input {
+  accent-color: #52b888;
+}
+main.visits-page .main-content .waiting-item .popup .status .Paid > input:checked ~ label {
+  color: #52b888;
+}
+main.visits-page .main-content .waiting-item .popup .status label {
+  margin-bottom: 0;
+  color: #8a98aa;
+}
+main.visits-page .main-content .waiting-item .bg-Scheduled {
+  background: #8a98aa;
+}
+main.visits-page .main-content .waiting-item .bg-Checked {
+  background: #56cbeb;
+}
+main.visits-page .main-content .waiting-item .bg-Progress {
+  background: #f5913c;
+}
+main.visits-page .main-content .waiting-item .bg-Completed {
+  background: #8e8769;
+}
+main.visits-page .main-content .waiting-item .bg-Paid {
+  background: #16bc84;
+}
+main.visits-page .main-content .fa-chevron-left,
+main.visits-page .main-content .fa-chevron-right {
+  color: #007bff;
+  cursor: pointer;
+}
+main.visits-page .main-content .cancle-visit {
+  color: #e54d5b;
+}
+main.visits-page .main-content .waiting-list .waiting-item {
+  border: 1px solid #56cbeb;
+}
+main.visits-page .main-content .add-newbtn {
+  background: #018e9f;
+  border: 1px solid #018e9f;
+  border-radius: 5px;
+}
+main.visits-page .new-patient {
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: -110%;
+  width: 100vw;
+  z-index: 1000;
+  transition: all 0.5s ease;
+}
+main.visits-page .new-patient.show {
+  right: 0;
+}
+main.visits-page .new-patient .newpatient-content {
+  overflow-y: auto;
+  width: 424px;
+  max-width: 90%;
+  border-top: 5px solid #018e9f;
+  height: 100vh;
+}
+main.visits-page .new-patient .newpatient-content .close {
+  left: auto;
+  top: 20px;
+  right: 450px;
+  font-size: 22px;
+}
+main.visits-page .new-patient .newpatient-content .title {
+  font-size: 20px;
+  color: #018e9f;
+}
+main.visits-page .new-patient .newpatient-content .search-box input[name=search] {
+  accent-color: #8a98aa;
+}
+main.visits-page .new-patient .newpatient-content .search-box input[name=search] + label {
+  color: #8a98aa;
+}
+main.visits-page .new-patient .newpatient-content .search-box input[name=search]:checked {
+  accent-color: #8e8769;
+}
+main.visits-page .new-patient .newpatient-content .search-box input[name=search]:checked + label {
+  color: #8e8769;
+}
+main.visits-page .new-patient .newpatient-content .patient-item {
+  background: rgba(241, 243, 249, 0.5019607843);
+}
+main.visits-page .new-patient .newpatient-content .patient-item.selected {
+  border: 1px solid #018e9f;
+  background: white;
+}
+main.visits-page .new-patient .newpatient-content .patient-item select:focus + .lable {
+  color: #018e9f;
+}
+main.visits-page .new-patient .newpatient-content .patient-item .lable {
+  top: -10px;
+  left: 20px;
+  color: #8a98aa;
+}
+main.visits-page .new-patient .newpatient-content .btn-cancle {
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+main.visits-page .new-patient .newpatient-content .btn-save {
+  background: #018e9f 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  color: white;
+}
+
+main.add-record72-page .add-record .newpatient-content .close {
+  right: 630px;
+}
+main.add-record72-page .add-record {
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: -120%;
+  width: 100vw;
+  z-index: 1000;
+  transition: all 0.5s ease;
+}
+main.add-record72-page .add-record.show {
+  right: 0;
+}
+main.add-record72-page .add-record .newpatient-content {
+  overflow-y: auto;
+  width: 600px;
+  max-width: 90%;
+  border-top: 5px solid #018e9f;
+  height: 100vh;
+}
+main.add-record72-page .add-record .newpatient-content .close {
+  top: 20px;
+  right: 640px;
+  font-size: 22px;
+}
+main.add-record72-page .add-record .newpatient-content .title {
+  font-size: 20px;
+  color: #018e9f;
+}
+main.add-record72-page .add-record .newpatient-content h4 {
+  font-size: 18px;
+}
+main.add-record72-page .add-record .newpatient-content input {
+  font-size: 14px;
+}
+main.add-record72-page .add-record .newpatient-content input:focus {
+  box-shadow: none;
+}
+main.add-record72-page .add-record .newpatient-content input::-moz-placeholder {
+  color: #8a98aa;
+}
+main.add-record72-page .add-record .newpatient-content input:-ms-input-placeholder {
+  color: #8a98aa;
+}
+main.add-record72-page .add-record .newpatient-content input::placeholder {
+  color: #8a98aa;
+}
+main.add-record72-page .add-record .newpatient-content .ck-editor__editable {
+  height: 300px !important;
+}
+main.add-record72-page .add-record .newpatient-content .btn-cancle {
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+main.add-record72-page .add-record .newpatient-content .btn-save {
+  background: #018e9f 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  color: white;
+}
+@media (max-width: 767px) {
+  main.add-record72-page .close {
+    left: 4% !important;
+    right: auto !important;
+  }
+}
+
+.cancle-vist {
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: -120%;
+  width: 100vw;
+  z-index: 1000;
+  transition: all 0.5s ease;
+}
+.cancle-vist.show {
+  right: 0;
+}
+.cancle-vist .cancle-content {
+  overflow-y: auto;
+  width: 400px;
+  max-width: 90%;
+  border-top: 5px solid #018e9f;
+  height: 100vh;
+}
+.cancle-vist .cancle-content .close {
+  top: 20px;
+  right: 430px;
+  font-size: 22px;
+}
+.cancle-vist .cancle-content .title {
+  font-size: 20px;
+  color: #e54d5b;
+}
+.cancle-vist .cancle-content input:checked {
+  accent-color: #e54d5b;
+}
+.cancle-vist .cancle-content input:checked + .patient-lbl {
+  border: 1px solid #e54d5b;
+  border-radius: 5px;
+}
+.cancle-vist .cancle-content input:checked + .patient-lbl .patient-num {
+  display: block !important;
+}
+.cancle-vist .cancle-content label.error {
+  font-size: 12px;
+  color: #e54d5b;
+}
+.cancle-vist .cancle-content input.error,
+.cancle-vist .cancle-content select.error,
+.cancle-vist .cancle-content textarea.error {
+  border-color: #e54d5b;
+}
+.cancle-vist .cancle-content input.error:focus,
+.cancle-vist .cancle-content select.error:focus,
+.cancle-vist .cancle-content textarea.error:focus {
+  border-color: #e54d5b;
+}
+.cancle-vist .cancle-content .time-section {
+  border-bottom: 1px solid #f1f3f9;
+}
+.cancle-vist .cancle-content .time-section label {
+  font-size: 12px;
+  top: -10px;
+  left: 10px;
+}
+.cancle-vist .cancle-content .patients-section .patient-item .patient-lbl {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1019607843);
+}
+.cancle-vist .cancle-content .patients-section label.all {
+  color: #8a98aa;
+}
+.cancle-vist .cancle-content .patients-section label span.sec {
+  color: #8a98aa;
+}
+.cancle-vist .btn-cancle {
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+.cancle-vist .btn-save {
+  background: #018e9f 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  color: white;
+}
+
+main.setting-page .menu .navigation li.active {
+  background-color: rgba(253, 182, 100, 0.2274509804);
+}
+main.setting-page .menu .navigation li.active span {
+  color: #fdb664 !important;
+}
+main.setting-page .main-content .title {
+  color: #fdb664 !important;
+}
+main.setting-page .main-content .setting h3 {
+  font-size: 18px;
+  color: #018e9f;
+}
+main.setting-page .main-content .setting p {
+  color: #8e8769;
+  font-size: 16px;
+}
+main.setting-page .main-content .setting label {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+main.setting-page .main-content .setting .input-box input {
+  font-size: 14px;
+}
+main.setting-page .main-content .setting .input-box svg {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}/*# sourceMappingURL=main.css.map */
