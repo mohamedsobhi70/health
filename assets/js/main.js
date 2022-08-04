@@ -22,8 +22,20 @@ window.onload = function () {
     menu.classList.add("open");
     mainContent.classList.remove("open");
   }
+  document.documentElement.style.setProperty(
+    "--primary-color",
+    localStorage.getItem("--primary-color") || "#018e9f"
+  );
+  document.documentElement.style.setProperty(
+    "--secondary-color",
+    localStorage.getItem("--secondary-color") || "#8E8769"
+  );
+  document.documentElement.style.setProperty(
+    "--bg-color",
+    localStorage.getItem("--mg-color") || "#f1f3f9"
+  );
+
 };
-window.on;
 window.onresize = function () {
   if (window.innerWidth <= 992) {
     menu.classList.remove("open");

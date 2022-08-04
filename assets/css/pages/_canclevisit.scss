@@ -12,7 +12,7 @@
     overflow-y: auto;
     width: 400px;
     max-width: 90%;
-    border-top: 5px solid #018e9f;
+    border-top: 5px solid var(--primary-color);
     height: 100vh;
     .close {
       top: 20px;
@@ -50,7 +50,7 @@
       }
     }
     .time-section {
-      border-bottom: 1px solid #f1f3f9;
+      border-bottom: 1px solid var(--bg-color);
       label {
         font-size: 12px;
         top: -10px;
@@ -80,7 +80,7 @@
     border-radius: 5px;
   }
   .btn-save {
-    background: #018e9f 0% 0% no-repeat padding-box;
+    background: var(--primary-color) 0% 0% no-repeat padding-box;
     border-radius: 5px;
     color: white;
   }

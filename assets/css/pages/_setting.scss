@@ -19,10 +19,10 @@ main {
       .setting {
         h3 {
           font-size: 18px;
-          color: #018e9f;
+          color: var(--primary-color);
         }
         p {
-          color: #8e8769;
+          color: var(--secondary-color);
           font-size: 16px;
         }
         label {

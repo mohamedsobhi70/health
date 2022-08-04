@@ -1,9 +1,11 @@
 :root {
   /* Colors: */
+  --primary-color: #018e9f;
+  --secondary-color: #8e8769;
+  --bg-color: #f1f3f9;
   --color-17d0f2: #17d0f2;
   --color-f5913c: #f5913c;
   --color-f1f3f980: #f1f3f980;
-  --color-f1f3f9: #f1f3f9;
   --color-8c98a841: #8c98a841;
   --color-f5f6fa: #f5f6fa;
   --color-7764e4: #7764e4;
@@ -13,11 +15,10 @@
   --color-8a98aa: #8a98aa;
   --color-8c98a8: #8c98a8;
   --color-172b4d: #172b4d;
-  --color-8898aa: #8898aa;
 }
 
 body {
-  background: var(--color-f1f3f9);
+  background: var(--bg-color);
   font-family: Arial;
 }
 
@@ -220,11 +221,11 @@ main.dashboard .main-content .charts h3 {
 main.dashboard .main-content .charts button {
   transition: 0.5s ease;
   font-size: 14px;
-  border: 1px solid #018e9f;
-  color: #018e9f;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
 main.dashboard .main-content .charts button.active, main.dashboard .main-content .charts button:hover {
-  background: #018e9f;
+  background: var(--primary-color);
   color: white;
 }
 main.dashboard .main-content .charts .canvasjs-chart-credit {
@@ -250,7 +251,7 @@ main.patient-page .patients-table td {
   vertical-align: middle !important;
 }
 main.patient-page .patients-table thead {
-  background: #f1f3f9 !important;
+  background: var(--bg-color) !important;
 }
 main.patient-page .patients-table thead th {
   color: #8898aa;
@@ -261,7 +262,7 @@ main.patient-page .patients-table table.dataTable.table-striped > tbody > tr.odd
   box-shadow: inset 0 0 0 999px #f7fafc !important;
 }
 main.patient-page .patients-table .male {
-  color: #018e9f;
+  color: var(--primary-color);
 }
 main.patient-page .patients-table .female {
   color: #c257c6;
@@ -293,10 +294,10 @@ main.patient-page .patients-table .add-patient .btn .filter-options {
   height: 167px;
   z-index: 10;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1019607843);
-  border: 1px solid #018e9f;
+  border: 1px solid var(--primary-color);
 }
 main.patient-page .patients-table .add-patient .btn .filter-options .add-condition {
-  color: #018e9f;
+  color: var(--primary-color);
 }
 main.patient-page .patients-table .add-patient .btn .filter-options::before {
   content: "";
@@ -308,8 +309,8 @@ main.patient-page .patients-table .add-patient .btn .filter-options::before {
   right: 5%;
   background: white;
   position: absolute;
-  border-right: 1px solid #018e9f;
-  border-top: 1px solid #018e9f;
+  border-right: 1px solid var(--primary-color);
+  border-top: 1px solid var(--primary-color);
   transform: rotate(-45deg);
 }
 main.patient-page .patients-table .add-patient .btn:not(.add-patient-btn) {
@@ -319,11 +320,11 @@ main.patient-page .patients-table .add-patient .btn:not(.add-patient-btn) {
 main.patient-page .patients-table .add-patient .btn:not(.add-patient-btn).bars {
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1019607843);
-  border: 1px solid #018e9f;
+  border: 1px solid var(--primary-color);
   border-radius: 10px;
 }
 main.patient-page .patients-table .add-patient .btn:not(.add-patient-btn).bars .fa-bars {
-  color: #018e9f;
+  color: var(--primary-color);
 }
 main.patient-page .patients-table .add-patient .btn:not(.add-patient-btn).filter {
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -334,7 +335,7 @@ main.patient-page .patients-table .add-patient .btn:not(.add-patient-btn).filter
   color: #8898aa;
 }
 main.patient-page .patients-table .add-patient .add-patient-btn {
-  background: #018e9f 0% 0% no-repeat padding-box;
+  background: var(--primary-color) 0% 0% no-repeat padding-box;
   border-radius: 5px;
 }
 @media (max-width: 992px) {
@@ -364,7 +365,7 @@ main .new-patient .newpatient-content {
   overflow-y: auto;
   width: 80%;
   max-width: 90%;
-  border-top: 5px solid #018e9f;
+  border-top: 5px solid var(--primary-color);
   height: 100vh;
 }
 main .new-patient .newpatient-content .close {
@@ -374,7 +375,7 @@ main .new-patient .newpatient-content .close {
 }
 main .new-patient .newpatient-content .title {
   font-size: 20px;
-  color: #018e9f;
+  color: var(--primary-color);
 }
 main .new-patient .newpatient-content h4 {
   font-size: 18px;
@@ -406,7 +407,7 @@ main .new-patient .newpatient-content .btn-add {
   border-radius: 5px;
 }
 main .new-patient .newpatient-content .btn-add:hover {
-  background-color: #018e9f;
+  background-color: var(--primary-color);
 }
 main .new-patient .newpatient-content .form-check-input:checked {
   background-color: #16bc84;
@@ -417,7 +418,7 @@ main .new-patient .newpatient-content .btn-cancle {
   border-radius: 5px;
 }
 main .new-patient .newpatient-content .btn-save {
-  background: #018e9f 0% 0% no-repeat padding-box;
+  background: var(--primary-color) 0% 0% no-repeat padding-box;
   border-radius: 5px;
   color: white;
 }
@@ -443,11 +444,11 @@ main .main-content .patient-info .patient-name h2 {
   font-size: 24px;
 }
 main .main-content .patient-info .edit-patient {
-  color: #018e9f;
+  color: var(--primary-color);
   font-size: 14px;
 }
 main .main-content .patient-info svg path {
-  fill: #018e9f;
+  fill: var(--primary-color);
 }
 main .main-content .patient-info .info-title {
   color: #8898aa;
@@ -462,7 +463,7 @@ main .main-content .patient-file h3 {
   color: #8a98aa;
 }
 main .main-content .patient-file .expand {
-  color: #018e9f;
+  color: var(--primary-color);
 }
 main .main-content .patient-file .btn {
   color: #8a98aa;
@@ -471,7 +472,7 @@ main .main-content .patient-file .btn {
   white-space: nowrap;
 }
 main .main-content .patient-file .btn.active {
-  background-color: #8e8769;
+  background-color: var(--secondary-color);
   color: white;
   border: none;
 }
@@ -522,14 +523,14 @@ main .main-content .patient-file .diagnosis .item .num {
   width: 20px;
 }
 main .main-content .patient-file .diagnosis .item.colored {
-  color: #018e9f;
+  color: var(--primary-color);
 }
 main .main-content .patient-file .diagnosis .item.colored .num {
-  background: #018e9f;
+  background: var(--primary-color);
   color: white;
 }
 main .main-content .patient-file .diagnosis .item.colored svg path {
-  fill: #018e9f;
+  fill: var(--primary-color);
 }
 main .main-content .patient-file .diagnosis .add-diagnosis {
   background: #8c98a8;
@@ -537,7 +538,7 @@ main .main-content .patient-file .diagnosis .add-diagnosis {
   color: white;
 }
 main .main-content .patient-file .diagnosis .add-diagnosis:hover {
-  background: #018e9f;
+  background: var(--primary-color);
 }
 
 .new-patient {
@@ -555,7 +556,7 @@ main .main-content .patient-file .diagnosis .add-diagnosis:hover {
   overflow-y: auto;
   width: 400px;
   max-width: 90%;
-  border-top: 5px solid #018e9f;
+  border-top: 5px solid var(--primary-color);
   height: 100vh;
 }
 .new-patient .newpatient-content .close {
@@ -565,7 +566,7 @@ main .main-content .patient-file .diagnosis .add-diagnosis:hover {
 }
 .new-patient .newpatient-content .title {
   font-size: 20px;
-  color: #018e9f;
+  color: var(--primary-color);
 }
 .new-patient .newpatient-content select {
   font-size: 14px;
@@ -575,7 +576,7 @@ main .main-content .patient-file .diagnosis .add-diagnosis:hover {
   box-shadow: none;
 }
 .new-patient .newpatient-content .drop-area {
-  background: #f1f3f9 0% 0% no-repeat padding-box;
+  background: var(--bg-color) 0% 0% no-repeat padding-box;
   border: 1px dashed #8a98aa;
   border-radius: 5px;
   transition: 0.5s ease;
@@ -588,10 +589,10 @@ main .main-content .patient-file .diagnosis .add-diagnosis:hover {
   color: #8a98aa;
 }
 .new-patient .newpatient-content .file-box:not(:last-of-type) {
-  border-bottom: 1px solid #f1f3f9;
+  border-bottom: 1px solid var(--bg-color);
 }
 .new-patient .newpatient-content .options > div:nth-child(odd) {
-  background: #f1f3f9;
+  background: var(--bg-color);
 }
 
 .btn-cancle {
@@ -600,7 +601,7 @@ main .main-content .patient-file .diagnosis .add-diagnosis:hover {
 }
 
 .btn-save {
-  background: #018e9f 0% 0% no-repeat padding-box;
+  background: var(--primary-color) 0% 0% no-repeat padding-box;
   border-radius: 5px;
   color: white;
 }
@@ -620,7 +621,7 @@ main .main-content .patient-file .diagnosis .add-diagnosis:hover {
   overflow-y: auto;
   width: 1070px;
   max-width: 90%;
-  border-top: 5px solid #018e9f;
+  border-top: 5px solid var(--primary-color);
   height: 100vh;
 }
 .record .newpatient-content .close {
@@ -630,7 +631,7 @@ main .main-content .patient-file .diagnosis .add-diagnosis:hover {
 }
 .record .newpatient-content .title {
   font-size: 20px;
-  color: #018e9f;
+  color: var(--primary-color);
 }
 .record .newpatient-content select {
   font-size: 14px;
@@ -647,7 +648,7 @@ main .main-content .patient-file .diagnosis .add-diagnosis:hover {
   color: #8a98aa;
 }
 .record .newpatient-content .drop-area {
-  background: #f1f3f9 0% 0% no-repeat padding-box;
+  background: var(--bg-color) 0% 0% no-repeat padding-box;
   border: 1px dashed #8a98aa;
   border-radius: 5px;
   transition: 0.5s ease;
@@ -660,14 +661,14 @@ main .main-content .patient-file .diagnosis .add-diagnosis:hover {
   color: #8a98aa;
 }
 .record .newpatient-content .file-box:not(:last-of-type) {
-  border-bottom: 1px solid #f1f3f9;
+  border-bottom: 1px solid var(--bg-color);
 }
 .record .newpatient-content .btn-cancle {
   border: 1px solid #000000;
   border-radius: 5px;
 }
 .record .newpatient-content .btn-save {
-  background: #018e9f;
+  background: var(--primary-color);
   border-radius: 5px;
   color: white;
 }
@@ -676,8 +677,8 @@ main .main-content .patient-file .diagnosis .add-diagnosis:hover {
   border-radius: 5px;
 }
 .record .newpatient-content .record-item.active {
-  background: #018e9f;
-  border-color: #018e9f;
+  background: var(--primary-color);
+  border-color: var(--primary-color);
   color: white;
 }
 
@@ -707,8 +708,8 @@ textarea.error:focus {
 }
 
 .btn-view {
-  border: 1px solid #018e9f;
-  color: #018e9f;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 @media (max-width: 767px) {
@@ -722,7 +723,7 @@ textarea.error:focus {
   }
 }
 .gray {
-  background: #f1f3f9;
+  background: var(--bg-color);
 }
 
 main.visits-page .menu .navigation li.active {
@@ -736,10 +737,10 @@ main.visits-page .main-content .title {
 }
 main.visits-page .main-content .setting h3 {
   font-size: 18px;
-  color: #018e9f;
+  color: var(--primary-color);
 }
 main.visits-page .main-content .setting p {
-  color: #8e8769;
+  color: var(--secondary-color);
   font-size: 16px;
 }
 main.visits-page .main-content .setting label {
@@ -760,7 +761,7 @@ main.visits-page .main-content .time {
   color: #8898aa;
 }
 main.visits-page .main-content .bg-gray {
-  background: rgba(241, 243, 249, 0.5019607843);
+  background: var(--bg-color) 80;
 }
 main.visits-page .main-content .calendar-type a {
   width: 70px;
@@ -787,7 +788,7 @@ main.visits-page .main-content .calendar-type a.month {
   overflow: hidden;
 }
 main.visits-page .main-content .month-calendar .week-days {
-  background: #f1f3f9;
+  background: var(--bg-color);
   color: #a3a6b4;
   height: 45px;
   font-weight: bold;
@@ -844,7 +845,7 @@ main.visits-page .main-content .month-calendar table td {
 }
 main.visits-page .main-content .month-calendar table thead {
   height: 45px !important;
-  background: #f1f3f9;
+  background: var(--bg-color);
   color: #8898aa;
   font-weight: bold;
   font-size: 11px;
@@ -913,10 +914,10 @@ main.visits-page .main-content .waiting-item .popup .status .Progress > input:ch
   color: #d97d30;
 }
 main.visits-page .main-content .waiting-item .popup .status .Completed > input {
-  accent-color: #8e8769;
+  accent-color: var(--secondary-color);
 }
 main.visits-page .main-content .waiting-item .popup .status .Completed > input:checked ~ label {
-  color: #8e8769;
+  color: var(--secondary-color);
 }
 main.visits-page .main-content .waiting-item .popup .status .Paid > input {
   accent-color: #52b888;
@@ -938,7 +939,7 @@ main.visits-page .main-content .waiting-item .bg-Progress {
   background: #f5913c;
 }
 main.visits-page .main-content .waiting-item .bg-Completed {
-  background: #8e8769;
+  background: var(--secondary-color);
 }
 main.visits-page .main-content .waiting-item .bg-Paid {
   background: #16bc84;
@@ -955,8 +956,8 @@ main.visits-page .main-content .waiting-list .waiting-item {
   border: 1px solid #56cbeb;
 }
 main.visits-page .main-content .add-newbtn {
-  background: #018e9f;
-  border: 1px solid #018e9f;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
   border-radius: 5px;
 }
 main.visits-page .new-patient {
@@ -974,7 +975,7 @@ main.visits-page .new-patient .newpatient-content {
   overflow-y: auto;
   width: 424px;
   max-width: 90%;
-  border-top: 5px solid #018e9f;
+  border-top: 5px solid var(--primary-color);
   height: 100vh;
 }
 main.visits-page .new-patient .newpatient-content .close {
@@ -985,7 +986,7 @@ main.visits-page .new-patient .newpatient-content .close {
 }
 main.visits-page .new-patient .newpatient-content .title {
   font-size: 20px;
-  color: #018e9f;
+  color: var(--primary-color);
 }
 main.visits-page .new-patient .newpatient-content .search-box input[name=search] {
   accent-color: #8a98aa;
@@ -994,20 +995,20 @@ main.visits-page .new-patient .newpatient-content .search-box input[name=search]
   color: #8a98aa;
 }
 main.visits-page .new-patient .newpatient-content .search-box input[name=search]:checked {
-  accent-color: #8e8769;
+  accent-color: var(--secondary-color);
 }
 main.visits-page .new-patient .newpatient-content .search-box input[name=search]:checked + label {
-  color: #8e8769;
+  color: var(--secondary-color);
 }
 main.visits-page .new-patient .newpatient-content .patient-item {
-  background: rgba(241, 243, 249, 0.5019607843);
+  background: var(--bg-color) 80;
 }
 main.visits-page .new-patient .newpatient-content .patient-item.selected {
-  border: 1px solid #018e9f;
+  border: 1px solid var(--primary-color);
   background: white;
 }
 main.visits-page .new-patient .newpatient-content .patient-item select:focus + .lable {
-  color: #018e9f;
+  color: var(--primary-color);
 }
 main.visits-page .new-patient .newpatient-content .patient-item .lable {
   top: -10px;
@@ -1019,7 +1020,7 @@ main.visits-page .new-patient .newpatient-content .btn-cancle {
   border-radius: 5px;
 }
 main.visits-page .new-patient .newpatient-content .btn-save {
-  background: #018e9f 0% 0% no-repeat padding-box;
+  background: var(--primary-color) 0% 0% no-repeat padding-box;
   border-radius: 5px;
   color: white;
 }
@@ -1042,7 +1043,7 @@ main.add-record72-page .add-record .newpatient-content {
   overflow-y: auto;
   width: 600px;
   max-width: 90%;
-  border-top: 5px solid #018e9f;
+  border-top: 5px solid var(--primary-color);
   height: 100vh;
 }
 main.add-record72-page .add-record .newpatient-content .close {
@@ -1052,7 +1053,7 @@ main.add-record72-page .add-record .newpatient-content .close {
 }
 main.add-record72-page .add-record .newpatient-content .title {
   font-size: 20px;
-  color: #018e9f;
+  color: var(--primary-color);
 }
 main.add-record72-page .add-record .newpatient-content h4 {
   font-size: 18px;
@@ -1080,7 +1081,7 @@ main.add-record72-page .add-record .newpatient-content .btn-cancle {
   border-radius: 5px;
 }
 main.add-record72-page .add-record .newpatient-content .btn-save {
-  background: #018e9f 0% 0% no-repeat padding-box;
+  background: var(--primary-color) 0% 0% no-repeat padding-box;
   border-radius: 5px;
   color: white;
 }
@@ -1106,7 +1107,7 @@ main.add-record72-page .add-record .newpatient-content .btn-save {
   overflow-y: auto;
   width: 400px;
   max-width: 90%;
-  border-top: 5px solid #018e9f;
+  border-top: 5px solid var(--primary-color);
   height: 100vh;
 }
 .cancle-vist .cancle-content .close {
@@ -1143,7 +1144,7 @@ main.add-record72-page .add-record .newpatient-content .btn-save {
   border-color: #e54d5b;
 }
 .cancle-vist .cancle-content .time-section {
-  border-bottom: 1px solid #f1f3f9;
+  border-bottom: 1px solid var(--bg-color);
 }
 .cancle-vist .cancle-content .time-section label {
   font-size: 12px;
@@ -1164,7 +1165,7 @@ main.add-record72-page .add-record .newpatient-content .btn-save {
   border-radius: 5px;
 }
 .cancle-vist .btn-save {
-  background: #018e9f 0% 0% no-repeat padding-box;
+  background: var(--primary-color) 0% 0% no-repeat padding-box;
   border-radius: 5px;
   color: white;
 }
@@ -1180,10 +1181,10 @@ main.setting-page .main-content .title {
 }
 main.setting-page .main-content .setting h3 {
   font-size: 18px;
-  color: #018e9f;
+  color: var(--primary-color);
 }
 main.setting-page .main-content .setting p {
-  color: #8e8769;
+  color: var(--secondary-color);
   font-size: 16px;
 }
 main.setting-page .main-content .setting label {

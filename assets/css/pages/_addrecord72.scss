@@ -21,7 +21,7 @@ main {
         overflow-y: auto;
         width: 600px;
         max-width: 90%;
-        border-top: 5px solid #018e9f;
+        border-top: 5px solid var(--primary-color);
         height: 100vh;
         .close {
           top: 20px;
@@ -30,7 +30,7 @@ main {
         }
         .title {
           font-size: 20px;
-          color: #018e9f;
+          color: var(--primary-color);
         }
         h4 {
           font-size: 18px;
@@ -54,7 +54,7 @@ main {
           border-radius: 5px;
         }
         .btn-save {
-          background: #018e9f 0% 0% no-repeat padding-box;
+          background: var(--primary-color) 0% 0% no-repeat padding-box;
           border-radius: 5px;
           color: white;
         }
