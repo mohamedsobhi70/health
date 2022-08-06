@@ -280,7 +280,10 @@
             <div class="patient-file bg-white  br-10">
                 <div class="d-flex mb-4 mt-3 justify-content-between align-items-center">
                     <h3 class="ms-3 fw-bold">Patient File</h3>
-                    <div role="button" class="fs-14 expand">Expand <i class="fas fa-chevron-down"></i></div>
+                    <div role="button" class="fs-14 expand">
+                    <span class=""> Expand <i class="fas fa-chevron-down"></i></span>
+                    <span class="d-none"> Collapse <i class="fas fa-chevron-up"></i></span>
+                    </div>
                 </div>
 
 
@@ -846,6 +849,13 @@
     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
     <script src="assets/vendor/bootstrap-5.0.2/bootstrap.min.js"></script>
     <script>
+        document.querySelector(".expand").addEventListener("click",function(){
+           let spans = this.querySelectorAll("span");
+           spans.forEach(element => {
+                element.classList.toggle("d-none");
+           });
+            document.querySelector(".nav-tabs").classList.toggle("flex-nowrap")
+        })
         $(document).ready(function () {
             var table = $('#patientstable').DataTable({
                 "bPaginate": false,
