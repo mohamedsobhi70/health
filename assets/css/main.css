@@ -338,18 +338,6 @@ main.patient-page .patients-table .add-patient .add-patient-btn {
   background: var(--primary-color) 0% 0% no-repeat padding-box;
   border-radius: 5px;
 }
-@media (max-width: 992px) {
-  main.patient-page .patients-table table tr td:nth-of-type(1),
-main.patient-page .patients-table table tr th:nth-of-type(1),
-main.patient-page .patients-table table tr td:nth-of-type(3),
-main.patient-page .patients-table table tr th:nth-of-type(3),
-main.patient-page .patients-table table tr td:nth-of-type(4),
-main.patient-page .patients-table table tr th:nth-of-type(4),
-main.patient-page .patients-table table tr td:nth-of-type(6),
-main.patient-page .patients-table table tr th:nth-of-type(6) {
-    display: none;
-  }
-}
 main .new-patient {
   background: rgba(0, 0, 0, 0.7);
   top: 0;
@@ -470,6 +458,10 @@ main .main-content .patient-file .btn {
   border: 1px solid #8c98a8;
   border-radius: 5px;
   white-space: nowrap;
+  transition: 0.3s ease;
+}
+main .main-content .patient-file .btn:focus {
+  box-shadow: none;
 }
 main .main-content .patient-file .btn.active {
   background-color: var(--secondary-color);
@@ -479,10 +471,18 @@ main .main-content .patient-file .btn.active {
 main .main-content .patient-file .btn.active svg path {
   fill: #fff;
 }
+main .main-content .patient-file .btn:hover:not(.active) {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+main .main-content .patient-file .btn:hover:not(.active) svg path {
+  fill: var(--primary-color);
+}
 main .main-content .patient-file .btn svg {
   margin-right: 2px;
 }
 main .main-content .patient-file .btn svg path {
+  transition: 0.3s ease;
   fill: #8a98aa;
 }
 main .main-content .patient-file textarea::-moz-placeholder {

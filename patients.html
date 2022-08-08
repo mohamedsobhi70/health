@@ -17,7 +17,9 @@
 </head>
 
 <body>
+    <!-- start main content   -->
     <main class="patient-page">
+        <!-- aside bar navigation  -->
         <aside class="menu mr-3 open">
             <div class="navigation py-5  bg-white my-3 p-2 br-10">
                 <div class="navbar-switch position-absolute bg-white d-flex align-items-center" role="button">
@@ -213,11 +215,14 @@
                 </ul>
             </div>
         </aside>
+        <!-- end navigation bar  -->
         <div class="main-content ">
+            <!-- header informations  -->
             <header class="info bg-white mb-3 br-10 d-flex align-items-center justify-content-between">
                 <div class="title d-none d-sm-block">
                     Patients
                 </div>
+                <!-- dr informations  -->
                 <div class="dr-info px-3">
                     <a class="mx-3 text-decoration-none" href="">
                         <i class="far fa-bell fa-lg"></i>
@@ -231,8 +236,11 @@
                     </a>
                 </div>
             </header>
-            <div class="my-4 patients-table position-relative bg-white  p-3 br-10 ">
-                <div class="d-flex position-absolute filters-section justify-content-md-between mb-4 flex-wrap justify-content-center">
+            <!-- end header informations  -->
+            <!-- patient table section  -->
+            <div class="my-4 patients-table position-relative bg-white table-responsive  p-3 br-10 ">
+                <div
+                    class="d-flex position-absolute filters-section justify-content-md-between mb-4 flex-wrap justify-content-center">
                     <div class="add-patient">
                         <button
                             class="bars my-2 btn mx-1 my-md-0 d-inline-flex justify-content-center align-items-center">
@@ -376,6 +384,7 @@
                         </button>
                     </div>
                 </div>
+                <!-- patient table  -->
                 <table id="patients-table1" class="table w-100 fs-14 table-borderless table-striped "
                     style="width:100%;max-width: 100%;">
                     <thead>
@@ -660,149 +669,153 @@
                         </tr>
                     </tbody>
                 </table>
+                <!-- end patient table  -->
             </div>
-        </div>  <!-- add new patient  -->
-    <div dir="rtl" class="new-patient position-fixed min-vh-100  position-relative ">
-        <div dir="ltr" class="newpatient-content bg-white px-5 py-4  ">
-            <div class="close fw-bold text-white position-absolute" role="button">X</div>
-            <h3 class="title fw-bold mb-4"> Add New Patient </h3>
-            <form action="" id="upload-form">
-                <div class="personal-informations">
-                    <h4 class="fw-bold mb-3">Personal Information</h4>
-                    <div class="row mb-5 ">
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <input name="input1" type="text" placeholder="First Name*" class="form-control">
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <input name="input2" type="text" placeholder="Second Name*" class="form-control">
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <input name="input3" type="text" placeholder="Third Name*" class="form-control">
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <input name="input4" type="text" placeholder="Last Name*" class="form-control">
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <input name="input5" type="text" placeholder="Date of Birth*" onblur="(this.type='text')"
-                                onfocus="(this.type='date')" class="form-control place">
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <select name="input6" class="form-select sex" aria-label=".sex">
-                                <option selected>Sex*</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <input type="text" placeholder="National ID" class="form-control">
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <select class="form-select company " aria-label=".company">
-                                <option selected>Company</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <select class="form-select company " aria-label=".company">
-                                <option selected>Occupation</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                        <div class="col-sm-6 mb-4">
-                            <input type="text" placeholder="Address" class="form-control">
-                        </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
-                            <select class="form-select company " aria-label=".company">
-                                <option selected>how did you hear about us?</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
+        </div>
+        <!-- add new patient  -->
+        <div dir="rtl" class="new-patient position-fixed min-vh-100  position-relative ">
+            <div dir="ltr" class="newpatient-content bg-white px-5 py-4  ">
+                <div class="close fw-bold text-white position-absolute" role="button">X</div>
+                <h3 class="title fw-bold mb-4"> Add New Patient </h3>
+                <form action="" id="upload-form">
+                    <div class="personal-informations">
+                        <h4 class="fw-bold mb-3">Personal Information</h4>
+                        <div class="row mb-5 ">
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <input name="input1" type="text" placeholder="First Name*" class="form-control">
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <input name="input2" type="text" placeholder="Second Name*" class="form-control">
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <input name="input3" type="text" placeholder="Third Name*" class="form-control">
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <input name="input4" type="text" placeholder="Last Name*" class="form-control">
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <input name="input5" type="text" placeholder="Date of Birth*"
+                                    onblur="(this.type='text')" onfocus="(this.type='date')" class="form-control place">
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <select name="input6" class="form-select sex" aria-label=".sex">
+                                    <option selected>Sex*</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <input type="text" placeholder="National ID" class="form-control">
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <select class="form-select company " aria-label=".company">
+                                    <option selected>Company</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <select class="form-select company " aria-label=".company">
+                                    <option selected>Occupation</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6 mb-4">
+                                <input type="text" placeholder="Address" class="form-control">
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <select class="form-select company " aria-label=".company">
+                                    <option selected>how did you hear about us?</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
 
+                        </div>
                     </div>
-                </div>
-                <div class="">
-                    <h4 class="fw-bold mb-3">Contact Information</h4>
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="d-flex  ">
-                                <input type="Email" placeholder="Email" class="form-control">
-                                <button class="btn p-1 ml-2 px-3 border text-white btn-add btn-add-email">+</button>
-                            </div>
-                            <div class="emails-field mb-4 mx-3">
+                    <div class="">
+                        <h4 class="fw-bold mb-3">Contact Information</h4>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="d-flex  ">
+                                    <input type="Email" placeholder="Email" class="form-control">
+                                    <button class="btn p-1 ml-2 px-3 border text-white btn-add btn-add-email">+</button>
+                                </div>
+                                <div class="emails-field mb-4 mx-3">
 
-                            </div>
-                            <div class="d-flex mb-2 align-items-baseline">
-                                <div class="row w-100">
-                                    <div class="col-4">
-                                        <select class="form-select company " aria-label=".company">
-                                            <option selected>Jor (+962)</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-8">
-                                        <input type="text" name="input7" placeholder="Mobile No.*" class="form-control mob-num">
-                                        <div class="mobiles-field mx-3">
+                                </div>
+                                <div class="d-flex mb-2 align-items-baseline">
+                                    <div class="row w-100">
+                                        <div class="col-4">
+                                            <select class="form-select company " aria-label=".company">
+                                                <option selected>Jor (+962)</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-8">
+                                            <input type="text" name="input7" placeholder="Mobile No.*"
+                                                class="form-control mob-num">
+                                            <div class="mobiles-field mx-3">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <button class="btn p-1 ml-2 px-3 border text-white btn-add btn-add-mobile">+</button>
+                                    <button
+                                        class="btn p-1 ml-2 px-3 border text-white btn-add btn-add-mobile">+</button>
 
-                            </div>
-                           
-                            <div class="d-flex justify-content-end">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label fs-12" for="flexCheckDefault">
-                                        WhatsApp
-                                    </label>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="d-flex mb-4 align-items-baseline">
-                                <div class="row w-100">
-                                    <div class="col-sm-6">
-                                        <select name="input8" class="form-select company " aria-label=".company">
-                                            <option value selected>Insurance*</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <select class="form-select company " aria-label=".company">
-                                            <option value="" selected>Insurance Subscription No.</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
+
+                                <div class="d-flex justify-content-end">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label fs-12" for="flexCheckDefault">
+                                            WhatsApp
+                                        </label>
                                     </div>
                                 </div>
-                                <button class="btn p-1 ml-2 px-3 border text-white btn-add">+</button>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="d-flex mb-4 align-items-baseline">
+                                    <div class="row w-100">
+                                        <div class="col-sm-6">
+                                            <select name="input8" class="form-select company " aria-label=".company">
+                                                <option value selected>Insurance*</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <select class="form-select company " aria-label=".company">
+                                                <option value="" selected>Insurance Subscription No.</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button class="btn p-1 ml-2 px-3 border text-white btn-add">+</button>
 
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="d-flex justify-content-end mt-5">
-                    <button class="btn btn-cancle fs-14 py-2 px-5 ml-3">Cancle</button>
-                    <button class="btn btn-save fs-14 py-2 px-5 ml-3">Save</button>
-                </div>
-            </form>
+                    <div class="d-flex justify-content-end mt-5">
+                        <button class="btn btn-cancle fs-14 py-2 px-5 ml-3">Cancle</button>
+                        <button class="btn btn-save fs-14 py-2 px-5 ml-3">Save</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
-    <!-- end add new patient  -->
+        <!-- end add new patient  -->
     </main>
-  
+    <!-- end main contant  -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>

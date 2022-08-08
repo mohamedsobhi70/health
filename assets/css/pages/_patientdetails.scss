@@ -36,10 +36,15 @@ main {
       }
 
       .btn {
+
         color: #8a98aa;
         border: 1px solid #8c98a8;
         border-radius: 5px;
         white-space: nowrap;
+        transition: .3s ease;
+        &:focus{
+          box-shadow: none;
+        }
         &.active {
           background-color: var(--secondary-color);
           color: white;
@@ -50,9 +55,19 @@ main {
             }
           }
         }
+        &:hover:not(.active){
+          color: var(--primary-color);
+          border-color: var(--primary-color);
+          svg {
+            path {
+              fill: var(--primary-color);
+            }
+          }
+        }
         svg {
           margin-right: 2px;
           path {
+            transition: .3s ease;
             fill: #8a98aa;
           }
         }

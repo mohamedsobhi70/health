@@ -55,10 +55,12 @@ window.onload = function () {
       gridDashType: "longDash",
       gridColor: "#ccc",
     },
+    axisX: {
+      labelFontColor: "#8898AA",
+    },
     axisY: {
+      gridColor: "#ddd",
       lineThickness: 0,
-      gridDashType: "longDash",
-      gridColor: "#8898AA",
       labelFontColor: "#8898AA",
       interval: 10000,
     },
@@ -87,6 +89,7 @@ window.onload = function () {
       lineThickness: 0,
       labelFontColor: "#8898AA",
       tickLength: 0,
+      
     },
     axisY: {
       lineThickness: 0,
@@ -111,7 +114,6 @@ window.onload = function () {
       labelFontColor: "#8898AA",
       interval: 10,
     },
-    axisX: { tickLength: 0 },
     dataPointWidth: 10,
     data: [
       {
@@ -132,59 +134,55 @@ window.onload = function () {
 
   //referals chart
   var chart = new CanvasJS.Chart("referals", {
-    title: {
-      text: "1065 visits",
-      fontSize: 18,
-      horizontalAlign: "center",
-      verticalAlign: "center",
-    },
     legend: {
       itemWidth: 200,
-      fontSize: 18,
+      fontSize: 14,
     },
     data: [
       {
+        indexLabelLineThickness: 0,
+        indexLabelFontSize: 0,
+
         type: "doughnut",
-        indexLabelPlacement: "outside",
         dataPoints: [
           {
             y: 350,
-            legendText: "Social Media",
+            legendText: ` Social Media                350 `,
             label: "Social Media",
             color: "#2DCE98",
             showInLegend: true,
             legendMarkerColor: "#fff",
             legendMarkerBorderColor: "#2DCE98",
-            legendMarkerBorderThickness: 4,
+            legendMarkerBorderThickness: 6,
           },
           {
             y: 501,
-            legendText: "Friends and Family",
+            legendText: "Friends and Family      501",
             label: "Friends and Family",
             color: "#E54D5B",
             legendMarkerColor: "#fff",
             legendMarkerBorderColor: "#E54D5B",
-            legendMarkerBorderThickness: 4,
+            legendMarkerBorderThickness: 6,
             showInLegend: true,
           },
           {
             y: 76,
-            legendText: "Doctors",
+            legendText: "Doctors                        76",
             label: "Doctors",
             color: "#11CDEF",
             legendMarkerColor: "#fff",
             legendMarkerBorderColor: "#11CDEF",
-            legendMarkerBorderThickness: 4,
+            legendMarkerBorderThickness: 6,
             showInLegend: true,
           },
           {
             y: 129,
-            legendText: "Lab",
+            legendText: "Lab                              129",
             label: "Lab",
             color: "#FEB969",
             legendMarkerColor: "#fff",
             legendMarkerBorderColor: "#FEB969",
-            legendMarkerBorderThickness: 4,
+            legendMarkerBorderThickness: 6,
             showInLegend: true,
           },
         ],
@@ -240,6 +238,11 @@ window.onload = function () {
       labelFontColor: "#8898AA",
       interval: 100,
     },
+    legend: {
+      itemWidth: 160,
+
+      markerMargin: 14,
+    },
     data: [
       {
         type: "column",
@@ -247,7 +250,7 @@ window.onload = function () {
         legendText: "Gig",
         legendMarkerColor: "white",
         legendMarkerBorderColor: "#11CDEF",
-        legendMarkerBorderThickness: 3,
+        legendMarkerBorderThickness: 4,
         legendMarkerType: "circle",
 
         dataPoints: [
@@ -265,7 +268,7 @@ window.onload = function () {
         legendText: "Nathealth",
         legendMarkerColor: "white",
         legendMarkerBorderColor: "#7764E4",
-        legendMarkerBorderThickness: 3,
+        legendMarkerBorderThickness: 4,
         legendMarkerType: "circle",
         legendMarkerSize: 400,
 
@@ -284,7 +287,7 @@ window.onload = function () {
         legendText: "Alnaser Alarabi",
         legendMarkerColor: "white",
         legendMarkerBorderColor: "#2DCE98",
-        legendMarkerBorderThickness: 3,
+        legendMarkerBorderThickness: 4,
         legendMarkerType: "circle",
         dataPoints: [
           { label: "Jan", y: 550, color: "#2DCE98" },
@@ -304,12 +307,21 @@ window.onload = function () {
 
   var chart = new CanvasJS.Chart("employers", {
     animationEnabled: true,
+    axisX: {
+      gridThickness: 1,
+      gridColor: "#eee",
+      lineThickness: 1,
+      lineColor: "#eee",
+      labelFontColor: "#8898AA",
 
+    },
     axisY: {
-      lineThickness: 0,
+      lineThickness: 1,
+      lineColor: "#eee",
+      gridThickness: 1,
+      gridColor: "#eee",
       tickLength: 0,
       maximum: 400,
-      gridDashType: "longDash",
       gridColor: "#ccc",
       labelFontColor: "#8898AA",
       interval: 100,
@@ -320,26 +332,23 @@ window.onload = function () {
     legend: {
       verticalAlign: "top",
       horizontalAlign: "center",
+      reversed: true,
+      markerMargin: 10,
+      itemWidth: 70,
     },
     data: [
       {
         type: "stackedColumn",
-        name: "Zain",
-        showInLegend: true,
-        legendMarkerColor: "#7764E4",
-        legendMarkerType: "circle",
+        name: "Amazon",
         dataPoints: [
-          { label: "jan", y: 40, color: "#7764E4" },
-          { label: "Feb", y: 50, color: "#7764E4" },
-          { label: "mar", y: 60, color: "#7764E4" },
+          { label: "jan", y: 95, color: "#FEB969" },
+          { label: "Feb", y: 22, color: "#FEB969" },
+          { label: "mar", y: 60, color: "#FEB969" },
         ],
       },
       {
         type: "stackedColumn",
         name: "Orange",
-        showInLegend: true,
-        legendMarkerColor: "#FB6340",
-        legendMarkerType: "circle",
         dataPoints: [
           { label: "jan", y: 60, color: "#FB6340" },
           { label: "Feb", y: 18, color: "#FB6340" },
@@ -348,15 +357,11 @@ window.onload = function () {
       },
       {
         type: "stackedColumn",
-        name: "Amazon",
-        showInLegend: true,
-        legendMarkerColor: "#FEB969",
-        // legendMarkerColor: "#7764E4",
-        legendMarkerType: "circle",
+        name: "Zain",
         dataPoints: [
-          { label: "jan", y: 95, color: "#FEB969" },
-          { label: "Feb", y: 22, color: "#FEB969" },
-          { label: "mar", y: 60, color: "#FEB969" },
+          { label: "jan", y: 40, color: "#7764E4" },
+          { label: "Feb", y: 50, color: "#7764E4" },
+          { label: "mar", y: 60, color: "#7764E4" },
         ],
       },
     ],

@@ -15,7 +15,9 @@
 </head>
 
 <body>
+    <!-- start main content  -->
     <main class="dashboard">
+        <!-- start aside (navigation bar) bar  -->
         <aside class="menu mr-3 open">
             <div class="navigation py-5  bg-white my-3 p-2 br-10">
                 <div class="navbar-switch position-absolute bg-white d-flex align-items-center" role="button">
@@ -52,10 +54,12 @@
                         </g>
                     </svg>
                 </div>
+                <!-- logo  -->
                 <div class="logo text-center">
                     <img src="assets/img/logo.png" alt="">
                 </div>
                 <ul class="list-unstyled">
+                    <!-- nav item  -->
                     <li class="br-15 d-flex align-items-center active">
                         <a class="text-dark text-decoration-none" href="dashboard.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
@@ -75,6 +79,7 @@
                             <span class="ml-2">Dashboard</span>
                         </a>
                     </li>
+                    <!-- nav item  -->
                     <li class="br-15 d-flex align-items-center ">
                         <a class="text-dark text-decoration-none" href="patients.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
@@ -89,6 +94,7 @@
                             <span class="ml-2">Patients</span>
                         </a>
                     </li>
+                    <!-- nav item  -->
                     <li class="br-15 d-flex align-items-center ">
                         <a class="text-dark text-decoration-none" href="visits.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
@@ -136,6 +142,7 @@
                             <span class="ml-2">Appointments</span>
                         </a>
                     </li>
+                    <!-- nav item  -->
                     <li class="br-15 d-flex align-items-center">
                         <a class="text-dark text-decoration-none" href="mypackages.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
@@ -161,6 +168,7 @@
                             <span class="ml-2">My Packages</span>
                         </a>
                     </li>
+                    <!-- nav item  -->
                     <li class="br-15 d-flex align-items-center">
                         <a class="text-dark text-decoration-none" href="templates.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
@@ -189,6 +197,7 @@
                             <span class="ml-2">Templates</span>
                         </a>
                     </li>
+                    <!-- nav item  -->
                     <li class="br-15 d-flex align-items-center">
                         <a class="text-dark text-decoration-none" href="setting.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
@@ -211,7 +220,9 @@
                 </ul>
             </div>
         </aside>
+        <!-- end aside (navigation bar) bar  -->
         <div class="main-content ">
+            <!-- start header  -->
             <header
                 class="info bg-white mb-3 br-10 d-flex align-items-center justify-content-sm-between justify-content-center">
                 <div class="title d-none d-sm-block">
@@ -230,7 +241,10 @@
                     </a>
                 </div>
             </header>
+            <!-- end header  -->
+            <!-- stats section  -->
             <div class="row">
+                <!-- stat item  -->
                 <div class="col-md-3 col-sm-6 mb-3">
                     <div class="stat new-patients br-10 bg-white p-3">
                         <div class="d-flex mt-2 justify-content-between align-items-center">
@@ -253,6 +267,7 @@
                         </p>
                     </div>
                 </div>
+                <!-- stat item  -->
                 <div class="col-md-3 col-sm-6 mb-3">
                     <div class="stat new-visits br-10 bg-white p-3">
                         <div class="d-flex mt-2 justify-content-between align-items-center">
@@ -275,6 +290,7 @@
                         </p>
                     </div>
                 </div>
+                <!-- stat item  -->
                 <div class="col-md-3 col-sm-6 mb-3">
                     <div class="stat total-patients br-10 bg-white p-3">
                         <div class="d-flex mt-2 justify-content-between align-items-center">
@@ -302,6 +318,7 @@
                         </p>
                     </div>
                 </div>
+                <!-- stat item  -->
                 <div class="col-md-3 col-sm-6 mb-3">
                     <div class="stat total-visits br-10 bg-white p-3">
                         <div class="d-flex mt-2 justify-content-between align-items-center">
@@ -364,7 +381,10 @@
                     </div>
                 </div>
             </div>
+            <!-- end stats sction  -->
+            <!-- charts section  -->
             <div class="row charts">
+                <!-- total patients chart  -->
                 <div class="col-md-8 mb-4">
                     <div class="bg-white p-4 br-10">
                         <div class="d-flex mb-5 justify-content-between align-items-center">
@@ -381,6 +401,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- visits chart  -->
                 <div class="col-md-4 mb-4">
                     <div class="bg-white p-4 br-10">
                         <div class="mb-5">
@@ -392,6 +413,7 @@
                     </div>
                 </div>
                 <div class="col-md-8 mb-4">
+                    <!-- total visits chart  -->
                     <div class="bg-white p-4 br-10 mb-4">
                         <div class="d-flex mb-5 justify-content-between align-items-center">
                             <div class="">
@@ -403,6 +425,7 @@
                         <div id="totalVisits" style="height: 350px; width: 100%;">
                         </div>
                     </div>
+                    <!-- Top used insurance companies chart -->
                     <div class="bg-white p-4 br-10">
                         <div class="d-flex mb-5 justify-content-between align-items-center">
                             <div class="">
@@ -416,7 +439,13 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <div class="bg-white mb-4 p-4 br-10">
+                    <!-- how did you hear about us chart -->
+                    <div class="bg-white mb-4 p-4 br-10 position-relative">
+                        <div class="position-absolute text-center"
+                            style="z-index: 22;top: 50%;left: 50%; transform: translate(-50%,-50%);">
+                            <h5 class="mb-0">1065</h5>
+                            <p class="mb-0">Answers</p>
+                        </div>
                         <div class="">
                             <p class="mb-0">REFERALS</p>
                             <h3 class="my-2 font-weight-bold">How did you hear about us</h3>
@@ -424,10 +453,28 @@
                         <div id="referals" style="height: 500px; width: 100%;"></div>
 
                     </div>
+                    <!-- top 3 patients Employers chart  -->
                     <div class="bg-white mb-4 p-4 br-10">
                         <div class="">
                             <p class="mb-0">COMPANIES</p>
-                            <h3 class="my-2 font-weight-bold">Top 3 patients Employers</h3>
+                            <h3 class="my-2 font-weight-bold mb-5">Top 3 patients Employers</h3>
+                        </div>
+                        <div class="d-flex fs-12 mx-3 mb-3 justify-content-between align-items-center">
+                            <div class="d-flex align-items-center ">
+                                <div class="d-inline-block rounded-pill mr-2 "
+                                    style="width: 25px ;height: 13px ; background: #7764E4;"></div>
+                                <div class="">zain</div>
+                            </div>
+                            <div class="d-flex align-items-center ">
+                                <div class="d-inline-block rounded-pill mr-2 "
+                                    style="width: 25px ;height: 13px ; background: #FB6340;"></div>
+                                <div class="">Orange</div>
+                            </div>
+                            <div class="d-flex align-items-center ">
+                                <div class="d-inline-block rounded-pill mr-2 "
+                                    style="width: 25px ;height: 13px ; background: #FEB969;"></div>
+                                <div class="">Amazon</div>
+                            </div>
                         </div>
                         <div id="employers" style="height: 300px; width: 100%;"></div>
 
@@ -436,6 +483,7 @@
             </div>
         </div>
     </main>
+    <!-- end main content  -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="assets/vendor/fontawesome/fontawesome.js"></script>
