@@ -291,7 +291,7 @@ main.patient-page .patients-table .add-patient .btn .filter-options {
   top: 150%;
   right: -30%;
   width: 531px;
-  height: 167px;
+  height: auto;
   z-index: 10;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1019607843);
   border: 1px solid var(--primary-color);

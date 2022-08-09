@@ -252,7 +252,6 @@ window.onload = function () {
         legendMarkerBorderColor: "#11CDEF",
         legendMarkerBorderThickness: 4,
         legendMarkerType: "circle",
-
         dataPoints: [
           { label: "Jan", y: 221, color: "#11CDEF" },
           { label: "Jun", y: 455, color: "#11CDEF" },
