@@ -1,4 +1,4 @@
-
+// popup 
 document.querySelectorAll(".popup-open").forEach((item) =>
   item.addEventListener("click", function () {
     this.parentElement.querySelector(".popup").classList.toggle("d-none");
@@ -32,15 +32,7 @@ patientItemsinput.forEach((item) =>
     }
   })
 );
-
 // drag drop 
-
-// let waitingLists = document.querySelectorAll(".waiting-item");
-// console.log(waitingLists);
-// waitingLists.forEach(list =>{
-  
-
-// } );
 function allowDrop(ev) {
   ev.preventDefault();
 }
