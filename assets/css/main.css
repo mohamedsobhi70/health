@@ -231,6 +231,23 @@ main.dashboard .main-content .charts button.active, main.dashboard .main-content
 main.dashboard .main-content .charts .canvasjs-chart-credit {
   display: none;
 }
+main.dashboard .main-content .charts .legends .circle-color {
+  width: 15px;
+  height: 15px;
+  border: 5px solid;
+}
+main.dashboard .main-content .charts .legends .circle-color.social {
+  border-color: #2dce98;
+}
+main.dashboard .main-content .charts .legends .circle-color.friends {
+  border-color: #e54d5b;
+}
+main.dashboard .main-content .charts .legends .circle-color.doctors {
+  border-color: #11cdef;
+}
+main.dashboard .main-content .charts .legends .circle-color.labs {
+  border-color: #FEB969;
+}
 main.dashboard .main-content .circle {
   border: 5px solid #222;
   width: 15px;

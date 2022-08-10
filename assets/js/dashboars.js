@@ -89,7 +89,6 @@ window.onload = function () {
       lineThickness: 0,
       labelFontColor: "#8898AA",
       tickLength: 0,
-      
     },
     axisY: {
       lineThickness: 0,
@@ -134,10 +133,6 @@ window.onload = function () {
 
   //referals chart
   var chart = new CanvasJS.Chart("referals", {
-    legend: {
-      itemWidth: 200,
-      fontSize: 14,
-    },
     data: [
       {
         indexLabelLineThickness: 0,
@@ -147,43 +142,23 @@ window.onload = function () {
         dataPoints: [
           {
             y: 350,
-            legendText: ` Social Media                350 `,
             label: "Social Media",
             color: "#2DCE98",
-            showInLegend: true,
-            legendMarkerColor: "#fff",
-            legendMarkerBorderColor: "#2DCE98",
-            legendMarkerBorderThickness: 6,
           },
           {
             y: 501,
-            legendText: "Friends and Family      501",
             label: "Friends and Family",
             color: "#E54D5B",
-            legendMarkerColor: "#fff",
-            legendMarkerBorderColor: "#E54D5B",
-            legendMarkerBorderThickness: 6,
-            showInLegend: true,
           },
           {
             y: 76,
-            legendText: "Doctors                        76",
             label: "Doctors",
             color: "#11CDEF",
-            legendMarkerColor: "#fff",
-            legendMarkerBorderColor: "#11CDEF",
-            legendMarkerBorderThickness: 6,
-            showInLegend: true,
           },
           {
             y: 129,
-            legendText: "Lab                              129",
             label: "Lab",
             color: "#FEB969",
-            legendMarkerColor: "#fff",
-            legendMarkerBorderColor: "#FEB969",
-            legendMarkerBorderThickness: 6,
-            showInLegend: true,
           },
         ],
       },
@@ -312,7 +287,6 @@ window.onload = function () {
       lineThickness: 1,
       lineColor: "#eee",
       labelFontColor: "#8898AA",
-
     },
     axisY: {
       lineThickness: 1,

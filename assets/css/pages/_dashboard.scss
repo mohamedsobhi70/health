@@ -87,6 +87,25 @@ main {
         .canvasjs-chart-credit {
           display: none;
         }
+        .legends {
+          .circle-color {
+            width: 15px;
+            height: 15px;
+            border: 5px solid;
+            &.social {
+              border-color: #2dce98;
+            }
+            &.friends {
+              border-color: #e54d5b;
+            }
+            &.doctors {
+              border-color: #11cdef;
+            }
+            &.labs {
+              border-color: #FEB969;
+            }
+          }
+        }
       }
       .circle {
         border: 5px solid #222;
